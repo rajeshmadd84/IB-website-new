@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+
 const LINKEDIN = "https://www.linkedin.com/company/intellibyld";
 
 const cols = [
@@ -29,13 +33,27 @@ const cols = [
 ];
 
 export default function Footer() {
+  const [showImage, setShowImage] = useState(true);
+
   return (
     <footer className="ib-foot">
       <div className="ib-wrap">
         <div className="ib-foot-top">
           <div className="ib-foot-about">
             <span className="ib-foot-brand">
-              Intelli<b>Byld</b>
+              <img
+                src="/images/logo.svg"
+                alt="IntelliByld"
+                className="ib-logo"
+                style={{ display: showImage ? undefined : "none" }}
+                onError={() => setShowImage(false)}
+                onLoad={() => setShowImage(true)}
+              />
+              {!showImage && (
+                <>
+                  Intelli<b>Byld</b>
+                </>
+              )}
             </span>
             <p>The execution layer for construction — turning fragmented site and supply-chain data into autonomous, real-time decisions.</p>
             <a href={LINKEDIN} className="ib-btn ib-btn-ghost" style={{ padding: ".6em 1.1em", fontSize: ".85rem" }}>

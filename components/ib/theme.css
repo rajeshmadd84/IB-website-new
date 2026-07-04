@@ -3,7 +3,7 @@
    Light blueprint theme + brand-blue accent. Scoped under .ib-root
    so a global import won't bleed into the rest of an app.
    ============================================================ */
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
 
 :root{
   --ib-ink:#FFFFFF;
@@ -26,7 +26,7 @@
   --ib-shadow-md:0 2px 6px rgba(16,24,40,.05),0 18px 40px -22px rgba(16,33,71,.22);
   --ib-maxw:1180px;
   --ib-pad:clamp(1.25rem,5vw,2.5rem);
-  --ib-display:"Archivo",system-ui,sans-serif;
+  --ib-display:"Space Grotesk",system-ui,sans-serif;
   --ib-body:"Inter",system-ui,sans-serif;
   --ib-mono:"IBM Plex Mono",ui-monospace,monospace;
 }
@@ -67,6 +67,7 @@
 .ib-nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
 .ib-brand{font-family:var(--ib-display);font-weight:800;font-size:1.3rem;letter-spacing:-.02em;color:var(--ib-text);display:flex;align-items:center;gap:.55em}
 .ib-brand .mark{width:22px;height:22px;flex-shrink:0}
+.ib-logo{height:34px;width:auto;display:block}
 .ib-brand b{color:var(--ib-cyan);font-weight:800}
 .ib-nav-links{display:flex;align-items:center;gap:1.8rem}
 .ib-nav-links a,.ib-nav-drop>span{font-size:.92rem;color:var(--ib-text-body);transition:color .15s;cursor:pointer;display:inline-flex;align-items:center;gap:.35em}
@@ -153,7 +154,7 @@
 .ib-card .ib-ic{width:42px;height:42px;border-radius:10px;background:var(--ib-cyan-dim);border:1px solid rgba(30,86,214,.22);display:flex;align-items:center;justify-content:center;margin-bottom:1.1rem}
 .ib-card .ib-ic svg{stroke:var(--ib-cyan)}
 .ib-card .knum{font-family:var(--ib-mono);font-size:.66rem;color:var(--ib-cyan);letter-spacing:.12em}
-.ib-card h3{font-size:1.22rem;margin:.5rem 0 .55rem}
+.ib-card h3{font-size:1.22rem;margin:.5rem 0 .55rem;color:var(--ib-cyan)}
 .ib-card p{font-size:.94rem;color:var(--ib-text-body);flex:1}
 .ib-card .tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.1rem}
 .ib-card .tags span{font-family:var(--ib-mono);font-size:.6rem;letter-spacing:.04em;color:var(--ib-text-muted);border:1px solid var(--ib-line);border-radius:20px;padding:.25em .7em}

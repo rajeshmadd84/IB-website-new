@@ -19,6 +19,7 @@ function Mark() {
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
+  const [showImage, setShowImage] = useState(true);
   const close = () => setOpen(false);
 
   useEffect(() => {
@@ -43,8 +44,20 @@ export default function Nav() {
     <header className="ib-nav">
       <div className="ib-wrap ib-nav-inner">
         <a href="/" className="ib-brand" onClick={close}>
-          <Mark />
-          Intelli<b>Byld</b>
+          <img
+            src="/images/logo.svg"
+            alt="IntelliByld"
+            className="ib-logo"
+            style={{ display: showImage ? undefined : "none" }}
+            onError={() => setShowImage(false)}
+            onLoad={() => setShowImage(true)}
+          />
+          {!showImage && (
+            <>
+              <Mark />
+              Intelli<b>Byld</b>
+            </>
+          )}
         </a>
         <nav className={`ib-nav-links${open ? " open" : ""}`}>
           <a href="/" onClick={close}>
