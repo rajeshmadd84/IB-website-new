@@ -220,18 +220,19 @@
   display: inline-flex;
 }
 
-.ib-nav-links a:hover, .ib-nav-drop:hover > span {
-  color: var(--ib-cyan);
-}
-
 .ib-nav-drop {
   position: relative;
 }
 
-.ib-nav-drop > span:after {
-  content: "▾";
+.ib-drop-caret {
   color: var(--ib-text-muted);
-  font-size: .7rem;
+  flex-shrink: 0;
+  transition: transform .16s, color .16s;
+}
+
+.ib-nav-drop:focus-within .ib-drop-caret {
+  color: var(--ib-cyan);
+  transform: rotate(180deg);
 }
 
 .ib-drop-menu {
@@ -250,7 +251,7 @@
   box-shadow: 0 24px 50px -24px #10214747;
 }
 
-.ib-nav-drop:hover .ib-drop-menu, .ib-nav-drop:focus-within .ib-drop-menu {
+.ib-nav-drop:focus-within .ib-drop-menu {
   opacity: 1;
   visibility: visible;
   transform: translateX(-50%)translateY(0);
@@ -265,17 +266,34 @@
   display: block;
 }
 
-.ib-drop-menu a:hover {
-  background: var(--ib-ink-2);
-  color: var(--ib-cyan);
-}
-
 .ib-drop-menu a span {
   font-family: var(--ib-mono);
   color: var(--ib-text-muted);
   margin-top: .15rem;
   font-size: .68rem;
   display: block;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .ib-nav-links a:hover, .ib-nav-drop:hover > span {
+    color: var(--ib-cyan);
+  }
+
+  .ib-nav-drop:hover .ib-drop-caret {
+    color: var(--ib-cyan);
+    transform: rotate(180deg);
+  }
+
+  .ib-nav-drop:hover .ib-drop-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%)translateY(0);
+  }
+
+  .ib-drop-menu a:hover {
+    background: var(--ib-ink-2);
+    color: var(--ib-cyan);
+  }
 }
 
 .ib-nav-cta {
@@ -1278,19 +1296,55 @@
   }
 
   .ib-nav-drop > span {
-    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    display: flex;
+  }
+
+  .ib-nav-drop.open .ib-drop-caret {
+    color: var(--ib-cyan);
+    transform: rotate(180deg);
   }
 
   .ib-drop-menu {
-    opacity: 1;
-    visibility: visible;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
     box-shadow: none;
     background: none;
     border: none;
     min-width: 0;
-    padding: 0 0 0 1rem;
+    padding: 0;
+    transition: opacity .16s, max-height .16s;
     position: static;
+    overflow: hidden;
     transform: none;
+  }
+
+  .ib-nav-drop:hover .ib-drop-menu, .ib-nav-drop:focus-within .ib-drop-menu {
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+  }
+
+  .ib-nav-drop.open .ib-drop-menu {
+    opacity: 1;
+    visibility: visible;
+    background: var(--ib-ink-2);
+    border-radius: 10px;
+    max-height: 400px;
+    margin-top: .3rem;
+    padding: .4rem 0 .2rem 1rem;
+  }
+
+  .ib-nav-drop.open .ib-drop-menu a {
+    color: var(--ib-text);
+    padding: .6rem .7rem;
+  }
+
+  .ib-nav-drop.open .ib-drop-menu a span {
+    color: var(--ib-text-body);
   }
 
   .ib-menu-toggle {

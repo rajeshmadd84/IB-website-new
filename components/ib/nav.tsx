@@ -17,10 +17,22 @@ function Mark() {
   );
 }
 
+function Chevron() {
+  return (
+    <svg className="ib-drop-caret" width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden="true">
+      <path d="M2.5 4L5.5 7L8.5 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
 export default function Nav() {
   const [open, setOpen] = useState(false);
+  const [useCasesOpen, setUseCasesOpen] = useState(false);
   const [showImage, setShowImage] = useState(true);
-  const close = () => setOpen(false);
+  const close = () => {
+    setOpen(false);
+    setUseCasesOpen(false);
+  };
 
   useEffect(() => {
     const els = document.querySelectorAll(".ib-reveal");
@@ -60,9 +72,7 @@ export default function Nav() {
           )}
         </a>
         <nav className={`ib-nav-links${open ? " open" : ""}`}>
-          <a href="/" onClick={close}>
-            Home
-          </a>
+         
           <a href="/agentic-ai" onClick={close}>
             Agentic AI
           </a>
@@ -72,8 +82,22 @@ export default function Nav() {
           <a href="/sustainability" onClick={close}>
             Sustainability
           </a>
-          <div className="ib-nav-drop">
-            <span tabIndex={0}>Use Cases</span>
+          <div className={`ib-nav-drop${useCasesOpen ? " open" : ""}`}>
+            <span
+              tabIndex={0}
+              role="button"
+              aria-expanded={useCasesOpen}
+              onClick={() => setUseCasesOpen((v) => !v)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  setUseCasesOpen((v) => !v);
+                }
+              }}
+            >
+              Use Cases
+              <Chevron />
+            </span>
             <div className="ib-drop-menu">
               {useCases.map((u) => (
                 <a key={u.href} href={u.href} onClick={close}>
@@ -88,9 +112,7 @@ export default function Nav() {
           </a>
         </nav>
         <div className="ib-nav-cta">
-          <a href="/contact-us" className="ib-btn ib-btn-ghost">
-            Talk to us
-          </a>
+          
           <a href="/pilot" className="ib-btn ib-btn-primary">
             Join Pilot <span className="arw">→</span>
           </a>
