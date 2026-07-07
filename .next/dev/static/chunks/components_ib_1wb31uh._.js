@@ -270,6 +270,26 @@ function Nav() {
                             fileName: "[project]/components/ib/nav.tsx",
                             lineNumber: 110,
                             columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                            href: "/pilot",
+                            className: "ib-btn ib-btn-primary ib-nav-cta-mobile",
+                            onClick: close,
+                            children: [
+                                "Join Pilot ",
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "arw",
+                                    children: "→"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/ib/nav.tsx",
+                                    lineNumber: 114,
+                                    columnNumber: 24
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/ib/nav.tsx",
+                            lineNumber: 113,
+                            columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
@@ -282,7 +302,7 @@ function Nav() {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             href: "/pilot",
-                            className: "ib-btn ib-btn-primary",
+                            className: "ib-btn ib-btn-primary ib-nav-cta-desktop",
                             children: [
                                 "Join Pilot ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -290,13 +310,13 @@ function Nav() {
                                     children: "→"
                                 }, void 0, false, {
                                     fileName: "[project]/components/ib/nav.tsx",
-                                    lineNumber: 117,
+                                    lineNumber: 120,
                                     columnNumber: 24
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ib/nav.tsx",
-                            lineNumber: 116,
+                            lineNumber: 119,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -307,13 +327,13 @@ function Nav() {
                             children: "☰"
                         }, void 0, false, {
                             fileName: "[project]/components/ib/nav.tsx",
-                            lineNumber: 119,
+                            lineNumber: 122,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/ib/nav.tsx",
-                    lineNumber: 114,
+                    lineNumber: 117,
                     columnNumber: 9
                 }, this)
             ]

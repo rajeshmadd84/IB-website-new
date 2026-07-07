@@ -110,10 +110,13 @@ export default function Nav() {
           <a href="/contact-us" onClick={close}>
             Contact
           </a>
+          <a href="/pilot" className="ib-btn ib-btn-primary ib-nav-cta-mobile" onClick={close}>
+            Join Pilot <span className="arw">→</span>
+          </a>
         </nav>
         <div className="ib-nav-cta">
-          
-          <a href="/pilot" className="ib-btn ib-btn-primary">
+
+          <a href="/pilot" className="ib-btn ib-btn-primary ib-nav-cta-desktop">
             Join Pilot <span className="arw">→</span>
           </a>
           <button className="ib-menu-toggle" onClick={() => setOpen((v) => !v)} aria-expanded={open} aria-label="Toggle menu">

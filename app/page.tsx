@@ -1,5 +1,5 @@
 import { Flowchart, FCNode, FCEdge } from "@/components/ib/flowchart";
-import { IconCpu, IconLayers, IconBot, IconRadar, IconShield, IconRoute, IconLeaf, IconClock, IconTruck, IconBlocks, IconCheck, IconLink, IconZap } from "@/components/ib/icons";
+import { IconCpu, IconLayers, IconBot, IconRadar, IconShield, IconRoute, IconLeaf, IconClock, IconTruck, IconBlocks, IconCheck, IconLink, IconZap, IconInfo, IconTarget, IconUsers, IconPlug, IconPlay, IconQuestion } from "@/components/ib/icons";
 
 /* ---- hero flowchart: the autonomous execution loop ---- */
 const heroNodes: FCNode[] = [
@@ -85,7 +85,9 @@ export default function Home() {
       <section className="ib-hero">
         <div className="ib-grid-bg" />
         <div className="ib-wrap ib-hero-inner">
-          <span className="ib-eyebrow">Agentic AI · Construction Supply Chains</span>
+          <span className="ib-eyebrow">
+            <IconBot /> Agentic AI · Construction Supply Chains
+          </span>
           <h1>
             Agentic AI for <span className="cy">construction</span> supply chains
           </h1>
@@ -136,7 +138,9 @@ export default function Home() {
       <section className="ib-sec">
         <div className="ib-wrap">
           <div className="ib-head ib-reveal">
-            <span className="ib-eyebrow">What is IntelliByld?</span>
+            <span className="ib-eyebrow">
+              <IconInfo /> What is IntelliByld?
+            </span>
             <h2>Autonomous Execution for construction supply chains</h2>
             <p>
               <b>IntelliByld is the OS that turns supply-chain data into Autonomous Execution.</b> It helps teams coordinate procurement, shipping, and bid evaluation so execution stays on schedule.
@@ -164,7 +168,9 @@ export default function Home() {
         <div className="ib-wrap">
           <div className="ib-split">
             <div className="ib-reveal">
-              <span className="ib-eyebrow">Digital Twins</span>
+              <span className="ib-eyebrow">
+                <IconLayers /> Digital Twins
+              </span>
               <h2>A living twin of your entire supply chain</h2>
               <p>
                 IntelliByld's Digital Twin is a living, real-time replica of your construction supply chain. It links every material movement to your master schedule — closing the "Integration Trap" so your model mirrors physical site reality.
@@ -204,7 +210,9 @@ export default function Home() {
       <section className="ib-sec">
         <div className="ib-wrap">
           <div className="ib-head center ib-reveal">
-            <span className="ib-eyebrow">Why it matters</span>
+            <span className="ib-eyebrow">
+              <IconTarget /> Why it matters
+            </span>
             <h2>From visibility to action</h2>
           </div>
           <div className="ib-cards c4">
@@ -223,7 +231,9 @@ export default function Home() {
       <section className="ib-sec alt">
         <div className="ib-wrap">
           <div className="ib-head ib-reveal">
-            <span className="ib-eyebrow">The Teams</span>
+            <span className="ib-eyebrow">
+              <IconUsers /> The Teams
+            </span>
             <h2>Meet your digital workforce</h2>
             <p>Three teams of specialised agents working in concert — sourcing, logistics and carbon — coordinated by supervising orchestrators and a single shared data flow.</p>
           </div>
@@ -247,7 +257,9 @@ export default function Home() {
       <section className="ib-sec">
         <div className="ib-wrap">
           <div className="ib-head ib-reveal">
-            <span className="ib-eyebrow">No Rip-and-Replace</span>
+            <span className="ib-eyebrow">
+              <IconPlug /> No Rip-and-Replace
+            </span>
             <h2>Zero integration. Zero disruption. Live in 7 days.</h2>
             <p>We sit on top of your existing tools. Your team changes nothing — the only thing that changes is that your supply chain becomes visible.</p>
           </div>
@@ -268,7 +280,9 @@ export default function Home() {
         <div className="ib-wrap">
           <div className="ib-split">
             <div className="ib-reveal">
-              <span className="ib-eyebrow">Run it on a live project</span>
+              <span className="ib-eyebrow">
+                <IconPlay /> Run it on a live project
+              </span>
               <h2>See autonomous coordination in your own data</h2>
               <p>Free pilot for select developers, GCs, and EPC teams. Connect one site and watch the twin come alive within three weeks.</p>
               <div className="ib-hero-actions" style={{ marginTop: "1.8rem" }}>
@@ -311,7 +325,9 @@ export default function Home() {
       <section className="ib-sec">
         <div className="ib-wrap">
           <div className="ib-head center ib-reveal">
-            <span className="ib-eyebrow">Core team</span>
+            <span className="ib-eyebrow">
+              <IconUsers /> Core team
+            </span>
             <h2>The people building the digital workforce</h2>
           </div>
           <div className="ib-cards c4">
@@ -337,7 +353,9 @@ export default function Home() {
       <section className="ib-sec alt">
         <div className="ib-wrap">
           <div className="ib-head ib-reveal">
-            <span className="ib-eyebrow">FAQs</span>
+            <span className="ib-eyebrow">
+              <IconQuestion /> FAQs
+            </span>
             <h2>Know more about IntelliByld</h2>
           </div>
           <div className="ib-faq ib-reveal">
@@ -356,7 +374,7 @@ export default function Home() {
         <div className="ib-cta-bg" />
         <div className="ib-wrap ib-cta-inner ib-reveal">
           <span className="ib-eyebrow" style={{ justifyContent: "center" }}>
-            Build the execution layer
+            <IconZap /> Build the execution layer
           </span>
           <h2>
             Make your supply chain <span className="cy">visible</span> — and autonomous

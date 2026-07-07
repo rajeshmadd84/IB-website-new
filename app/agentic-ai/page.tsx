@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Flowchart, FCNode, FCEdge } from "@/components/ib/flowchart";
-import { IconBlocks, IconTruck, IconLeaf, IconCheck, IconShield, IconRadar, IconZap, IconLink, IconRoute } from "@/components/ib/icons";
+import { IconBlocks, IconTruck, IconLeaf, IconCheck, IconShield, IconRadar, IconZap, IconLink, IconRoute, IconBot, IconWorkflow, IconUsers, IconShare, IconTrendingUp, IconQuestion } from "@/components/ib/icons";
 
 export const metadata: Metadata = {
   title: "Agentic AI",
@@ -66,7 +66,9 @@ export default function AgenticAI() {
       <section className="ib-phero">
         <div className="ib-grid-bg" />
         <div className="ib-wrap" style={{ position: "relative" }}>
-          <span className="ib-eyebrow">Agentic AI · A Digital Workforce</span>
+          <span className="ib-eyebrow">
+            <IconBot /> Agentic AI · A Digital Workforce
+          </span>
           <h1>
             Three teams. <span className="cy">Fourteen agents.</span> One supply chain.
           </h1>
@@ -86,7 +88,9 @@ export default function AgenticAI() {
       <section className="ib-sec">
         <div className="ib-wrap">
           <div className="ib-head ib-reveal">
-            <span className="ib-eyebrow">One workflow</span>
+            <span className="ib-eyebrow">
+              <IconWorkflow /> One workflow
+            </span>
             <h2>From requirement to delivery — with carbon in view</h2>
             <p>Sourcing confirms a supplier, logistics gets it to site, and the Scope 3 team reads the same RFQ, PO and shipment data to calculate and disclose emissions in the same flow.</p>
           </div>
@@ -99,7 +103,9 @@ export default function AgenticAI() {
       <section className="ib-sec alt">
         <div className="ib-wrap">
           <div className="ib-head ib-reveal">
-            <span className="ib-eyebrow">Meet the teams</span>
+            <span className="ib-eyebrow">
+              <IconUsers /> Meet the teams
+            </span>
             <h2>Three teams of specialists, not one monolith</h2>
             <p>Each team owns a distinct slice of the supply chain. A supervising orchestrator conducts each one, and the procurement and carbon teams share a single data flow.</p>
           </div>
@@ -123,7 +129,9 @@ export default function AgenticAI() {
         <div className="ib-wrap">
           <div className="ib-split">
             <div className="ib-reveal">
-              <span className="ib-eyebrow">Shared data flows</span>
+              <span className="ib-eyebrow">
+                <IconShare /> Shared data flows
+              </span>
               <h2>Carbon shares the procurement bloodstream</h2>
               <p>The Scope 3 agents are not a module bolted on after the fact — they share data and decisions with the procurement team, so every award can be weighed on price, technical fit and tonnes of CO₂e in the same workflow.</p>
               <a href="/agents/scope3" className="ib-btn ib-btn-primary" style={{ marginTop: "1.6rem" }}>
@@ -147,7 +155,9 @@ export default function AgenticAI() {
       <section className="ib-sec alt">
         <div className="ib-wrap">
           <div className="ib-head ib-reveal">
-            <span className="ib-eyebrow">Authority stays human</span>
+            <span className="ib-eyebrow">
+              <IconShield /> Authority stays human
+            </span>
             <h2>Agents do the work; humans hold the decisions</h2>
             <p>Autonomy without accountability is risky in procurement. The agents draft, analyse, compare and track autonomously — but the decisions that carry commercial or regulatory weight sit behind approval gates.</p>
           </div>
@@ -165,7 +175,9 @@ export default function AgenticAI() {
       <section className="ib-sec">
         <div className="ib-wrap">
           <div className="ib-head center ib-reveal">
-            <span className="ib-eyebrow">Outcomes</span>
+            <span className="ib-eyebrow">
+              <IconTrendingUp /> Outcomes
+            </span>
             <h2>What a coordinated workforce delivers</h2>
           </div>
           <div className="ib-cards c3">
@@ -183,7 +195,9 @@ export default function AgenticAI() {
       <section className="ib-sec alt">
         <div className="ib-wrap">
           <div className="ib-head ib-reveal">
-            <span className="ib-eyebrow">FAQs</span>
+            <span className="ib-eyebrow">
+              <IconQuestion /> FAQs
+            </span>
             <h2>The agent architecture, answered</h2>
           </div>
           <div className="ib-faq ib-reveal">

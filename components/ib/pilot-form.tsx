@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { IconCheck } from "@/components/ib/icons";
+import { IconCheck, IconRocket } from "@/components/ib/icons";
 
 const ROLES = ["Developer / Owner", "General Contractor", "EPC", "Consultant / PM", "Other"];
 
@@ -62,7 +62,9 @@ export default function PilotForm() {
         <div className="ib-wrap" style={{ position: "relative" }}>
           <div className="ib-form-grid">
             <aside className="ib-aside">
-              <span className="ib-eyebrow">Join Pilot</span>
+              <span className="ib-eyebrow">
+                <IconRocket /> Join Pilot
+              </span>
               <h1>
                 Run it on a <span className="cy">live</span> project
               </h1>

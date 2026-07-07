@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Flowchart, FCNode, FCEdge } from "@/components/ib/flowchart";
-import { IconCheck, IconRadar, IconLayers, IconClock, IconLeaf } from "@/components/ib/icons";
+import { IconCheck, IconRadar, IconLayers, IconClock, IconLeaf, IconSwap, IconQuestion } from "@/components/ib/icons";
 
 export const metadata: Metadata = {
   title: "Digital Twins",
@@ -40,7 +40,9 @@ export default function DigitalTwins() {
       <section className="ib-phero">
         <div className="ib-grid-bg" />
         <div className="ib-wrap" style={{ position: "relative" }}>
-          <span className="ib-eyebrow">Digital Twins</span>
+          <span className="ib-eyebrow">
+            <IconLayers /> Digital Twins
+          </span>
           <h1>
             A living twin of your <span className="cy">project</span> supply chain
           </h1>
@@ -54,7 +56,9 @@ export default function DigitalTwins() {
         <div className="ib-wrap">
           <div className="ib-split">
             <div className="ib-reveal">
-              <span className="ib-eyebrow">Physical ↔ digital</span>
+              <span className="ib-eyebrow">
+                <IconSwap /> Physical ↔ digital
+              </span>
               <h2>One model, continuously reconciled</h2>
               <p>The site feeds the twin; the twin drives the next decision. Deliveries, weather, and crew status stream into a single live state that schedule, procurement, and carbon all read from.</p>
               <ul className="ib-checks">
@@ -88,7 +92,9 @@ export default function DigitalTwins() {
       <section className="ib-sec alt">
         <div className="ib-wrap">
           <div className="ib-head center ib-reveal">
-            <span className="ib-eyebrow">What the twin tracks</span>
+            <span className="ib-eyebrow">
+              <IconRadar /> What the twin tracks
+            </span>
             <h2>Four live layers, one picture</h2>
           </div>
           <div className="ib-cards c4">
@@ -106,7 +112,9 @@ export default function DigitalTwins() {
       <section className="ib-sec">
         <div className="ib-wrap">
           <div className="ib-head ib-reveal">
-            <span className="ib-eyebrow">FAQs</span>
+            <span className="ib-eyebrow">
+              <IconQuestion /> FAQs
+            </span>
             <h2>Digital Twins, answered</h2>
           </div>
           <div className="ib-faq ib-reveal">

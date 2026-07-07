@@ -1,5 +1,5 @@
 import { Flowchart } from "@/components/ib/flowchart";
-import { IconCheck, IconZap, IconShield, IconRoute } from "@/components/ib/icons";
+import { IconCheck, IconZap, IconShield, IconRoute, IconBriefcase, IconBot, IconGear, IconUsers, IconSwap, IconTrendingUp, IconQuestion } from "@/components/ib/icons";
 import { DETAILS, type Detail } from "@/components/ib/detail-data";
 
 const OUT_ICONS = [<IconZap key="z" />, <IconShield key="s" />, <IconRoute key="r" />];
@@ -26,7 +26,9 @@ export default function DetailPage({ d }: { d: Detail }) {
       <section className="ib-phero">
         <div className="ib-grid-bg" />
         <div className="ib-wrap" style={{ position: "relative" }}>
-          <span className="ib-eyebrow">{d.eyebrow}</span>
+          <span className="ib-eyebrow">
+            {d.eyebrow === "Use Case" ? <IconBriefcase /> : <IconBot />} {d.eyebrow}
+          </span>
           <h1>{highlight(d.title, d.cy)}</h1>
           <p>{d.lead}</p>
           {d.intro2 && <p style={{ marginTop: "1.1rem", color: "var(--ib-text-muted)", fontSize: "1rem", maxWidth: "660px" }}>{d.intro2}</p>}
@@ -37,7 +39,9 @@ export default function DetailPage({ d }: { d: Detail }) {
       <section className="ib-sec">
         <div className="ib-wrap">
           <div className="ib-head ib-reveal">
-            <span className="ib-eyebrow">How it runs</span>
+            <span className="ib-eyebrow">
+              <IconGear /> How it runs
+            </span>
             <h2>{d.flow.title.replace(/ — .*/, "")}</h2>
           </div>
           <div className="ib-reveal">
@@ -51,7 +55,9 @@ export default function DetailPage({ d }: { d: Detail }) {
         <section className="ib-sec alt">
           <div className="ib-wrap">
             <div className="ib-head ib-reveal">
-              <span className="ib-eyebrow">The team</span>
+              <span className="ib-eyebrow">
+                <IconUsers /> The team
+              </span>
               <h2>{d.agentsHead}</h2>
             </div>
             <div className="ib-roster">
@@ -80,7 +86,9 @@ export default function DetailPage({ d }: { d: Detail }) {
         <section className="ib-sec">
           <div className="ib-wrap">
             <div className="ib-head ib-reveal">
-              <span className="ib-eyebrow">End to end</span>
+              <span className="ib-eyebrow">
+                <IconRoute /> End to end
+              </span>
               <h2>{d.workflowHead}</h2>
             </div>
             <div className="ib-flowsteps ib-reveal">
@@ -106,7 +114,9 @@ export default function DetailPage({ d }: { d: Detail }) {
         <section className="ib-sec alt">
           <div className="ib-wrap">
             <div className="ib-head ib-reveal">
-              <span className="ib-eyebrow">Authority stays human</span>
+              <span className="ib-eyebrow">
+                <IconShield /> Authority stays human
+              </span>
               <h2>{d.gatesHead}</h2>
             </div>
             <div className="ib-gates ib-reveal">
@@ -128,7 +138,9 @@ export default function DetailPage({ d }: { d: Detail }) {
           <div className="ib-wrap">
             <div className="ib-split">
               <div className="ib-reveal">
-                <span className="ib-eyebrow">The shift</span>
+                <span className="ib-eyebrow">
+                  <IconSwap /> The shift
+                </span>
                 <h2>{d.splitHead}</h2>
                 <p>{d.splitBody}</p>
                 <ul className="ib-checks">
@@ -164,7 +176,9 @@ export default function DetailPage({ d }: { d: Detail }) {
         <section className="ib-sec">
           <div className="ib-wrap">
             <div className="ib-head center ib-reveal">
-              <span className="ib-eyebrow">Outcomes</span>
+              <span className="ib-eyebrow">
+                <IconTrendingUp /> Outcomes
+              </span>
               <h2>{d.outcomesHead}</h2>
             </div>
             <div className="ib-cards c3">
@@ -184,7 +198,9 @@ export default function DetailPage({ d }: { d: Detail }) {
       <section className={"ib-sec" + (isTeam ? " alt" : "")}>
         <div className="ib-wrap">
           <div className="ib-head ib-reveal">
-            <span className="ib-eyebrow">FAQs</span>
+            <span className="ib-eyebrow">
+              <IconQuestion /> FAQs
+            </span>
             <h2>{isTeam ? "Questions, answered" : `${d.outcomesHead}, answered`}</h2>
           </div>
           <div className="ib-faq ib-reveal">

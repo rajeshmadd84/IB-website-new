@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { IconCheck } from "@/components/ib/icons";
+import { IconCheck, IconMail } from "@/components/ib/icons";
 
 const TOPICS = ["Book a pilot", "Partnership", "Investor / BD", "Press", "Something else"];
 
@@ -48,7 +48,9 @@ export default function ContactForm() {
         <div className="ib-wrap" style={{ position: "relative" }}>
           <div className="ib-form-grid">
             <aside className="ib-aside">
-              <span className="ib-eyebrow">Contact</span>
+              <span className="ib-eyebrow">
+                <IconMail /> Contact
+              </span>
               <h1>
                 Let's talk about your <span className="cy">supply chain</span>
               </h1>

@@ -315,26 +315,54 @@ function Flowchart({ nodes, edges, width = 1000, height, title, caption, legend 
     ()=>IconBlocks,
     "IconBot",
     ()=>IconBot,
+    "IconBriefcase",
+    ()=>IconBriefcase,
     "IconCheck",
     ()=>IconCheck,
     "IconClock",
     ()=>IconClock,
     "IconCpu",
     ()=>IconCpu,
+    "IconGear",
+    ()=>IconGear,
+    "IconInfo",
+    ()=>IconInfo,
     "IconLayers",
     ()=>IconLayers,
     "IconLeaf",
     ()=>IconLeaf,
     "IconLink",
     ()=>IconLink,
+    "IconMail",
+    ()=>IconMail,
+    "IconPlay",
+    ()=>IconPlay,
+    "IconPlug",
+    ()=>IconPlug,
+    "IconQuestion",
+    ()=>IconQuestion,
     "IconRadar",
     ()=>IconRadar,
+    "IconRocket",
+    ()=>IconRocket,
     "IconRoute",
     ()=>IconRoute,
+    "IconShare",
+    ()=>IconShare,
     "IconShield",
     ()=>IconShield,
+    "IconSwap",
+    ()=>IconSwap,
+    "IconTarget",
+    ()=>IconTarget,
+    "IconTrendingUp",
+    ()=>IconTrendingUp,
     "IconTruck",
     ()=>IconTruck,
+    "IconUsers",
+    ()=>IconUsers,
+    "IconWorkflow",
+    ()=>IconWorkflow,
     "IconZap",
     ()=>IconZap
 ]);
@@ -770,6 +798,451 @@ const IconLink = (p)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$proje
     }, void 0, true, {
         fileName: "[project]/components/ib/icons.tsx",
         lineNumber: 111,
+        columnNumber: 3
+    }, ("TURBOPACK compile-time value", void 0));
+const IconInfo = (p)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        ...base(p),
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "12",
+                cy: "12",
+                r: "9"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 119,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M12 10.5v6M12 7.5h.01"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 120,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/ib/icons.tsx",
+        lineNumber: 118,
+        columnNumber: 3
+    }, ("TURBOPACK compile-time value", void 0));
+const IconTarget = (p)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        ...base(p),
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "12",
+                cy: "12",
+                r: "9"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 126,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "12",
+                cy: "12",
+                r: "5"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 127,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "12",
+                cy: "12",
+                r: "1.3"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 128,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/ib/icons.tsx",
+        lineNumber: 125,
+        columnNumber: 3
+    }, ("TURBOPACK compile-time value", void 0));
+const IconUsers = (p)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        ...base(p),
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "9",
+                cy: "8",
+                r: "3"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 134,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 135,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "17",
+                cy: "9",
+                r: "2.4",
+                opacity: "0.6"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 136,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M15.5 14.2c2.5.4 4.5 2.5 4.5 5.8",
+                opacity: "0.6"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 137,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/ib/icons.tsx",
+        lineNumber: 133,
+        columnNumber: 3
+    }, ("TURBOPACK compile-time value", void 0));
+const IconPlug = (p)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        ...base(p),
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M8 3v5M16 3v5"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 143,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                x: "6",
+                y: "8",
+                width: "12",
+                height: "6",
+                rx: "3"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 144,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M12 14v7"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 145,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/ib/icons.tsx",
+        lineNumber: 142,
+        columnNumber: 3
+    }, ("TURBOPACK compile-time value", void 0));
+const IconPlay = (p)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        ...base(p),
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "12",
+                cy: "12",
+                r: "9"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 151,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M10 8.5l6 3.5-6 3.5z"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 152,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/ib/icons.tsx",
+        lineNumber: 150,
+        columnNumber: 3
+    }, ("TURBOPACK compile-time value", void 0));
+const IconQuestion = (p)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        ...base(p),
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "12",
+                cy: "12",
+                r: "9"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 158,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M9.5 9.2a2.5 2.5 0 1 1 3.5 2.3c-.8.4-1 .9-1 1.5v.3"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 159,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M12 17h.01"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 160,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/ib/icons.tsx",
+        lineNumber: 157,
+        columnNumber: 3
+    }, ("TURBOPACK compile-time value", void 0));
+const IconRocket = (p)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        ...base(p),
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M12 2c2.5 2 4 5 4 8.5 0 2.5-.8 4.8-2 6.5h-4c-1.2-1.7-2-4-2-6.5C8 7 9.5 4 12 2z"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 166,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M9 16l-2.5 4M15 16l2.5 4"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 167,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "12",
+                cy: "9",
+                r: "1.3"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 168,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/ib/icons.tsx",
+        lineNumber: 165,
+        columnNumber: 3
+    }, ("TURBOPACK compile-time value", void 0));
+const IconWorkflow = (p)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        ...base(p),
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "5",
+                cy: "6",
+                r: "2.2"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 174,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "19",
+                cy: "6",
+                r: "2.2"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 175,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "12",
+                cy: "18",
+                r: "2.2"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 176,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M7 7l4 9M17 7l-4 9"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 177,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/ib/icons.tsx",
+        lineNumber: 173,
+        columnNumber: 3
+    }, ("TURBOPACK compile-time value", void 0));
+const IconShare = (p)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        ...base(p),
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "6",
+                cy: "12",
+                r: "2.2"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 183,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "18",
+                cy: "6",
+                r: "2.2"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 184,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "18",
+                cy: "18",
+                r: "2.2"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 185,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M8 11l8-4M8 13l8 4"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 186,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/ib/icons.tsx",
+        lineNumber: 182,
+        columnNumber: 3
+    }, ("TURBOPACK compile-time value", void 0));
+const IconTrendingUp = (p)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        ...base(p),
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M4 17l6-6 4 4 6-8"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 192,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M15 7h5v5"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 193,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/ib/icons.tsx",
+        lineNumber: 191,
+        columnNumber: 3
+    }, ("TURBOPACK compile-time value", void 0));
+const IconGear = (p)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        ...base(p),
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "12",
+                cy: "12",
+                r: "3.2"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 199,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M12 3v2.4M12 18.6V21M21 12h-2.4M5.4 12H3M18.4 5.6l-1.7 1.7M7.3 16.7l-1.7 1.7M18.4 18.4l-1.7-1.7M7.3 7.3 5.6 5.6"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 200,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/ib/icons.tsx",
+        lineNumber: 198,
+        columnNumber: 3
+    }, ("TURBOPACK compile-time value", void 0));
+const IconSwap = (p)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        ...base(p),
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M7 7h11l-3-3M7 7l3 3"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 206,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M17 17H6l3-3M17 17l-3 3"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 207,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/ib/icons.tsx",
+        lineNumber: 205,
+        columnNumber: 3
+    }, ("TURBOPACK compile-time value", void 0));
+const IconBriefcase = (p)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        ...base(p),
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                x: "3",
+                y: "7",
+                width: "18",
+                height: "12",
+                rx: "2"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 213,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 214,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M3 12h18"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 215,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/ib/icons.tsx",
+        lineNumber: 212,
+        columnNumber: 3
+    }, ("TURBOPACK compile-time value", void 0));
+const IconMail = (p)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        ...base(p),
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                x: "3",
+                y: "5",
+                width: "18",
+                height: "14",
+                rx: "2"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 221,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M4 7l8 6 8-6"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 222,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/ib/icons.tsx",
+        lineNumber: 220,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 }),
@@ -2088,8 +2561,20 @@ function DetailPage({ d }) {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "ib-eyebrow",
-                                children: d.eyebrow
-                            }, void 0, false, {
+                                children: [
+                                    d.eyebrow === "Use Case" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ib$2f$icons$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["IconBriefcase"], {}, void 0, false, {
+                                        fileName: "[project]/components/ib/detail-page.tsx",
+                                        lineNumber: 30,
+                                        columnNumber: 41
+                                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ib$2f$icons$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["IconBot"], {}, void 0, false, {
+                                        fileName: "[project]/components/ib/detail-page.tsx",
+                                        lineNumber: 30,
+                                        columnNumber: 61
+                                    }, this),
+                                    " ",
+                                    d.eyebrow
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/components/ib/detail-page.tsx",
                                 lineNumber: 29,
                                 columnNumber: 11
@@ -2098,14 +2583,14 @@ function DetailPage({ d }) {
                                 children: highlight(d.title, d.cy)
                             }, void 0, false, {
                                 fileName: "[project]/components/ib/detail-page.tsx",
-                                lineNumber: 30,
+                                lineNumber: 32,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 children: d.lead
                             }, void 0, false, {
                                 fileName: "[project]/components/ib/detail-page.tsx",
-                                lineNumber: 31,
+                                lineNumber: 33,
                                 columnNumber: 11
                             }, this),
                             d.intro2 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2118,7 +2603,7 @@ function DetailPage({ d }) {
                                 children: d.intro2
                             }, void 0, false, {
                                 fileName: "[project]/components/ib/detail-page.tsx",
-                                lineNumber: 32,
+                                lineNumber: 34,
                                 columnNumber: 24
                             }, this)
                         ]
@@ -2143,23 +2628,30 @@ function DetailPage({ d }) {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "ib-eyebrow",
-                                    children: "How it runs"
-                                }, void 0, false, {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ib$2f$icons$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["IconGear"], {}, void 0, false, {
+                                            fileName: "[project]/components/ib/detail-page.tsx",
+                                            lineNumber: 43,
+                                            columnNumber: 15
+                                        }, this),
+                                        " How it runs"
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/components/ib/detail-page.tsx",
-                                    lineNumber: 40,
+                                    lineNumber: 42,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                     children: d.flow.title.replace(/ — .*/, "")
                                 }, void 0, false, {
                                     fileName: "[project]/components/ib/detail-page.tsx",
-                                    lineNumber: 41,
+                                    lineNumber: 45,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ib/detail-page.tsx",
-                            lineNumber: 39,
+                            lineNumber: 41,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2173,23 +2665,23 @@ function DetailPage({ d }) {
                                 legend: d.flow.legend
                             }, void 0, false, {
                                 fileName: "[project]/components/ib/detail-page.tsx",
-                                lineNumber: 44,
+                                lineNumber: 48,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/ib/detail-page.tsx",
-                            lineNumber: 43,
+                            lineNumber: 47,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/ib/detail-page.tsx",
-                    lineNumber: 38,
+                    lineNumber: 40,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/ib/detail-page.tsx",
-                lineNumber: 37,
+                lineNumber: 39,
                 columnNumber: 7
             }, this),
             d.agents && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -2202,23 +2694,30 @@ function DetailPage({ d }) {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "ib-eyebrow",
-                                    children: "The team"
-                                }, void 0, false, {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ib$2f$icons$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["IconUsers"], {}, void 0, false, {
+                                            fileName: "[project]/components/ib/detail-page.tsx",
+                                            lineNumber: 59,
+                                            columnNumber: 17
+                                        }, this),
+                                        " The team"
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/components/ib/detail-page.tsx",
-                                    lineNumber: 54,
+                                    lineNumber: 58,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                     children: d.agentsHead
                                 }, void 0, false, {
                                     fileName: "[project]/components/ib/detail-page.tsx",
-                                    lineNumber: 55,
+                                    lineNumber: 61,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ib/detail-page.tsx",
-                            lineNumber: 53,
+                            lineNumber: 57,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2234,14 +2733,14 @@ function DetailPage({ d }) {
                                                     children: a.ref
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/ib/detail-page.tsx",
-                                                    lineNumber: 61,
+                                                    lineNumber: 67,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                     children: a.name
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/ib/detail-page.tsx",
-                                                    lineNumber: 62,
+                                                    lineNumber: 68,
                                                     columnNumber: 21
                                                 }, this),
                                                 a.tag && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2249,13 +2748,13 @@ function DetailPage({ d }) {
                                                     children: a.tag
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/ib/detail-page.tsx",
-                                                    lineNumber: 63,
+                                                    lineNumber: 69,
                                                     columnNumber: 31
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/ib/detail-page.tsx",
-                                            lineNumber: 60,
+                                            lineNumber: 66,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2263,7 +2762,7 @@ function DetailPage({ d }) {
                                             children: a.role
                                         }, void 0, false, {
                                             fileName: "[project]/components/ib/detail-page.tsx",
-                                            lineNumber: 65,
+                                            lineNumber: 71,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -2271,34 +2770,34 @@ function DetailPage({ d }) {
                                                     children: x
                                                 }, i, false, {
                                                     fileName: "[project]/components/ib/detail-page.tsx",
-                                                    lineNumber: 68,
+                                                    lineNumber: 74,
                                                     columnNumber: 23
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/components/ib/detail-page.tsx",
-                                            lineNumber: 66,
+                                            lineNumber: 72,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, a.ref, true, {
                                     fileName: "[project]/components/ib/detail-page.tsx",
-                                    lineNumber: 59,
+                                    lineNumber: 65,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/ib/detail-page.tsx",
-                            lineNumber: 57,
+                            lineNumber: 63,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/ib/detail-page.tsx",
-                    lineNumber: 52,
+                    lineNumber: 56,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/ib/detail-page.tsx",
-                lineNumber: 51,
+                lineNumber: 55,
                 columnNumber: 9
             }, this),
             d.workflow && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -2311,23 +2810,30 @@ function DetailPage({ d }) {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "ib-eyebrow",
-                                    children: "End to end"
-                                }, void 0, false, {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ib$2f$icons$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["IconRoute"], {}, void 0, false, {
+                                            fileName: "[project]/components/ib/detail-page.tsx",
+                                            lineNumber: 90,
+                                            columnNumber: 17
+                                        }, this),
+                                        " End to end"
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/components/ib/detail-page.tsx",
-                                    lineNumber: 83,
+                                    lineNumber: 89,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                     children: d.workflowHead
                                 }, void 0, false, {
                                     fileName: "[project]/components/ib/detail-page.tsx",
-                                    lineNumber: 84,
+                                    lineNumber: 92,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ib/detail-page.tsx",
-                            lineNumber: 82,
+                            lineNumber: 88,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2340,7 +2846,7 @@ function DetailPage({ d }) {
                                             children: s.n
                                         }, void 0, false, {
                                             fileName: "[project]/components/ib/detail-page.tsx",
-                                            lineNumber: 89,
+                                            lineNumber: 97,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2353,48 +2859,48 @@ function DetailPage({ d }) {
                                                             children: "human gate"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/ib/detail-page.tsx",
-                                                            lineNumber: 93,
+                                                            lineNumber: 101,
                                                             columnNumber: 34
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/ib/detail-page.tsx",
-                                                    lineNumber: 91,
+                                                    lineNumber: 99,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     children: s.desc
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/ib/detail-page.tsx",
-                                                    lineNumber: 95,
+                                                    lineNumber: 103,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/ib/detail-page.tsx",
-                                            lineNumber: 90,
+                                            lineNumber: 98,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, s.n, true, {
                                     fileName: "[project]/components/ib/detail-page.tsx",
-                                    lineNumber: 88,
+                                    lineNumber: 96,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/ib/detail-page.tsx",
-                            lineNumber: 86,
+                            lineNumber: 94,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/ib/detail-page.tsx",
-                    lineNumber: 81,
+                    lineNumber: 87,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/ib/detail-page.tsx",
-                lineNumber: 80,
+                lineNumber: 86,
                 columnNumber: 9
             }, this),
             d.gates && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -2407,23 +2913,30 @@ function DetailPage({ d }) {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "ib-eyebrow",
-                                    children: "Authority stays human"
-                                }, void 0, false, {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ib$2f$icons$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["IconShield"], {}, void 0, false, {
+                                            fileName: "[project]/components/ib/detail-page.tsx",
+                                            lineNumber: 118,
+                                            columnNumber: 17
+                                        }, this),
+                                        " Authority stays human"
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/components/ib/detail-page.tsx",
-                                    lineNumber: 109,
+                                    lineNumber: 117,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                     children: d.gatesHead
                                 }, void 0, false, {
                                     fileName: "[project]/components/ib/detail-page.tsx",
-                                    lineNumber: 110,
+                                    lineNumber: 120,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ib/detail-page.tsx",
-                            lineNumber: 108,
+                            lineNumber: 116,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2436,25 +2949,25 @@ function DetailPage({ d }) {
                                             height: 18
                                         }, void 0, false, {
                                             fileName: "[project]/components/ib/detail-page.tsx",
-                                            lineNumber: 115,
+                                            lineNumber: 125,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             children: g
                                         }, void 0, false, {
                                             fileName: "[project]/components/ib/detail-page.tsx",
-                                            lineNumber: 116,
+                                            lineNumber: 126,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, i, true, {
                                     fileName: "[project]/components/ib/detail-page.tsx",
-                                    lineNumber: 114,
+                                    lineNumber: 124,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/ib/detail-page.tsx",
-                            lineNumber: 112,
+                            lineNumber: 122,
                             columnNumber: 13
                         }, this),
                         d.gatesNote && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2462,18 +2975,18 @@ function DetailPage({ d }) {
                             children: d.gatesNote
                         }, void 0, false, {
                             fileName: "[project]/components/ib/detail-page.tsx",
-                            lineNumber: 120,
+                            lineNumber: 130,
                             columnNumber: 29
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/ib/detail-page.tsx",
-                    lineNumber: 107,
+                    lineNumber: 115,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/ib/detail-page.tsx",
-                lineNumber: 106,
+                lineNumber: 114,
                 columnNumber: 9
             }, this),
             d.splitHead && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -2488,24 +3001,31 @@ function DetailPage({ d }) {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "ib-eyebrow",
-                                        children: "The shift"
-                                    }, void 0, false, {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ib$2f$icons$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["IconSwap"], {}, void 0, false, {
+                                                fileName: "[project]/components/ib/detail-page.tsx",
+                                                lineNumber: 142,
+                                                columnNumber: 19
+                                            }, this),
+                                            " The shift"
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "[project]/components/ib/detail-page.tsx",
-                                        lineNumber: 131,
+                                        lineNumber: 141,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                         children: d.splitHead
                                     }, void 0, false, {
                                         fileName: "[project]/components/ib/detail-page.tsx",
-                                        lineNumber: 132,
+                                        lineNumber: 144,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: d.splitBody
                                     }, void 0, false, {
                                         fileName: "[project]/components/ib/detail-page.tsx",
-                                        lineNumber: 133,
+                                        lineNumber: 145,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -2514,7 +3034,7 @@ function DetailPage({ d }) {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ib$2f$icons$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["IconCheck"], {}, void 0, false, {
                                                         fileName: "[project]/components/ib/detail-page.tsx",
-                                                        lineNumber: 137,
+                                                        lineNumber: 149,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2523,7 +3043,7 @@ function DetailPage({ d }) {
                                                                 children: c.b
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/ib/detail-page.tsx",
-                                                                lineNumber: 139,
+                                                                lineNumber: 151,
                                                                 columnNumber: 25
                                                             }, this),
                                                             " ",
@@ -2531,18 +3051,18 @@ function DetailPage({ d }) {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/ib/detail-page.tsx",
-                                                        lineNumber: 138,
+                                                        lineNumber: 150,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, i, true, {
                                                 fileName: "[project]/components/ib/detail-page.tsx",
-                                                lineNumber: 136,
+                                                lineNumber: 148,
                                                 columnNumber: 21
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/components/ib/detail-page.tsx",
-                                        lineNumber: 134,
+                                        lineNumber: 146,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -2558,19 +3078,19 @@ function DetailPage({ d }) {
                                                 children: "→"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/ib/detail-page.tsx",
-                                                lineNumber: 145,
+                                                lineNumber: 157,
                                                 columnNumber: 44
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/ib/detail-page.tsx",
-                                        lineNumber: 144,
+                                        lineNumber: 156,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/ib/detail-page.tsx",
-                                lineNumber: 130,
+                                lineNumber: 140,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2586,48 +3106,48 @@ function DetailPage({ d }) {
                                                 children: OUT_ICONS[i % OUT_ICONS.length]
                                             }, void 0, false, {
                                                 fileName: "[project]/components/ib/detail-page.tsx",
-                                                lineNumber: 151,
+                                                lineNumber: 163,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                 children: o.h
                                             }, void 0, false, {
                                                 fileName: "[project]/components/ib/detail-page.tsx",
-                                                lineNumber: 152,
+                                                lineNumber: 164,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 children: o.p
                                             }, void 0, false, {
                                                 fileName: "[project]/components/ib/detail-page.tsx",
-                                                lineNumber: 153,
+                                                lineNumber: 165,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, i, true, {
                                         fileName: "[project]/components/ib/detail-page.tsx",
-                                        lineNumber: 150,
+                                        lineNumber: 162,
                                         columnNumber: 19
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/ib/detail-page.tsx",
-                                lineNumber: 148,
+                                lineNumber: 160,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/ib/detail-page.tsx",
-                        lineNumber: 129,
+                        lineNumber: 139,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/ib/detail-page.tsx",
-                    lineNumber: 128,
+                    lineNumber: 138,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/ib/detail-page.tsx",
-                lineNumber: 127,
+                lineNumber: 137,
                 columnNumber: 9
             }, this),
             !d.splitHead && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -2640,23 +3160,30 @@ function DetailPage({ d }) {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "ib-eyebrow",
-                                    children: "Outcomes"
-                                }, void 0, false, {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ib$2f$icons$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["IconTrendingUp"], {}, void 0, false, {
+                                            fileName: "[project]/components/ib/detail-page.tsx",
+                                            lineNumber: 180,
+                                            columnNumber: 17
+                                        }, this),
+                                        " Outcomes"
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/components/ib/detail-page.tsx",
-                                    lineNumber: 167,
+                                    lineNumber: 179,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                     children: d.outcomesHead
                                 }, void 0, false, {
                                     fileName: "[project]/components/ib/detail-page.tsx",
-                                    lineNumber: 168,
+                                    lineNumber: 182,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ib/detail-page.tsx",
-                            lineNumber: 166,
+                            lineNumber: 178,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2672,43 +3199,43 @@ function DetailPage({ d }) {
                                             children: OUT_ICONS[i % OUT_ICONS.length]
                                         }, void 0, false, {
                                             fileName: "[project]/components/ib/detail-page.tsx",
-                                            lineNumber: 173,
+                                            lineNumber: 187,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                             children: o.h
                                         }, void 0, false, {
                                             fileName: "[project]/components/ib/detail-page.tsx",
-                                            lineNumber: 174,
+                                            lineNumber: 188,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             children: o.p
                                         }, void 0, false, {
                                             fileName: "[project]/components/ib/detail-page.tsx",
-                                            lineNumber: 175,
+                                            lineNumber: 189,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, i, true, {
                                     fileName: "[project]/components/ib/detail-page.tsx",
-                                    lineNumber: 172,
+                                    lineNumber: 186,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/ib/detail-page.tsx",
-                            lineNumber: 170,
+                            lineNumber: 184,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/ib/detail-page.tsx",
-                    lineNumber: 165,
+                    lineNumber: 177,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/ib/detail-page.tsx",
-                lineNumber: 164,
+                lineNumber: 176,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -2721,23 +3248,30 @@ function DetailPage({ d }) {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "ib-eyebrow",
-                                    children: "FAQs"
-                                }, void 0, false, {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ib$2f$icons$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["IconQuestion"], {}, void 0, false, {
+                                            fileName: "[project]/components/ib/detail-page.tsx",
+                                            lineNumber: 202,
+                                            columnNumber: 15
+                                        }, this),
+                                        " FAQs"
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/components/ib/detail-page.tsx",
-                                    lineNumber: 187,
+                                    lineNumber: 201,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                     children: isTeam ? "Questions, answered" : `${d.outcomesHead}, answered`
                                 }, void 0, false, {
                                     fileName: "[project]/components/ib/detail-page.tsx",
-                                    lineNumber: 188,
+                                    lineNumber: 204,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ib/detail-page.tsx",
-                            lineNumber: 186,
+                            lineNumber: 200,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2749,25 +3283,25 @@ function DetailPage({ d }) {
                                             children: f.q
                                         }, void 0, false, {
                                             fileName: "[project]/components/ib/detail-page.tsx",
-                                            lineNumber: 193,
+                                            lineNumber: 209,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             children: f.a
                                         }, void 0, false, {
                                             fileName: "[project]/components/ib/detail-page.tsx",
-                                            lineNumber: 194,
+                                            lineNumber: 210,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, i, true, {
                                     fileName: "[project]/components/ib/detail-page.tsx",
-                                    lineNumber: 192,
+                                    lineNumber: 208,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/ib/detail-page.tsx",
-                            lineNumber: 190,
+                            lineNumber: 206,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2787,7 +3321,7 @@ function DetailPage({ d }) {
                                     children: isTeam ? "Other teams" : "More use cases"
                                 }, void 0, false, {
                                     fileName: "[project]/components/ib/detail-page.tsx",
-                                    lineNumber: 200,
+                                    lineNumber: 216,
                                     columnNumber: 13
                                 }, this),
                                 siblings.map((s)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -2800,24 +3334,24 @@ function DetailPage({ d }) {
                                         children: s.title.replace("The ", "").replace(" team", "")
                                     }, s.slug, false, {
                                         fileName: "[project]/components/ib/detail-page.tsx",
-                                        lineNumber: 204,
+                                        lineNumber: 220,
                                         columnNumber: 15
                                     }, this))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ib/detail-page.tsx",
-                            lineNumber: 199,
+                            lineNumber: 215,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/ib/detail-page.tsx",
-                    lineNumber: 185,
+                    lineNumber: 199,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/ib/detail-page.tsx",
-                lineNumber: 184,
+                lineNumber: 198,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -2827,7 +3361,7 @@ function DetailPage({ d }) {
                         className: "ib-cta-bg"
                     }, void 0, false, {
                         fileName: "[project]/components/ib/detail-page.tsx",
-                        lineNumber: 213,
+                        lineNumber: 229,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2837,14 +3371,14 @@ function DetailPage({ d }) {
                                 children: highlight(d.ctaTitle, d.ctaCy)
                             }, void 0, false, {
                                 fileName: "[project]/components/ib/detail-page.tsx",
-                                lineNumber: 215,
+                                lineNumber: 231,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 children: "Connect one site and see it run in your own data within three weeks."
                             }, void 0, false, {
                                 fileName: "[project]/components/ib/detail-page.tsx",
-                                lineNumber: 216,
+                                lineNumber: 232,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2860,13 +3394,13 @@ function DetailPage({ d }) {
                                                 children: "→"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/ib/detail-page.tsx",
-                                                lineNumber: 219,
+                                                lineNumber: 235,
                                                 columnNumber: 26
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/ib/detail-page.tsx",
-                                        lineNumber: 218,
+                                        lineNumber: 234,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -2875,25 +3409,25 @@ function DetailPage({ d }) {
                                         children: "Talk to us"
                                     }, void 0, false, {
                                         fileName: "[project]/components/ib/detail-page.tsx",
-                                        lineNumber: 221,
+                                        lineNumber: 237,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/ib/detail-page.tsx",
-                                lineNumber: 217,
+                                lineNumber: 233,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/ib/detail-page.tsx",
-                        lineNumber: 214,
+                        lineNumber: 230,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/ib/detail-page.tsx",
-                lineNumber: 212,
+                lineNumber: 228,
                 columnNumber: 7
             }, this)
         ]

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Flowchart, FCNode, FCEdge } from "@/components/ib/flowchart";
-import { IconCheck, IconLeaf, IconRadar, IconLayers } from "@/components/ib/icons";
+import { IconCheck, IconLeaf, IconRadar, IconLayers, IconGear, IconQuestion } from "@/components/ib/icons";
 
 export const metadata: Metadata = {
   title: "Sustainability",
@@ -39,7 +39,9 @@ export default function Sustainability() {
       <section className="ib-phero">
         <div className="ib-grid-bg" />
         <div className="ib-wrap" style={{ position: "relative" }}>
-          <span className="ib-eyebrow">Carbon Accountability</span>
+          <span className="ib-eyebrow">
+            <IconLeaf /> Carbon Accountability
+          </span>
           <h1>
             Embodied carbon, from <span className="cy">real</span> delivery data
           </h1>
@@ -52,7 +54,9 @@ export default function Sustainability() {
       <section className="ib-sec">
         <div className="ib-wrap">
           <div className="ib-head ib-reveal">
-            <span className="ib-eyebrow">How it works</span>
+            <span className="ib-eyebrow">
+              <IconGear /> How it works
+            </span>
             <h2>From delivery to ledger to report</h2>
             <p>Carbon rides along the same data the platform already moves for logistics — so accountability is a by-product of running the project, not a separate project of its own.</p>
           </div>
@@ -66,7 +70,9 @@ export default function Sustainability() {
         <div className="ib-wrap">
           <div className="ib-split">
             <div className="ib-reveal">
-              <span className="ib-eyebrow">Why actual-data carbon wins</span>
+              <span className="ib-eyebrow">
+                <IconCheck /> Why actual-data carbon wins
+              </span>
               <h2>The footprint you can defend</h2>
               <p>Estimate-based carbon falls apart under scrutiny because it never reflects substitutions, reorders, or what really showed up. A ledger built from delivery data holds up — to auditors, to clients, and to your own targets.</p>
               <ul className="ib-checks">
@@ -106,7 +112,9 @@ export default function Sustainability() {
       <section className="ib-sec">
         <div className="ib-wrap">
           <div className="ib-head ib-reveal">
-            <span className="ib-eyebrow">FAQs</span>
+            <span className="ib-eyebrow">
+              <IconQuestion /> FAQs
+            </span>
             <h2>Carbon tracking, answered</h2>
           </div>
           <div className="ib-faq ib-reveal">
