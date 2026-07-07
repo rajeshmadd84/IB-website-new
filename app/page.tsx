@@ -38,26 +38,26 @@ const twinEdges: FCEdge[] = [
 ];
 
 const features = [
-  { icon: <IconCpu />, h: "Construction-Trained Intelligence", p: "A Small Language Model fine-tuned on construction data — so it understands the nuances of project logistics and makes high-stakes decisions in context, not guesswork.", tags: ["SLM", "domain-tuned"] },
-  { icon: <IconLayers />, h: "Real-Time Digital Twins", p: "A live virtual map of every material's journey. Spot threats and openings before they reach your site, keeping the schedule and the model in sync.", tags: ["live", "BIM-linked"] },
+  { icon: <IconCpu />, h: "Construction-Trained Intelligence", p: "A Small Language Model fine-tuned on construction data, so it understands the nuances of project logistics and makes high-stakes decisions in context, not guesswork.", tags: ["SLM", "domain-tuned"] },
+  { icon: <IconLayers />, h: "Real-Time Digital Twins", p: "A live virtual map of every material's journey. Spot threats and openings before they reach your site, keeping the schedule and the model in sync.", tags: ["live", "BIM linked"] },
   { icon: <IconBot />, h: "Agentic Workflow Automation", p: "Sits on top of BIM, ERP, and PM tools. Agents automate RFQs, shipment tracking, and bid evaluation so your team can focus on building.", tags: ["RFQ", "tracking", "bids"] },
 ];
 
 const values = [
   { icon: <IconRadar />, h: "Real-time Awareness", p: "Live tracking of every asset, from the factory gate to the site gate." },
   { icon: <IconShield />, h: "Predictive Resilience", p: "Surface supply-chain threats and bottlenecks before they disrupt execution." },
-  { icon: <IconRoute />, h: "Autonomous Decisions", p: "Agents don't just flag delays — they reroute shipments and re-issue RFQs." },
+  { icon: <IconRoute />, h: "Autonomous Decisions", p: "Agents don't just flag delays, they reroute shipments and re-issue RFQs." },
   { icon: <IconLeaf />, h: "Carbon Accountability", p: "Embodied-carbon monitoring from actual delivery data, not estimates." },
 ];
 
 const agents = [
-  { icon: <IconBlocks />, h: "Procurement", p: "Five sourcing agents turn a requirement into a recommended award — RFQ, bid evaluation, supplier intelligence and negotiation, with an orchestrator conducting.", href: "/agents/procurement", count: "5 agents · Sourcing" },
-  { icon: <IconTruck />, h: "Logistics", p: "Three execution agents take a confirmed order to goods receipt — coordinating suppliers, forecasting disruption, and syncing the last mile with site readiness.", href: "/agents/logistics", count: "3 agents · Execution" },
-  { icon: <IconLeaf />, h: "Scope 3", p: "Six emissions agents map, calculate, disclose and reduce carbon from the same ledger — so every award is weighed on cost and CO₂e at once.", href: "/agents/scope3", count: "6 agents · Carbon" },
+  { icon: <IconBlocks />, h: "Procurement", p: "Five sourcing agents turn a requirement into a recommended award - RFQ, bid evaluation, supplier intelligence and negotiation, with an orchestrator conducting.", href: "/agents/procurement", count: "5 agents · Sourcing" },
+  { icon: <IconTruck />, h: "Logistics", p: "Three execution agents take a confirmed order to goods receipt i.e coordinating suppliers, forecasting disruption, and syncing the last mile with site readiness.", href: "/agents/logistics", count: "3 agents · Execution" },
+  { icon: <IconLeaf />, h: "Scope 3", p: "Six emissions agents map, calculate, disclose and reduce carbon from the same ledger so every award is weighed on cost and CO₂e at once.", href: "/agents/scope3", count: "6 agents · Carbon" },
 ];
 
 const noRip = [
-  { icon: <IconShield />, h: "No Integration Required", p: "Phase 1 is pure observation and action. No IT tickets, no procurement battles, no architecture reviews — we don't touch your ERP, PM software, or BIM model to start." },
+  { icon: <IconShield />, h: "No Integration Required", p: "Phase 1 is pure observation and action. No IT tickets, no procurement battles, no architecture reviews. We don't touch your ERP, PM software, or BIM model to start." },
   { icon: <IconLink />, h: "No Change Management", p: "Foremen stay on WhatsApp. Suppliers keep emailing. Procurement keeps the PO system. Our agents listen and act in the channels your people already use." },
   { icon: <IconZap />, h: "Results in 14 Days", p: "First live coordination dashboard in 7 days. First disruption caught and acted on within 14. No six-month rollout. No consulting bill." },
 ];
@@ -70,12 +70,12 @@ const team = [
 ];
 
 const faqs = [
-  { q: "What is IntelliByld?", a: "IntelliByld is an AI-powered supply-chain platform built specifically for construction. It works as an operating system that automates material tracking, procurement, and logistics — keeping projects on time and reducing carbon footprints." },
+  { q: "What is IntelliByld?", a: "IntelliByld is an AI-powered supply-chain platform built specifically for construction. It works as an operating system that automates material tracking, procurement, and logistics, keeping projects on time and reducing carbon footprints." },
   { q: "How does IntelliByld work?", a: "It creates a dynamic Digital Twin of your supply chain, linking live material movements directly to your master project schedule. AI agents then manage RFQs, evaluate bids, and track shipments in real time." },
-  { q: "What software does IntelliByld integrate with?", a: "It works with BIM tools (IFC, Revit, Navisworks) and ERP platforms (SAP, Oracle, Procore), acting as an intelligent coordination layer across them. Pilots begin from your BOMs — no manual data entry required to start." },
-  { q: "Is IntelliByld relevant outside Singapore?", a: "Yes. It's aligned with Singapore's BCA Site Management Data Standards and IDD framework, which makes it a natural fit for Singapore GCs and developers — but the core capabilities (digital twin, agentic AI, supply-chain orchestration) apply to any large-scale project globally. The compliance layer is configurable per jurisdiction." },
-  { q: "What does Autonomous Execution mean in construction logistics?", a: "It means the supply chain takes corrective action without human instruction. If a steel shipment slips three days, the agents assess the schedule impact, contact alternative suppliers, generate and send RFQs, evaluate bids, and update the twin — automatically. Your team is notified of the outcome, not asked to start the process." },
-  { q: "How does IntelliByld handle carbon tracking?", a: "It tracks embodied-carbon emissions from material deliveries in real time, based on actual delivery data rather than estimates. Each movement is logged with its footprint and reports generate automatically — supporting sustainability reporting and green-building requirements." },
+  { q: "What software does IntelliByld integrate with?", a: "It works with BIM tools (IFC, Revit, Navisworks) and ERP platforms (SAP, Oracle, Procore), acting as an intelligent coordination layer across them. Pilots begin from your BOMs so no manual data entry required to start." },
+  { q: "Is IntelliByld relevant outside Singapore?", a: "Yes. It's aligned with Singapore's BCA Site Management Data Standards and IDD framework, which makes it a natural fit for Singapore GCs and developers. But the core capabilities (digital twin, agentic AI, supply-chain orchestration) apply to any large-scale project globally. The compliance layer is configurable per jurisdiction." },
+  { q: "What does Autonomous Execution mean in construction logistics?", a: "It means the supply chain takes corrective action without human instruction. If a steel shipment slips three days, the agents assess the schedule impact, contact alternative suppliers, generate and send RFQs, evaluate bids, and update the twin automatically. Your team is notified of the outcome, not asked to start the process." },
+  { q: "How does IntelliByld handle carbon tracking?", a: "It tracks embodied-carbon emissions from material deliveries in real time, based on actual delivery data rather than estimates. Each movement is logged with its footprint and reports generate automatically, supporting sustainability reporting and green-building requirements." },
 ];
 
 export default function Home() {
@@ -108,7 +108,7 @@ export default function Home() {
               nodes={heroNodes}
               edges={heroEdges}
               height={300}
-              title="Autonomous Execution — PRJ-04"
+              title="Autonomous Execution"
               caption="One continuous loop: takeoff → sourcing → shipment → delivery, mirrored live in the twin."
               legend
             />
@@ -143,7 +143,7 @@ export default function Home() {
             </span>
             <h2>Autonomous Execution for construction supply chains</h2>
             <p>
-              <b>IntelliByld is the OS that turns supply-chain data into Autonomous Execution.</b> It helps teams coordinate procurement, shipping, and bid evaluation so execution stays on schedule.
+              <b>IntelliByld is the OS that turns supply chain data into Autonomous Execution.</b> It helps teams coordinate procurement, shipping, and bid evaluation so execution stays on schedule.
             </p>
           </div>
           <div className="ib-cards c3">
@@ -173,7 +173,7 @@ export default function Home() {
               </span>
               <h2>A living twin of your entire supply chain</h2>
               <p>
-                IntelliByld's Digital Twin is a living, real-time replica of your construction supply chain. It links every material movement to your master schedule — closing the "Integration Trap" so your model mirrors physical site reality.
+                IntelliByld's Digital Twin is a living, real-time replica of your construction supply chain. It links every material movement to your master schedule closing the "Integration Trap" so your model mirrors physical site reality.
               </p>
               <ul className="ib-checks">
                 <li>
@@ -200,7 +200,7 @@ export default function Home() {
               </a>
             </div>
             <div className="ib-reveal" style={{ transitionDelay: "100ms" }}>
-              <Flowchart nodes={twinNodes} edges={twinEdges} height={292} title="Twin Sync — live" caption="Site reality feeds the twin; the twin drives the next decision." />
+              <Flowchart nodes={twinNodes} edges={twinEdges} height={292} title="Twin Sync - live" caption="Site reality feeds the twin; the twin drives the next decision." />
             </div>
           </div>
         </div>
@@ -235,7 +235,7 @@ export default function Home() {
               <IconUsers /> The Teams
             </span>
             <h2>Meet your digital workforce</h2>
-            <p>Three teams of specialised agents working in concert — sourcing, logistics and carbon — coordinated by supervising orchestrators and a single shared data flow.</p>
+            <p>Three teams of specialised agents working in concert sourcing, logistics and carbon coordinated by supervising orchestrators and a single shared data flow.</p>
           </div>
           <div className="ib-cards c3">
             {agents.map((a, i) => (
@@ -258,10 +258,10 @@ export default function Home() {
         <div className="ib-wrap">
           <div className="ib-head ib-reveal">
             <span className="ib-eyebrow">
-              <IconPlug /> No Rip-and-Replace
+              <IconPlug /> No Rip and Replace
             </span>
             <h2>Zero integration. Zero disruption. Live in 7 days.</h2>
-            <p>We sit on top of your existing tools. Your team changes nothing — the only thing that changes is that your supply chain becomes visible.</p>
+            <p>We sit on top of your existing tools. Your team changes nothing. The only thing that changes is that your supply chain becomes visible.</p>
           </div>
           <div className="ib-cards c3">
             {noRip.map((n, i) => (
@@ -313,7 +313,7 @@ export default function Home() {
                 <span className="n">03</span>
                 <div>
                   <h4>First save in 14 days</h4>
-                  <p>A real disruption detected and acted on — before it reached the site.</p>
+                  <p>A real disruption detected and acted on before it reached the site.</p>
                 </div>
               </li>
             </ul>
@@ -377,7 +377,7 @@ export default function Home() {
             <IconZap /> Build the execution layer
           </span>
           <h2>
-            Make your supply chain <span className="cy">visible</span> — and autonomous
+            Make your supply chain <span className="cy">visible</span> and autonomous
           </h2>
           <p>Connect one site, see autonomous coordination in your own data within three weeks.</p>
           <div className="ib-cta-actions">

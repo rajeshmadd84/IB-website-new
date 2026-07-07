@@ -1456,7 +1456,7 @@ const features = [
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0)),
         h: "Construction-Trained Intelligence",
-        p: "A Small Language Model fine-tuned on construction data — so it understands the nuances of project logistics and makes high-stakes decisions in context, not guesswork.",
+        p: "A Small Language Model fine-tuned on construction data, so it understands the nuances of project logistics and makes high-stakes decisions in context, not guesswork.",
         tags: [
             "SLM",
             "domain-tuned"
@@ -1472,7 +1472,7 @@ const features = [
         p: "A live virtual map of every material's journey. Spot threats and openings before they reach your site, keeping the schedule and the model in sync.",
         tags: [
             "live",
-            "BIM-linked"
+            "BIM linked"
         ]
     },
     {
@@ -1516,7 +1516,7 @@ const values = [
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0)),
         h: "Autonomous Decisions",
-        p: "Agents don't just flag delays — they reroute shipments and re-issue RFQs."
+        p: "Agents don't just flag delays, they reroute shipments and re-issue RFQs."
     },
     {
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ib$2f$icons$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["IconLeaf"], {}, void 0, false, {
@@ -1536,7 +1536,7 @@ const agents = [
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0)),
         h: "Procurement",
-        p: "Five sourcing agents turn a requirement into a recommended award — RFQ, bid evaluation, supplier intelligence and negotiation, with an orchestrator conducting.",
+        p: "Five sourcing agents turn a requirement into a recommended award - RFQ, bid evaluation, supplier intelligence and negotiation, with an orchestrator conducting.",
         href: "/agents/procurement",
         count: "5 agents · Sourcing"
     },
@@ -1547,7 +1547,7 @@ const agents = [
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0)),
         h: "Logistics",
-        p: "Three execution agents take a confirmed order to goods receipt — coordinating suppliers, forecasting disruption, and syncing the last mile with site readiness.",
+        p: "Three execution agents take a confirmed order to goods receipt i.e coordinating suppliers, forecasting disruption, and syncing the last mile with site readiness.",
         href: "/agents/logistics",
         count: "3 agents · Execution"
     },
@@ -1558,7 +1558,7 @@ const agents = [
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0)),
         h: "Scope 3",
-        p: "Six emissions agents map, calculate, disclose and reduce carbon from the same ledger — so every award is weighed on cost and CO₂e at once.",
+        p: "Six emissions agents map, calculate, disclose and reduce carbon from the same ledger so every award is weighed on cost and CO₂e at once.",
         href: "/agents/scope3",
         count: "6 agents · Carbon"
     }
@@ -1571,7 +1571,7 @@ const noRip = [
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0)),
         h: "No Integration Required",
-        p: "Phase 1 is pure observation and action. No IT tickets, no procurement battles, no architecture reviews — we don't touch your ERP, PM software, or BIM model to start."
+        p: "Phase 1 is pure observation and action. No IT tickets, no procurement battles, no architecture reviews. We don't touch your ERP, PM software, or BIM model to start."
     },
     {
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ib$2f$icons$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["IconLink"], {}, void 0, false, {
@@ -1621,7 +1621,7 @@ const team = [
 const faqs = [
     {
         q: "What is IntelliByld?",
-        a: "IntelliByld is an AI-powered supply-chain platform built specifically for construction. It works as an operating system that automates material tracking, procurement, and logistics — keeping projects on time and reducing carbon footprints."
+        a: "IntelliByld is an AI-powered supply-chain platform built specifically for construction. It works as an operating system that automates material tracking, procurement, and logistics, keeping projects on time and reducing carbon footprints."
     },
     {
         q: "How does IntelliByld work?",
@@ -1629,19 +1629,19 @@ const faqs = [
     },
     {
         q: "What software does IntelliByld integrate with?",
-        a: "It works with BIM tools (IFC, Revit, Navisworks) and ERP platforms (SAP, Oracle, Procore), acting as an intelligent coordination layer across them. Pilots begin from your BOMs — no manual data entry required to start."
+        a: "It works with BIM tools (IFC, Revit, Navisworks) and ERP platforms (SAP, Oracle, Procore), acting as an intelligent coordination layer across them. Pilots begin from your BOMs so no manual data entry required to start."
     },
     {
         q: "Is IntelliByld relevant outside Singapore?",
-        a: "Yes. It's aligned with Singapore's BCA Site Management Data Standards and IDD framework, which makes it a natural fit for Singapore GCs and developers — but the core capabilities (digital twin, agentic AI, supply-chain orchestration) apply to any large-scale project globally. The compliance layer is configurable per jurisdiction."
+        a: "Yes. It's aligned with Singapore's BCA Site Management Data Standards and IDD framework, which makes it a natural fit for Singapore GCs and developers. But the core capabilities (digital twin, agentic AI, supply-chain orchestration) apply to any large-scale project globally. The compliance layer is configurable per jurisdiction."
     },
     {
         q: "What does Autonomous Execution mean in construction logistics?",
-        a: "It means the supply chain takes corrective action without human instruction. If a steel shipment slips three days, the agents assess the schedule impact, contact alternative suppliers, generate and send RFQs, evaluate bids, and update the twin — automatically. Your team is notified of the outcome, not asked to start the process."
+        a: "It means the supply chain takes corrective action without human instruction. If a steel shipment slips three days, the agents assess the schedule impact, contact alternative suppliers, generate and send RFQs, evaluate bids, and update the twin automatically. Your team is notified of the outcome, not asked to start the process."
     },
     {
         q: "How does IntelliByld handle carbon tracking?",
-        a: "It tracks embodied-carbon emissions from material deliveries in real time, based on actual delivery data rather than estimates. Each movement is logged with its footprint and reports generate automatically — supporting sustainability reporting and green-building requirements."
+        a: "It tracks embodied-carbon emissions from material deliveries in real time, based on actual delivery data rather than estimates. Each movement is logged with its footprint and reports generate automatically, supporting sustainability reporting and green-building requirements."
     }
 ];
 function Home() {
@@ -1754,7 +1754,7 @@ function Home() {
                                     nodes: heroNodes,
                                     edges: heroEdges,
                                     height: 300,
-                                    title: "Autonomous Execution — PRJ-04",
+                                    title: "Autonomous Execution",
                                     caption: "One continuous loop: takeoff → sourcing → shipment → delivery, mirrored live in the twin.",
                                     legend: true
                                 }, void 0, false, {
@@ -1893,7 +1893,7 @@ function Home() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                                            children: "IntelliByld is the OS that turns supply-chain data into Autonomous Execution."
+                                            children: "IntelliByld is the OS that turns supply chain data into Autonomous Execution."
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
                                             lineNumber: 146,
@@ -2011,7 +2011,7 @@ function Home() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        children: 'IntelliByld\'s Digital Twin is a living, real-time replica of your construction supply chain. It links every material movement to your master schedule — closing the "Integration Trap" so your model mirrors physical site reality.'
+                                        children: 'IntelliByld\'s Digital Twin is a living, real-time replica of your construction supply chain. It links every material movement to your master schedule closing the "Integration Trap" so your model mirrors physical site reality.'
                                     }, void 0, false, {
                                         fileName: "[project]/app/page.tsx",
                                         lineNumber: 175,
@@ -2150,7 +2150,7 @@ function Home() {
                                     nodes: twinNodes,
                                     edges: twinEdges,
                                     height: 292,
-                                    title: "Twin Sync — live",
+                                    title: "Twin Sync - live",
                                     caption: "Site reality feeds the twin; the twin drives the next decision."
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.tsx",
@@ -2297,7 +2297,7 @@ function Home() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    children: "Three teams of specialised agents working in concert — sourcing, logistics and carbon — coordinated by supervising orchestrators and a single shared data flow."
+                                    children: "Three teams of specialised agents working in concert sourcing, logistics and carbon coordinated by supervising orchestrators and a single shared data flow."
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.tsx",
                                     lineNumber: 238,
@@ -2400,7 +2400,7 @@ function Home() {
                                             lineNumber: 261,
                                             columnNumber: 15
                                         }, this),
-                                        " No Rip-and-Replace"
+                                        " No Rip and Replace"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/page.tsx",
@@ -2415,7 +2415,7 @@ function Home() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    children: "We sit on top of your existing tools. Your team changes nothing — the only thing that changes is that your supply chain becomes visible."
+                                    children: "We sit on top of your existing tools. Your team changes nothing. The only thing that changes is that your supply chain becomes visible."
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.tsx",
                                     lineNumber: 264,
@@ -2666,7 +2666,7 @@ function Home() {
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        children: "A real disruption detected and acted on — before it reached the site."
+                                                        children: "A real disruption detected and acted on before it reached the site."
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/page.tsx",
                                                         lineNumber: 316,
@@ -2955,7 +2955,7 @@ function Home() {
                                         lineNumber: 380,
                                         columnNumber: 36
                                     }, this),
-                                    " — and autonomous"
+                                    " and autonomous"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/page.tsx",

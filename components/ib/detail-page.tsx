@@ -42,7 +42,7 @@ export default function DetailPage({ d }: { d: Detail }) {
             <span className="ib-eyebrow">
               <IconGear /> How it runs
             </span>
-            <h2>{d.flow.title.replace(/ — .*/, "")}</h2>
+            <h2>{d.flow.title.replace(/ [-—].*/, "")}</h2>
           </div>
           <div className="ib-reveal">
             <Flowchart nodes={d.flow.nodes} edges={d.flow.edges} height={d.flow.height} title={d.flow.title} caption={d.flow.caption} legend={d.flow.legend} />

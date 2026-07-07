@@ -30,7 +30,7 @@ export default function ContactForm() {
                 <IconCheck width={30} height={30} />
               </div>
               <h2>Message sent</h2>
-              <p>Thanks, {f.name.split(" ")[0]}. We'll get back to you shortly — usually within two business days.</p>
+              <p>Thanks, {f.name.split(" ")[0]}. We'll get back to you shortly, usually within two business days.</p>
               <a href="/" className="ib-btn ib-btn-ghost">
                 Back to home
               </a>
@@ -54,7 +54,7 @@ export default function ContactForm() {
               <h1>
                 Let's talk about your <span className="cy">supply chain</span>
               </h1>
-              <p className="ib-lead">Whether you're scoping a pilot, exploring a partnership, or just want to understand the platform — tell us what you're working on.</p>
+              <p className="ib-lead">Whether you're scoping a pilot, exploring a partnership, or just want to understand the platform, tell us what you're working on.</p>
               <ul className="ib-steps">
                 <li>
                   <span className="n">↗</span>
@@ -64,8 +64,8 @@ export default function ContactForm() {
                       The fastest path is the{" "}
                       <a href="/pilot" style={{ color: "var(--ib-cyan)" }}>
                         pilot
-                      </a>{" "}
-                      — one live site, results in three weeks.
+                      </a>
+                      : one live site, results in three weeks.
                     </p>
                   </div>
                 </li>

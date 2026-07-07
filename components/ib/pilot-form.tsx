@@ -32,7 +32,7 @@ export default function PilotForm() {
               </div>
               <h2>Pilot request received</h2>
               <p>
-                Thanks, {f.name.split(" ")[0]}. We review pilot fit by hand and respond within two business days — usually with a couple of questions about the one site you'd like to connect.
+                Thanks, {f.name.split(" ")[0]}. We review pilot fit by hand and respond within two business days, usually with a couple of questions about the one site you'd like to connect.
               </p>
               <div className="ib-next">
                 <span>
@@ -88,12 +88,12 @@ export default function PilotForm() {
                   <span className="n">03</span>
                   <div>
                     <h4>First save in 14 days</h4>
-                    <p>A real disruption detected and acted on — before it reached the site.</p>
+                    <p>A real disruption detected and acted on before it reached the site.</p>
                   </div>
                 </li>
               </ul>
               <p className="ib-reassure">
-                <b>Pre-revenue MVP, live today.</b> Pilots begin from your BOMs — BIM-native ingestion comes later.
+                <b>Pre-revenue MVP, live today.</b> Pilots begin from your BOMs; BIM-native ingestion comes later.
                 <br />
                 No procurement battles. No consulting bill.
               </p>

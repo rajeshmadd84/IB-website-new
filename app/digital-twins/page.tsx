@@ -22,16 +22,16 @@ const twinEdges: FCEdge[] = [
 ];
 
 const tracks = [
-  { icon: <IconRadar />, h: "Every movement, live", p: "Factory dispatch, GPS in transit, gate arrival — each material's journey is on the map in real time." },
+  { icon: <IconRadar />, h: "Every movement, live", p: "Factory dispatch, GPS in transit, gate arrival - each material's journey is on the map in real time." },
   { icon: <IconClock />, h: "Tied to the schedule", p: "Every delivery is linked to the schedule task it unblocks, so a slip shows up as a critical-path risk, not a buried email." },
   { icon: <IconLayers />, h: "Mirrors the BIM model", p: "The twin speaks IFC. What's modelled, ordered, shipped, and installed stays reconciled in one place." },
   { icon: <IconLeaf />, h: "Carbon as a first-class field", p: "Each movement carries its embodied-carbon weight, so sustainability isn't a separate spreadsheet." },
 ];
 
 const faqs = [
-  { q: "What is the \"Integration Trap\"?", a: "It's the gap that opens when your BIM model, ERP, and site reality drift apart — the model says one thing, the PO system another, and the foreman a third. The twin closes that gap by linking live material movements directly to the master schedule, so one picture stays true." },
-  { q: "How is this different from a BIM model?", a: "A BIM model describes what should be built. The Digital Twin describes what is actually happening to the materials that build it — in real time — and links that back to the schedule. It's the live operational layer on top of the design model." },
-  { q: "Where does the live data come from?", a: "Shipment tracking, supplier updates, and site signals flow in through the channels already in use. Pilots start from your BOMs; no rip-and-replace integration is needed to stand up a working twin." },
+  { q: "What is the \"Integration Trap\"?", a: "It's the gap that opens when your BIM model, ERP, and site reality drift apart: the model says one thing, the PO system another, and the foreman a third. The twin closes that gap by linking live material movements directly to the master schedule, so one picture stays true." },
+  { q: "How is this different from a BIM model?", a: "A BIM model describes what should be built. The Digital Twin describes what is actually happening to the materials that build it, in real time, and links that back to the schedule. It's the live operational layer on top of the design model." },
+  { q: "Where does the live data come from?", a: "Shipment tracking, supplier updates, and site signals flow in through the channels already in use. Pilots start from your BOMs; no rip and replace integration is needed to stand up a working twin." },
 ];
 
 export default function DigitalTwins() {
@@ -47,7 +47,7 @@ export default function DigitalTwins() {
             A living twin of your <span className="cy">project</span> supply chain
           </h1>
           <p>
-            IntelliByld's Digital Twin is a living, real-time replica of your construction supply chain. It links every material movement to your master schedule — closing the Integration Trap so your digital model mirrors physical site reality.
+            IntelliByld's Digital Twin is a living, real-time replica of your construction supply chain. It links every material movement to your master schedule, closing the Integration Trap so your digital model mirrors physical site reality.
           </p>
         </div>
       </section>
@@ -83,7 +83,7 @@ export default function DigitalTwins() {
               </ul>
             </div>
             <div className="ib-reveal" style={{ transitionDelay: "100ms" }}>
-              <Flowchart nodes={twinNodes} edges={twinEdges} height={350} title="Twin Mirror — live" caption="Site reality flows up; schedule, sourcing, and carbon flow down." legend />
+              <Flowchart nodes={twinNodes} edges={twinEdges} height={350} title="Twin Mirror - live" caption="Site reality flows up; schedule, sourcing, and carbon flow down." legend />
             </div>
           </div>
         </div>

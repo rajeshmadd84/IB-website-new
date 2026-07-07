@@ -1017,7 +1017,7 @@ function ContactForm() {
                                 children: [
                                     "Thanks, ",
                                     f.name.split(" ")[0],
-                                    ". We'll get back to you shortly — usually within two business days."
+                                    ". We'll get back to you shortly, usually within two business days."
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/ib/contact-form.tsx",
@@ -1115,7 +1115,7 @@ function ContactForm() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "ib-lead",
-                                        children: "Whether you're scoping a pilot, exploring a partnership, or just want to understand the platform — tell us what you're working on."
+                                        children: "Whether you're scoping a pilot, exploring a partnership, or just want to understand the platform, tell us what you're working on."
                                     }, void 0, false, {
                                         fileName: "[project]/components/ib/contact-form.tsx",
                                         lineNumber: 57,
@@ -1158,8 +1158,7 @@ function ContactForm() {
                                                                         lineNumber: 65,
                                                                         columnNumber: 23
                                                                     }, this),
-                                                                    " ",
-                                                                    "— one live site, results in three weeks."
+                                                                    ": one live site, results in three weeks."
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/ib/contact-form.tsx",

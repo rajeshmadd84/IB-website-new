@@ -4,7 +4,7 @@ import { IconCheck, IconLeaf, IconRadar, IconLayers, IconGear, IconQuestion } fr
 
 export const metadata: Metadata = {
   title: "Sustainability",
-  description: "IntelliByld tracks embodied-carbon emissions from material deliveries in real time, based on actual delivery data rather than estimates — supporting sustainability reporting and green-building requirements.",
+  description: "IntelliByld tracks embodied-carbon emissions from material deliveries in real time, based on actual delivery data rather than estimates supporting sustainability reporting and green-building requirements.",
 };
 
 const carbonNodes: FCNode[] = [
@@ -22,13 +22,13 @@ const carbonEdges: FCEdge[] = [
 ];
 
 const points = [
-  { icon: <IconRadar />, h: "Measured, not estimated", p: "Carbon is computed from the quantities that actually arrived on site — not an early-stage approximation that drifts from reality." },
+  { icon: <IconRadar />, h: "Measured, not estimated", p: "Carbon is computed from the quantities that actually arrived on site not an early-stage approximation that drifts from reality." },
   { icon: <IconLayers />, h: "Per-material granularity", p: "Each movement is logged with its embodied-carbon weight, so you can see exactly where the footprint comes from." },
-  { icon: <IconLeaf />, h: "Reporting on autopilot", p: "Reports generate automatically and align with Singapore's green-building requirements — no end-of-quarter spreadsheet scramble." },
+  { icon: <IconLeaf />, h: "Reporting on autopilot", p: "Reports generate automatically and align with Singapore's green-building requirements, no end-of-quarter spreadsheet scramble." },
 ];
 
 const faqs = [
-  { q: "How does IntelliByld calculate embodied carbon?", a: "Each material delivery is matched to its emission factor (from EPD / EC3-style datasets) and multiplied by the actual delivered quantity. Because it's driven by real delivery data rather than estimates, the ledger reflects what was truly built — and updates as the project moves." },
+  { q: "How does IntelliByld calculate embodied carbon?", a: "Each material delivery is matched to its emission factor (from EPD / EC3-style datasets) and multiplied by the actual delivered quantity. Because it's driven by real delivery data rather than estimates, the ledger reflects what was truly built and updates as the project moves." },
   { q: "Does carbon tracking require extra work from my team?", a: "No. Carbon is a field on the same material movements the platform already tracks for logistics. Once deliveries flow through the twin, the carbon ledger and reports populate automatically." },
   { q: "Is this aligned with Singapore's requirements?", a: "Yes. The reporting is built to support Singapore's green-building requirements and BCA expectations, and the factor sources are configurable so the same engine works across jurisdictions." },
 ];
@@ -58,10 +58,10 @@ export default function Sustainability() {
               <IconGear /> How it works
             </span>
             <h2>From delivery to ledger to report</h2>
-            <p>Carbon rides along the same data the platform already moves for logistics — so accountability is a by-product of running the project, not a separate project of its own.</p>
+            <p>Carbon rides along the same data the platform already moves for logistics so accountability is a by-product of running the project, not a separate project of its own.</p>
           </div>
           <div className="ib-reveal">
-            <Flowchart nodes={carbonNodes} edges={carbonEdges} height={300} title="Carbon Ledger — live" caption="Each delivery is weighed against emission factors and logged automatically." legend />
+            <Flowchart nodes={carbonNodes} edges={carbonEdges} height={300} title="Carbon Ledger - live" caption="Each delivery is weighed against emission factors and logged automatically." legend />
           </div>
         </div>
       </section>
@@ -74,7 +74,7 @@ export default function Sustainability() {
                 <IconCheck /> Why actual-data carbon wins
               </span>
               <h2>The footprint you can defend</h2>
-              <p>Estimate-based carbon falls apart under scrutiny because it never reflects substitutions, reorders, or what really showed up. A ledger built from delivery data holds up — to auditors, to clients, and to your own targets.</p>
+              <p>Estimate-based carbon falls apart under scrutiny because it never reflects substitutions, reorders, or what really showed up. A ledger built from delivery data holds up to auditors, to clients, and to your own targets.</p>
               <ul className="ib-checks">
                 <li>
                   <IconCheck />
@@ -91,7 +91,7 @@ export default function Sustainability() {
                 <li>
                   <IconCheck />
                   <span>
-                    <b>One dataset.</b> The same delivery record drives logistics, schedule, and carbon — no double entry.
+                    <b>One dataset.</b> The same delivery record drives logistics, schedule, and carbon with no double entry.
                   </span>
                 </li>
               </ul>

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s — IntelliByld",
   },
   description:
-    "IntelliByld is the Agentic AI for construction supply chains. A construction-trained SLM and live Digital Twin turn fragmented logistics into Autonomous Execution — keeping projects on schedule and carbon on target.",
+    "IntelliByld is the Agentic AI for construction supply chains. A construction-trained SLM and live Digital Twin turn fragmented logistics into Autonomous Execution, keeping projects on schedule and carbon on target.",
   keywords: ["Construction Supply Chain", "Agentic AI", "Digital Twin", "BIM", "Autonomous Logistics", "Embodied Carbon"],
   openGraph: {
     type: "website",

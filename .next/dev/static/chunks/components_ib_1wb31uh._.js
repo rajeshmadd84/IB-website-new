@@ -479,7 +479,7 @@ function Footer() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    children: "The execution layer for construction — turning fragmented site and supply-chain data into autonomous, real-time decisions."
+                                    children: "The execution layer for construction, turning fragmented site and supply-chain data into autonomous, real-time decisions."
                                 }, void 0, false, {
                                     fileName: "[project]/components/ib/footer.tsx",
                                     lineNumber: 58,
@@ -554,14 +554,6 @@ function Footer() {
                                 }, void 0, false, {
                                     fileName: "[project]/components/ib/footer.tsx",
                                     lineNumber: 77,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    href: "/contact-us",
-                                    children: "Contact"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/ib/footer.tsx",
-                                    lineNumber: 78,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {

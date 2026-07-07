@@ -55,7 +55,7 @@ export default function Footer() {
                 </>
               )}
             </span>
-            <p>The execution layer for construction — turning fragmented site and supply-chain data into autonomous, real-time decisions.</p>
+            <p>The execution layer for construction, turning fragmented site and supply-chain data into autonomous, real-time decisions.</p>
             <a href={LINKEDIN} className="ib-btn ib-btn-ghost" style={{ padding: ".6em 1.1em", fontSize: ".85rem" }}>
               LinkedIn ↗
             </a>
@@ -75,7 +75,7 @@ export default function Footer() {
           <span className="ib-foot-copy">© 2026 IntelliByld. All rights reserved.</span>
           <div className="ib-foot-social">
             <a href="/pilot">Join Pilot</a>
-            <a href="/contact-us">Contact</a>
+            
             <a href={LINKEDIN}>LinkedIn</a>
           </div>
         </div>

@@ -1263,7 +1263,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ib$2f$icons$2e
 ;
 const metadata = {
     title: "Agentic AI",
-    description: "IntelliByld runs construction procurement end-to-end with three coordinated teams of specialist agents — Procurement, Logistics and Scope 3 — sharing one workflow and one audit trail, with humans in the loop on every decision that matters."
+    description: "IntelliByld runs construction procurement end-to-end with three coordinated teams of specialist agents, Procurement, Logistics and Scope 3, sharing one workflow and one audit trail, with humans in the loop on every decision that matters."
 };
 const flowNodes = [
     {
@@ -1378,7 +1378,7 @@ const teams = [
         }, ("TURBOPACK compile-time value", void 0)),
         h: "Procurement",
         count: "5 agents · Phase 1",
-        p: "Sourcing, from RFQ to a recommended award. RFQ, bid evaluation, supplier intelligence and negotiation — with an orchestrator conducting and a human signing off the award.",
+        p: "Sourcing, from RFQ to a recommended award. RFQ, bid evaluation, supplier intelligence and negotiation, with an orchestrator conducting and a human signing off the award.",
         href: "/agents/procurement"
     },
     {
@@ -1389,7 +1389,7 @@ const teams = [
         }, ("TURBOPACK compile-time value", void 0)),
         h: "Logistics",
         count: "3 agents · Phase 2",
-        p: "Execution, from PO to goods receipt. Order coordination, disruption forecasting and last-mile site sync — sharing the procurement orchestrator so nothing is dropped at the handoff.",
+        p: "Execution, from PO to goods receipt. Order coordination, disruption forecasting and last-mile site sync, sharing the procurement orchestrator so nothing is dropped at the handoff.",
         href: "/agents/logistics"
     },
     {
@@ -1400,7 +1400,7 @@ const teams = [
         }, ("TURBOPACK compile-time value", void 0)),
         h: "Scope 3",
         count: "6 agents · Integrated",
-        p: "Carbon, mapped, calculated, disclosed and reduced from the same ledger — so every supplier decision is weighed on price, technical fit and tonnes of CO₂e at once.",
+        p: "Carbon, mapped, calculated, disclosed and reduced from the same ledger so every supplier decision is weighed on price, technical fit and tonnes of CO₂e at once.",
         href: "/agents/scope3"
     }
 ];
@@ -1415,7 +1415,7 @@ const flows = [
     },
     {
         b: "PO → mapping & calc.",
-        rest: "Emissions are quantified the moment an order is placed — no separate carbon entry."
+        rest: "Emissions are quantified the moment an order is placed withno separate carbon entry."
     },
     {
         b: "Shipment → Category 4.",
@@ -1427,10 +1427,10 @@ const flows = [
     }
 ];
 const gates = [
-    "Final award & PO issuance — always a human decision, never automatic.",
-    "Disruption response — high-impact mitigation is surfaced before it runs.",
-    "Disclosure sign-off — every regulatory submission is reviewed before release.",
-    "Reduction commitments — material targets and supplier switches go to the team."
+    "Final award & PO issuance: always a human decision, never automatic.",
+    "Disruption response: high-impact mitigation is surfaced before it runs.",
+    "Disclosure sign-off: every regulatory submission is reviewed before release.",
+    "Reduction commitments: material targets and supplier switches go to the team."
 ];
 const outcomes = [
     {
@@ -1440,7 +1440,7 @@ const outcomes = [
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0)),
         h: "Faster sourcing cycles",
-        p: "RFQs go out the same day and quotations are evaluated the moment they arrive — decisions weigh ESG, financial health and history, not just price."
+        p: "RFQs go out the same day and quotations are evaluated the moment they arrive; decisions weigh ESG, financial health and history, not just price."
     },
     {
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ib$2f$icons$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["IconRadar"], {}, void 0, false, {
@@ -1464,19 +1464,19 @@ const outcomes = [
 const faqs = [
     {
         q: "What does \u201cthree teams, fourteen agents\u201d actually mean?",
-        a: "Rather than one monolithic AI, IntelliByld uses teams of specialised agents — each with a clear job, clear inputs and clear handoffs. Eight agents run procurement across sourcing and logistics; six run Scope 3 emissions. A supervising orchestrator conducts each team, and the two share data so carbon is a real input to every purchase."
+        a: "Rather than one monolithic AI, IntelliByld uses teams of specialised agents each with a clear job, clear inputs and clear handoffs. Eight agents run procurement across sourcing and logistics; six run Scope 3 emissions. A supervising orchestrator conducts each team, and the two share data so carbon is a real input to every purchase."
     },
     {
         q: "Do I have to adopt all three teams at once?",
-        a: "No. The teams are modular. Most partners start with sourcing or logistics and add Scope 3 once procurement data is flowing — because the carbon agents read the same RFQ, PO and shipment records, switching it on is a configuration step, not a new data project."
+        a: "No. The teams are modular. Most partners start with sourcing or logistics and add Scope 3 once procurement data is flowing because the carbon agents read the same RFQ, PO and shipment records, switching it on is a configuration step, not a new data project."
     },
     {
         q: "How much stays under human control?",
-        a: "Every decision that carries commercial, contractual or regulatory weight sits behind an approval gate — award and PO issuance, high-impact disruption responses, disclosure sign-off, reduction commitments. Outside those gates, the agents handle the busywork autonomously."
+        a: "Every decision that carries commercial, contractual or regulatory weight sits behind an approval gate: award and PO issuance, high-impact disruption responses, disclosure sign-off, reduction commitments. Outside those gates, the agents handle the busywork autonomously."
     },
     {
         q: "Where do pilots begin?",
-        a: "From your BoMs. BIM-native ingestion comes later — sourcing starts from the bill of materials and project specifications you already have."
+        a: "From your BoMs. BIM-native ingestion comes later; sourcing starts from the bill of materials and project specifications you already have."
     }
 ];
 function AgenticAI() {
@@ -1532,7 +1532,7 @@ function AgenticAI() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                children: "IntelliByld runs construction procurement end-to-end — from the first Request for Quotation to the moment material arrives on site — and quantifies the carbon of every transaction along the way. It is delivered by three coordinated teams of specialist agents that share data, decisions and a single audit trail."
+                                children: "IntelliByld runs construction procurement end-to-end from the first Request for Quotation to the moment material arrives on site and quantifies the carbon of every transaction along the way. It is delivered by three coordinated teams of specialist agents that share data, decisions and a single audit trail."
                             }, void 0, false, {
                                 fileName: "[project]/app/agentic-ai/page.tsx",
                                 lineNumber: 75,
@@ -1606,7 +1606,7 @@ function AgenticAI() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    children: "From requirement to delivery — with carbon in view"
+                                    children: "From requirement to delivery with carbon in view"
                                 }, void 0, false, {
                                     fileName: "[project]/app/agentic-ai/page.tsx",
                                     lineNumber: 94,
@@ -1631,7 +1631,7 @@ function AgenticAI() {
                                 nodes: flowNodes,
                                 edges: flowEdges,
                                 height: 270,
-                                title: "Procurement & carbon — end to end",
+                                title: "Procurement & carbon end to end",
                                 caption: "Two procurement phases plus an integrated Scope 3 team, on one ledger.",
                                 legend: true
                             }, void 0, false, {
@@ -1806,7 +1806,7 @@ function AgenticAI() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        children: "The Scope 3 agents are not a module bolted on after the fact — they share data and decisions with the procurement team, so every award can be weighed on price, technical fit and tonnes of CO₂e in the same workflow."
+                                        children: "The Scope 3 agents are not a module bolted on after the fact; they share data and decisions with the procurement team, so every award can be weighed on price, technical fit and tonnes of CO₂e in the same workflow."
                                     }, void 0, false, {
                                         fileName: "[project]/app/agentic-ai/page.tsx",
                                         lineNumber: 136,
@@ -1927,7 +1927,7 @@ function AgenticAI() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    children: "Autonomy without accountability is risky in procurement. The agents draft, analyse, compare and track autonomously — but the decisions that carry commercial or regulatory weight sit behind approval gates."
+                                    children: "Autonomy without accountability is risky in procurement. The agents draft, analyse, compare and track autonomously but the decisions that carry commercial or regulatory weight sit behind approval gates."
                                 }, void 0, false, {
                                     fileName: "[project]/app/agentic-ai/page.tsx",
                                     lineNumber: 162,

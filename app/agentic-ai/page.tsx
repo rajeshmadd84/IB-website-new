@@ -4,7 +4,7 @@ import { IconBlocks, IconTruck, IconLeaf, IconCheck, IconShield, IconRadar, Icon
 
 export const metadata: Metadata = {
   title: "Agentic AI",
-  description: "IntelliByld runs construction procurement end-to-end with three coordinated teams of specialist agents — Procurement, Logistics and Scope 3 — sharing one workflow and one audit trail, with humans in the loop on every decision that matters.",
+  description: "IntelliByld runs construction procurement end-to-end with three coordinated teams of specialist agents, Procurement, Logistics and Scope 3, sharing one workflow and one audit trail, with humans in the loop on every decision that matters.",
 };
 
 const flowNodes: FCNode[] = [
@@ -27,37 +27,37 @@ const flowEdges: FCEdge[] = [
 ];
 
 const teams = [
-  { icon: <IconBlocks />, h: "Procurement", count: "5 agents · Phase 1", p: "Sourcing, from RFQ to a recommended award. RFQ, bid evaluation, supplier intelligence and negotiation — with an orchestrator conducting and a human signing off the award.", href: "/agents/procurement" },
-  { icon: <IconTruck />, h: "Logistics", count: "3 agents · Phase 2", p: "Execution, from PO to goods receipt. Order coordination, disruption forecasting and last-mile site sync — sharing the procurement orchestrator so nothing is dropped at the handoff.", href: "/agents/logistics" },
-  { icon: <IconLeaf />, h: "Scope 3", count: "6 agents · Integrated", p: "Carbon, mapped, calculated, disclosed and reduced from the same ledger — so every supplier decision is weighed on price, technical fit and tonnes of CO₂e at once.", href: "/agents/scope3" },
+  { icon: <IconBlocks />, h: "Procurement", count: "5 agents · Phase 1", p: "Sourcing, from RFQ to a recommended award. RFQ, bid evaluation, supplier intelligence and negotiation, with an orchestrator conducting and a human signing off the award.", href: "/agents/procurement" },
+  { icon: <IconTruck />, h: "Logistics", count: "3 agents · Phase 2", p: "Execution, from PO to goods receipt. Order coordination, disruption forecasting and last-mile site sync, sharing the procurement orchestrator so nothing is dropped at the handoff.", href: "/agents/logistics" },
+  { icon: <IconLeaf />, h: "Scope 3", count: "6 agents · Integrated", p: "Carbon, mapped, calculated, disclosed and reduced from the same ledger so every supplier decision is weighed on price, technical fit and tonnes of CO₂e at once.", href: "/agents/scope3" },
 ];
 
 const flows = [
   { b: "RFQ → supplier data.", rest: "Emissions data is requested as part of the quotation, not chased afterwards." },
   { b: "Quotations → reduction.", rest: "Low-carbon alternatives are flagged during bid evaluation, while the award is still open." },
-  { b: "PO → mapping & calc.", rest: "Emissions are quantified the moment an order is placed — no separate carbon entry." },
+  { b: "PO → mapping & calc.", rest: "Emissions are quantified the moment an order is placed withno separate carbon entry." },
   { b: "Shipment → Category 4.", rest: "Logistics tracking feeds accurate upstream-transportation emissions to the same order." },
   { b: "Supplier scorecards → enriched.", rest: "ESG scores from sourcing are upgraded with verified primary emissions data." },
 ];
 
 const gates = [
-  "Final award & PO issuance — always a human decision, never automatic.",
-  "Disruption response — high-impact mitigation is surfaced before it runs.",
-  "Disclosure sign-off — every regulatory submission is reviewed before release.",
-  "Reduction commitments — material targets and supplier switches go to the team.",
+  "Final award & PO issuance: always a human decision, never automatic.",
+  "Disruption response: high-impact mitigation is surfaced before it runs.",
+  "Disclosure sign-off: every regulatory submission is reviewed before release.",
+  "Reduction commitments: material targets and supplier switches go to the team.",
 ];
 
 const outcomes = [
-  { icon: <IconZap />, h: "Faster sourcing cycles", p: "RFQs go out the same day and quotations are evaluated the moment they arrive — decisions weigh ESG, financial health and history, not just price." },
+  { icon: <IconZap />, h: "Faster sourcing cycles", p: "RFQs go out the same day and quotations are evaluated the moment they arrive; decisions weigh ESG, financial health and history, not just price." },
   { icon: <IconRadar />, h: "Resilient delivery", p: "Disruptions are forecast before they reach the critical path, and deliveries land in sync with site readiness, manpower and equipment." },
   { icon: <IconShield />, h: "Disclosure-ready carbon", p: "CSRD, GHG Protocol, CDP and ISSB reports generate from one ledger, with every reported tonne tracing back to a transaction and an approver." },
 ];
 
 const faqs = [
-  { q: "What does \u201cthree teams, fourteen agents\u201d actually mean?", a: "Rather than one monolithic AI, IntelliByld uses teams of specialised agents — each with a clear job, clear inputs and clear handoffs. Eight agents run procurement across sourcing and logistics; six run Scope 3 emissions. A supervising orchestrator conducts each team, and the two share data so carbon is a real input to every purchase." },
-  { q: "Do I have to adopt all three teams at once?", a: "No. The teams are modular. Most partners start with sourcing or logistics and add Scope 3 once procurement data is flowing — because the carbon agents read the same RFQ, PO and shipment records, switching it on is a configuration step, not a new data project." },
-  { q: "How much stays under human control?", a: "Every decision that carries commercial, contractual or regulatory weight sits behind an approval gate — award and PO issuance, high-impact disruption responses, disclosure sign-off, reduction commitments. Outside those gates, the agents handle the busywork autonomously." },
-  { q: "Where do pilots begin?", a: "From your BoMs. BIM-native ingestion comes later — sourcing starts from the bill of materials and project specifications you already have." },
+  { q: "What does \u201cthree teams, fourteen agents\u201d actually mean?", a: "Rather than one monolithic AI, IntelliByld uses teams of specialised agents each with a clear job, clear inputs and clear handoffs. Eight agents run procurement across sourcing and logistics; six run Scope 3 emissions. A supervising orchestrator conducts each team, and the two share data so carbon is a real input to every purchase." },
+  { q: "Do I have to adopt all three teams at once?", a: "No. The teams are modular. Most partners start with sourcing or logistics and add Scope 3 once procurement data is flowing because the carbon agents read the same RFQ, PO and shipment records, switching it on is a configuration step, not a new data project." },
+  { q: "How much stays under human control?", a: "Every decision that carries commercial, contractual or regulatory weight sits behind an approval gate: award and PO issuance, high-impact disruption responses, disclosure sign-off, reduction commitments. Outside those gates, the agents handle the busywork autonomously." },
+  { q: "Where do pilots begin?", a: "From your BoMs. BIM-native ingestion comes later; sourcing starts from the bill of materials and project specifications you already have." },
 ];
 
 export default function AgenticAI() {
@@ -73,7 +73,7 @@ export default function AgenticAI() {
             Three teams. <span className="cy">Fourteen agents.</span> One supply chain.
           </h1>
           <p>
-            IntelliByld runs construction procurement end-to-end — from the first Request for Quotation to the moment material arrives on site — and quantifies the carbon of every transaction along the way. It is delivered by three coordinated teams of specialist agents that share data, decisions and a single audit trail.
+            IntelliByld runs construction procurement end-to-end from the first Request for Quotation to the moment material arrives on site and quantifies the carbon of every transaction along the way. It is delivered by three coordinated teams of specialist agents that share data, decisions and a single audit trail.
           </p>
           <div style={{ display: "flex", gap: ".6rem", flexWrap: "wrap", marginTop: "1.6rem" }}>
             {["Autonomous Sourcing", "End-to-End Logistics", "Carbon by Design"].map((t) => (
@@ -91,11 +91,11 @@ export default function AgenticAI() {
             <span className="ib-eyebrow">
               <IconWorkflow /> One workflow
             </span>
-            <h2>From requirement to delivery — with carbon in view</h2>
+            <h2>From requirement to delivery with carbon in view</h2>
             <p>Sourcing confirms a supplier, logistics gets it to site, and the Scope 3 team reads the same RFQ, PO and shipment data to calculate and disclose emissions in the same flow.</p>
           </div>
           <div className="ib-reveal">
-            <Flowchart nodes={flowNodes} edges={flowEdges} height={270} title="Procurement & carbon — end to end" caption="Two procurement phases plus an integrated Scope 3 team, on one ledger." legend />
+            <Flowchart nodes={flowNodes} edges={flowEdges} height={270} title="Procurement & carbon end to end" caption="Two procurement phases plus an integrated Scope 3 team, on one ledger." legend />
           </div>
         </div>
       </section>
@@ -133,7 +133,7 @@ export default function AgenticAI() {
                 <IconShare /> Shared data flows
               </span>
               <h2>Carbon shares the procurement bloodstream</h2>
-              <p>The Scope 3 agents are not a module bolted on after the fact — they share data and decisions with the procurement team, so every award can be weighed on price, technical fit and tonnes of CO₂e in the same workflow.</p>
+              <p>The Scope 3 agents are not a module bolted on after the fact; they share data and decisions with the procurement team, so every award can be weighed on price, technical fit and tonnes of CO₂e in the same workflow.</p>
               <a href="/agents/scope3" className="ib-btn ib-btn-primary" style={{ marginTop: "1.6rem" }}>
                 See the Scope 3 team <span className="arw">→</span>
               </a>
@@ -159,7 +159,7 @@ export default function AgenticAI() {
               <IconShield /> Authority stays human
             </span>
             <h2>Agents do the work; humans hold the decisions</h2>
-            <p>Autonomy without accountability is risky in procurement. The agents draft, analyse, compare and track autonomously — but the decisions that carry commercial or regulatory weight sit behind approval gates.</p>
+            <p>Autonomy without accountability is risky in procurement. The agents draft, analyse, compare and track autonomously but the decisions that carry commercial or regulatory weight sit behind approval gates.</p>
           </div>
           <div className="ib-gates ib-reveal">
             {gates.map((g, i) => (

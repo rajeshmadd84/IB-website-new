@@ -1263,7 +1263,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ib$2f$icons$2e
 ;
 const metadata = {
     title: "Sustainability",
-    description: "IntelliByld tracks embodied-carbon emissions from material deliveries in real time, based on actual delivery data rather than estimates — supporting sustainability reporting and green-building requirements."
+    description: "IntelliByld tracks embodied-carbon emissions from material deliveries in real time, based on actual delivery data rather than estimates supporting sustainability reporting and green-building requirements."
 };
 const carbonNodes = [
     {
@@ -1341,7 +1341,7 @@ const points = [
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0)),
         h: "Measured, not estimated",
-        p: "Carbon is computed from the quantities that actually arrived on site — not an early-stage approximation that drifts from reality."
+        p: "Carbon is computed from the quantities that actually arrived on site not an early-stage approximation that drifts from reality."
     },
     {
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ib$2f$icons$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["IconLayers"], {}, void 0, false, {
@@ -1359,13 +1359,13 @@ const points = [
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0)),
         h: "Reporting on autopilot",
-        p: "Reports generate automatically and align with Singapore's green-building requirements — no end-of-quarter spreadsheet scramble."
+        p: "Reports generate automatically and align with Singapore's green-building requirements, no end-of-quarter spreadsheet scramble."
     }
 ];
 const faqs = [
     {
         q: "How does IntelliByld calculate embodied carbon?",
-        a: "Each material delivery is matched to its emission factor (from EPD / EC3-style datasets) and multiplied by the actual delivered quantity. Because it's driven by real delivery data rather than estimates, the ledger reflects what was truly built — and updates as the project moves."
+        a: "Each material delivery is matched to its emission factor (from EPD / EC3-style datasets) and multiplied by the actual delivered quantity. Because it's driven by real delivery data rather than estimates, the ledger reflects what was truly built and updates as the project moves."
     },
     {
         q: "Does carbon tracking require extra work from my team?",
@@ -1478,7 +1478,7 @@ function Sustainability() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    children: "Carbon rides along the same data the platform already moves for logistics — so accountability is a by-product of running the project, not a separate project of its own."
+                                    children: "Carbon rides along the same data the platform already moves for logistics so accountability is a by-product of running the project, not a separate project of its own."
                                 }, void 0, false, {
                                     fileName: "[project]/app/sustainability/page.tsx",
                                     lineNumber: 61,
@@ -1496,7 +1496,7 @@ function Sustainability() {
                                 nodes: carbonNodes,
                                 edges: carbonEdges,
                                 height: 300,
-                                title: "Carbon Ledger — live",
+                                title: "Carbon Ledger - live",
                                 caption: "Each delivery is weighed against emission factors and logged automatically.",
                                 legend: true
                             }, void 0, false, {
@@ -1553,7 +1553,7 @@ function Sustainability() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        children: "Estimate-based carbon falls apart under scrutiny because it never reflects substitutions, reorders, or what really showed up. A ledger built from delivery data holds up — to auditors, to clients, and to your own targets."
+                                        children: "Estimate-based carbon falls apart under scrutiny because it never reflects substitutions, reorders, or what really showed up. A ledger built from delivery data holds up to auditors, to clients, and to your own targets."
                                     }, void 0, false, {
                                         fileName: "[project]/app/sustainability/page.tsx",
                                         lineNumber: 77,
@@ -1636,7 +1636,7 @@ function Sustainability() {
                                                                 lineNumber: 94,
                                                                 columnNumber: 21
                                                             }, this),
-                                                            " The same delivery record drives logistics, schedule, and carbon — no double entry."
+                                                            " The same delivery record drives logistics, schedule, and carbon with no double entry."
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/sustainability/page.tsx",

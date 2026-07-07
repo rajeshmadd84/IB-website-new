@@ -1353,7 +1353,7 @@ const tracks = [
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0)),
         h: "Every movement, live",
-        p: "Factory dispatch, GPS in transit, gate arrival — each material's journey is on the map in real time."
+        p: "Factory dispatch, GPS in transit, gate arrival - each material's journey is on the map in real time."
     },
     {
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ib$2f$icons$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["IconClock"], {}, void 0, false, {
@@ -1386,15 +1386,15 @@ const tracks = [
 const faqs = [
     {
         q: "What is the \"Integration Trap\"?",
-        a: "It's the gap that opens when your BIM model, ERP, and site reality drift apart — the model says one thing, the PO system another, and the foreman a third. The twin closes that gap by linking live material movements directly to the master schedule, so one picture stays true."
+        a: "It's the gap that opens when your BIM model, ERP, and site reality drift apart: the model says one thing, the PO system another, and the foreman a third. The twin closes that gap by linking live material movements directly to the master schedule, so one picture stays true."
     },
     {
         q: "How is this different from a BIM model?",
-        a: "A BIM model describes what should be built. The Digital Twin describes what is actually happening to the materials that build it — in real time — and links that back to the schedule. It's the live operational layer on top of the design model."
+        a: "A BIM model describes what should be built. The Digital Twin describes what is actually happening to the materials that build it, in real time, and links that back to the schedule. It's the live operational layer on top of the design model."
     },
     {
         q: "Where does the live data come from?",
-        a: "Shipment tracking, supplier updates, and site signals flow in through the channels already in use. Pilots start from your BOMs; no rip-and-replace integration is needed to stand up a working twin."
+        a: "Shipment tracking, supplier updates, and site signals flow in through the channels already in use. Pilots start from your BOMs; no rip and replace integration is needed to stand up a working twin."
     }
 ];
 function DigitalTwins() {
@@ -1450,7 +1450,7 @@ function DigitalTwins() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                children: "IntelliByld's Digital Twin is a living, real-time replica of your construction supply chain. It links every material movement to your master schedule — closing the Integration Trap so your digital model mirrors physical site reality."
+                                children: "IntelliByld's Digital Twin is a living, real-time replica of your construction supply chain. It links every material movement to your master schedule, closing the Integration Trap so your digital model mirrors physical site reality."
                             }, void 0, false, {
                                 fileName: "[project]/app/digital-twins/page.tsx",
                                 lineNumber: 49,
@@ -1618,7 +1618,7 @@ function DigitalTwins() {
                                     nodes: twinNodes,
                                     edges: twinEdges,
                                     height: 350,
-                                    title: "Twin Mirror — live",
+                                    title: "Twin Mirror - live",
                                     caption: "Site reality flows up; schedule, sourcing, and carbon flow down.",
                                     legend: true
                                 }, void 0, false, {

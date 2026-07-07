@@ -1266,11 +1266,11 @@ __turbopack_context__.s([
     kicker: "USE CASE · 01",
     title: "Neutralize supplier delays before they hit the site",
     cy: "delays",
-    lead: "A late shipment used to mean a scramble of phone calls and a slipped pour. IntelliByld catches the slip the moment it appears, models the schedule impact, and re-sources — often before anyone on site would have noticed.",
-    metaDescription: "IntelliByld detects supplier delays the moment they appear, models the schedule impact, and autonomously re-sources from ranked vendors — neutralizing slips before they reach the site.",
+    lead: "A late shipment used to mean a scramble of phone calls and a slipped pour. IntelliByld catches the slip the moment it appears, and models the schedule impact often before anyone on site would have noticed.",
+    metaDescription: "IntelliByld detects supplier delays the moment they appear, models the schedule impact, and autonomously resources from ranked vendors neutralizing slips before they reach the site.",
     flow: {
-        title: "Delay Neutralization — live",
-        caption: "Detected, analyzed, re-sourced, rerouted — without waiting for a status call.",
+        title: "Delay Neutralization - live",
+        caption: "Detected, analyzed, re-sourced, rerouted without waiting for a status call.",
         height: 290,
         legend: true,
         nodes: [
@@ -1366,12 +1366,12 @@ __turbopack_context__.s([
             }
         ]
     },
-    splitHead: "From three-day fire-drill to three-minute reroute",
-    splitBody: "The cost of a delay isn't the delay — it's the hours lost discovering it, the idle crew, and the panic-priced replacement order. IntelliByld compresses all of that into an automatic loop that runs the moment an ETA moves.",
+    splitHead: "From three day fire-drill to three minute reroute",
+    splitBody: "The cost of a delay isn't the delay: it's the hours lost discovering it, the idle crew, and the panic-priced replacement order. IntelliByld compresses all of that into an automatic loop that runs the moment an ETA moves.",
     checks: [
         {
             b: "Caught at the source.",
-            rest: "A supplier's own ETA update is enough to trigger analysis — no waiting for the missed delivery."
+            rest: "A supplier's own ETA update is enough to trigger analysis no waiting for the missed delivery."
         },
         {
             b: "Priced with leverage.",
@@ -1400,7 +1400,7 @@ __turbopack_context__.s([
     faqs: [
         {
             q: "How early can a delay be detected?",
-            a: "As soon as a signal exists — a supplier ETA change, a tracking update, or a missed milestone. The earlier the signal, the more room the agents have to neutralize it before it reaches the critical path."
+            a: "As soon as a signal exists i.e. a supplier ETA change, a tracking update, or a missed milestone. The earlier the signal, the more room the agents have to neutralize it before it reaches the critical path."
         },
         {
             q: "Does it reorder without my approval?",
@@ -1417,10 +1417,10 @@ const multiSite = {
     kicker: "USE CASE · 02",
     title: "One control tower for every site",
     cy: "control tower",
-    lead: "Running five projects means five supply chains, five sets of fires, and no single view. IntelliByld puts every site into one live control tower — so materials, risk, and capacity can be balanced across the portfolio, not just within one job.",
-    metaDescription: "IntelliByld coordinates multi-site construction supply chains from a single live control tower — balancing materials, risk, and capacity across the whole portfolio in real time.",
+    lead: "Running five projects means five supply chains, five sets of fires, and no single view. IntelliByld puts every site into one live control tower so materials, risk, and capacity can be balanced across the portfolio, not just within one job.",
+    metaDescription: "IntelliByld coordinates multi-site construction supply chains from a single live control tower balancing materials, risk, and capacity across the whole portfolio in real time.",
     flow: {
-        title: "Multi-Site Control Tower — live",
+        title: "Multi-Site Control Tower - live",
         caption: "Every site reports to one twin; the tower rebalances across the portfolio.",
         height: 320,
         legend: true,
@@ -1514,7 +1514,7 @@ const multiSite = {
         ]
     },
     splitHead: "Balance the portfolio, not just the project",
-    splitBody: "When one site is short on rebar and another is sitting on a surplus, the answer is obvious — but only if someone can see both at once. A shared twin makes cross-site moves visible and actionable instead of accidental.",
+    splitBody: "When one site is short on rebar and another is sitting on a surplus, the answer is obvious but only if someone can see both at once. A shared twin makes cross-site moves visible and actionable instead of accidental.",
     checks: [
         {
             b: "One source of truth.",
@@ -1537,7 +1537,7 @@ const multiSite = {
         },
         {
             h: "One pane of glass",
-            p: "Executives see every project's supply-chain health in a single live view."
+            p: "Executives see every project's supply chain health in a single live view."
         },
         {
             h: "Coordinated response",
@@ -1547,7 +1547,7 @@ const multiSite = {
     faqs: [
         {
             q: "Do all sites need to be on the same systems?",
-            a: "No. The control tower sits above whatever each site already runs and normalizes the picture. New sites are added by connecting their BOMs and channels — the same lightweight pilot path."
+            a: "No. The control tower sits above whatever each site already runs and normalizes the picture. New sites are added by connecting their BOMs and channels just like the same lightweight pilot path."
         },
         {
             q: "Can teams still operate independently?",
@@ -1564,10 +1564,10 @@ const embodiedCarbon = {
     kicker: "USE CASE · 03",
     title: "Embodied carbon from real delivery data",
     cy: "real delivery data",
-    lead: "Estimate-based carbon never survives an audit, because it never reflects what actually arrived. IntelliByld builds the embodied-carbon ledger from real deliveries — every movement logged with its footprint, every report generated automatically.",
-    metaDescription: "IntelliByld tracks embodied carbon from actual material deliveries — not estimates — logging each movement's footprint and generating audit-ready reports automatically.",
+    lead: "Estimate-based carbon never survives an audit, because it never reflects what actually arrived. IntelliByld builds the embodied-carbon ledger from real deliveries, every movement logged with its footprint, every report generated automatically.",
+    metaDescription: "IntelliByld tracks embodied carbon from actual material deliveries, not estimates, logging each movement's footprint and generating audit-ready reports automatically.",
     flow: {
-        title: "Carbon Ledger — live",
+        title: "Carbon Ledger - live",
         caption: "Each delivery is weighed against emission factors and logged automatically.",
         height: 290,
         legend: true,
@@ -1644,7 +1644,7 @@ const embodiedCarbon = {
     splitBody: "Because the ledger is built from delivery data, it reflects substitutions, reorders, and what truly showed up. That's the difference between a number you present nervously and one that holds up to an auditor or a client.",
     checks: [
         {
-            b: "Audit-ready.",
+            b: "Audit ready.",
             rest: "Every kilogram of CO₂e traces back to a specific logged delivery."
         },
         {
@@ -1660,11 +1660,11 @@ const embodiedCarbon = {
     outcomes: [
         {
             h: "Defensible numbers",
-            p: "Actual-delivery data stands up to scrutiny in a way estimates never do."
+            p: "Actual delivery data stands up to scrutiny in a way estimates never do."
         },
         {
             h: "Effortless reports",
-            p: "Reporting aligned to green-building requirements generates on its own."
+            p: "Reporting aligned to green building requirements generates on its own."
         },
         {
             h: "In-flight visibility",
@@ -1678,7 +1678,7 @@ const embodiedCarbon = {
         },
         {
             q: "Is this extra work for the team?",
-            a: "No — carbon is a field on the deliveries the platform already tracks for logistics. Once deliveries flow through the twin, the ledger and reports populate themselves."
+            a: "No. carbon is a field on the deliveries the platform already tracks for logistics. Once deliveries flow through the twin, the ledger and reports populate themselves."
         }
     ],
     ctaTitle: "Make carbon a measurement, not a guess",
@@ -1691,11 +1691,11 @@ const embodiedCarbon = {
     kicker: "TEAM · SOURCING",
     title: "The Procurement team",
     cy: "Procurement",
-    lead: "Five agents that turn a material requirement into a confirmed supplier — drafting RFQs, evaluating bids, scoring supplier risk, and negotiating terms. The sourcing team runs end-to-end and surfaces a recommended award for your sign-off.",
-    intro2: "Rather than one monolithic AI, a supervising orchestrator coordinates the team and owns every human-in-the-loop checkpoint — so the agents do the analytical heavy lifting while procurement managers keep authority over each commercial decision.",
-    metaDescription: "IntelliByld's Procurement team — Orchestrator, RFQ, Bid Evaluation, Supplier Intelligence and Negotiation agents — runs construction sourcing end-to-end, from BoQ to a recommended award, with humans in the loop.",
+    lead: "Five agents that turn a material requirement into a confirmed supplier drafting RFQs, evaluating bids, scoring supplier risk, and negotiating terms. The sourcing team runs end-to-end and surfaces a recommended award for your sign-off.",
+    intro2: "Rather than one monolithic AI, a supervising orchestrator coordinates the team and owns every human-in-the-loop checkpoint, so the agents do the analytical heavy lifting while procurement managers keep authority over each commercial decision.",
+    metaDescription: "IntelliByld's Procurement team (Orchestrator, RFQ, Bid Evaluation, Supplier Intelligence and Negotiation agents) runs construction sourcing end-to-end, from BoQ to a recommended award, with humans in the loop.",
     flow: {
-        title: "Sourcing — RFQ to award",
+        title: "Sourcing - RFQ to award",
         caption: "The orchestrator routes work; the award is always a human sign-off.",
         height: 318,
         legend: true,
@@ -1816,7 +1816,7 @@ const embodiedCarbon = {
             ref: "00",
             name: "Procurement Orchestrator",
             tag: "Orchestrator · both phases",
-            role: "The conductor of the team — owns workflow state, routes tasks, and manages every approval gate.",
+            role: "The conductor of the team: owns workflow state, routes tasks, and manages every approval gate.",
             duties: [
                 "Maintains the master state of each procurement case",
                 "Routes tasks to the right specialist at each step",
@@ -1883,7 +1883,7 @@ const embodiedCarbon = {
         {
             n: "02",
             title: "RFQ generation & dispatch",
-            desc: "RFQs are drafted from the BoQ, suppliers shortlisted, and — once the shortlist is confirmed — dispatched.",
+            desc: "RFQs are drafted from the BoQ, suppliers shortlisted, and once the shortlist is confirmed, dispatched.",
             gate: true
         },
         {
@@ -1905,17 +1905,17 @@ const embodiedCarbon = {
         {
             n: "06",
             title: "Award recommendation",
-            desc: "Negotiated terms come back for the final award decision — always a human sign-off.",
+            desc: "Negotiated terms come back for the final award decision, always a human sign-off.",
             gate: true
         }
     ],
     gatesHead: "Human in the loop",
-    gatesNote: "Outside these gates the agents work autonomously — drafting, parsing, scoring and clarifying. Inside them, authority stays with your team.",
+    gatesNote: "Outside these gates the agents work autonomously, drafting, parsing, scoring and clarifying. Inside them, authority stays with your team.",
     gates: [
-        "RFQ dispatch — the supplier shortlist is confirmed before RFQs go out.",
-        "Bid award recommendation — the team reviews the ranking before any award.",
-        "Negotiation mandate — the team sets the boundaries; the agent works within them.",
-        "Final award & PO issuance — always a human decision, never automatic."
+        "RFQ dispatch: the supplier shortlist is confirmed before RFQs go out.",
+        "Bid award recommendation: the team reviews the ranking before any award.",
+        "Negotiation mandate: the team sets the boundaries; the agent works within them.",
+        "Final award & PO issuance: always a human decision, never automatic."
     ],
     outcomesHead: "What the sourcing team delivers",
     outcomes: [
@@ -1925,7 +1925,7 @@ const embodiedCarbon = {
         },
         {
             h: "Better awards",
-            p: "Decisions weigh ESG, financial health and execution history — not just price."
+            p: "Decisions weigh ESG, financial health and execution history, not just price."
         },
         {
             h: "Full traceability",
@@ -1935,7 +1935,7 @@ const embodiedCarbon = {
     faqs: [
         {
             q: "Does it replace my procurement team?",
-            a: "No — it removes the busywork. Buyers set strategy, mandates and approvals; the agents handle RFQ drafting, parsing, scoring and negotiation logistics, so the team spends time on judgement, not data entry."
+            a: "No. It removes the busywork. Buyers set strategy, mandates and approvals; the agents handle RFQ drafting, parsing, scoring and negotiation logistics, so the team spends time on judgement, not data entry."
         },
         {
             q: "How are suppliers scored?",
@@ -1943,7 +1943,7 @@ const embodiedCarbon = {
         },
         {
             q: "Where do pilots begin?",
-            a: "From your BoMs. BIM-native ingestion comes later — sourcing starts from the bill of materials and project specs you already have."
+            a: "From your BoMs. BIM-native ingestion comes later; sourcing starts from the bill of materials and project specs you already have."
         }
     ],
     ctaTitle: "Turn requirements into confirmed suppliers",
@@ -1956,11 +1956,11 @@ const logistics = {
     kicker: "TEAM · LOGISTICS",
     title: "The Logistics team",
     cy: "Logistics",
-    lead: "Three agents that turn a confirmed supplier into a received delivery — confirming POs, watching for disruption, tracking shipments, and aligning arrivals with site readiness. Phase 2 picks up where sourcing ends and runs to goods receipt.",
-    intro2: "The Logistics team shares the Procurement Orchestrator, so the handoff from award to execution carries full context — no dropped balls between sourcing and the site.",
-    metaDescription: "IntelliByld's Logistics team — Order Coordination, Disruption & Risk and Logistics & Site Sync agents — runs construction order execution from PO confirmation to goods receipt, syncing deliveries with site readiness.",
+    lead: "Three agents that turn a confirmed supplier into a received delivery by confirming POs, watching for disruption, tracking shipments, and aligning arrivals with site readiness. Phase 2 picks up where sourcing ends and runs to goods receipt.",
+    intro2: "The Logistics team shares the Procurement Orchestrator, so the handoff from award to execution carries full context, with no dropped balls between sourcing and the site.",
+    metaDescription: "IntelliByld's Logistics team (Order Coordination, Disruption & Risk and Logistics & Site Sync agents) runs construction order execution from PO confirmation to goods receipt, syncing deliveries with site readiness.",
     flow: {
-        title: "Execution — PO to goods receipt",
+        title: "Execution - PO to goods receipt",
         caption: "Coordinate, watch for disruption, then sync the last mile.",
         height: 318,
         legend: true,
@@ -2152,9 +2152,9 @@ const logistics = {
     gatesHead: "Human in the loop",
     gatesNote: "Routine follow-ups, tracking and exception handling run autonomously. The decisions that carry schedule or commercial weight are surfaced for approval.",
     gates: [
-        "Disruption response — high-impact mitigation actions are surfaced before they run.",
-        "Schedule re-sequencing — material changes to the delivery plan are confirmed.",
-        "Goods receipt & exceptions — discrepancies are escalated, not silently absorbed."
+        "Disruption response: high-impact mitigation actions are surfaced before they run.",
+        "Schedule re-sequencing: material changes to the delivery plan are confirmed.",
+        "Goods receipt & exceptions: discrepancies are escalated, not silently absorbed."
     ],
     outcomesHead: "What the logistics team delivers",
     outcomes: [
@@ -2178,7 +2178,7 @@ const logistics = {
         },
         {
             q: "Does it share context with sourcing?",
-            a: "Yes — it runs on the same Procurement Orchestrator, so award terms, supplier commitments and schedule context carry straight into execution without re-keying."
+            a: "Yes. It runs on the same Procurement Orchestrator, so award terms, supplier commitments and schedule context carry straight into execution without re-keying."
         }
     ],
     ctaTitle: "Turn confirmed orders into on-time deliveries",
@@ -2191,11 +2191,11 @@ const scope3 = {
     kicker: "TEAM · SCOPE 3",
     title: "The Scope 3 team",
     cy: "Scope 3",
-    lead: "Six agents that quantify, disclose and reduce value-chain emissions — mapping every transaction to a GHG Protocol category, calculating CO₂e at the right data-quality tier, engaging suppliers for primary data, and generating audit-ready disclosures. Carbon becomes a real input to procurement, not a number reported six months late.",
-    intro2: "The Scope 3 agents share data with the procurement team, drawing on the same RFQ, supplier and shipment records — so emissions are calculated the moment an order is placed, with no separate carbon data entry.",
-    metaDescription: "IntelliByld's Scope 3 team — Orchestrator, Category Mapping, Emissions Calculation, Supplier Data Engagement, Disclosure & Reporting and Reduction Strategy agents — quantifies, discloses and reduces construction value-chain emissions, integrated with procurement.",
+    lead: "Six agents that quantify, disclose and reduce value-chain emissions by mapping every transaction to a GHG Protocol category, calculating CO₂e at the right data-quality tier, engaging suppliers for primary data, and generating audit-ready disclosures. Carbon becomes a real input to procurement, not a number reported six months late.",
+    intro2: "The Scope 3 agents share data with the procurement team, drawing on the same RFQ, supplier and shipment records, so emissions are calculated the moment an order is placed, with no separate carbon data entry.",
+    metaDescription: "IntelliByld's Scope 3 team (Orchestrator, Category Mapping, Emissions Calculation, Supplier Data Engagement, Disclosure & Reporting and Reduction Strategy agents) quantifies, discloses and reduces construction value-chain emissions, integrated with procurement.",
     flow: {
-        title: "Carbon — PO to disclosure",
+        title: "Carbon - PO to disclosure",
         caption: "Map, calculate, collect primary data, then disclose.",
         height: 318,
         legend: true,
@@ -2409,7 +2409,7 @@ const scope3 = {
         {
             n: "02",
             title: "Category mapping",
-            desc: "The order is classified — e.g. Scope 3 Category 1, purchased goods — and passed to calculation."
+            desc: "The order is classified (e.g. Scope 3 Category 1, purchased goods) and passed to calculation."
         },
         {
             n: "03",
@@ -2429,17 +2429,17 @@ const scope3 = {
         {
             n: "06",
             title: "Disclosure & audit",
-            desc: "At reporting time the ledger flows into CSRD, CDP or ISSB templates — every figure tracing back to source.",
+            desc: "At reporting time the ledger flows into CSRD, CDP or ISSB templates, with every figure tracing back to source.",
             gate: true
         }
     ],
     gatesHead: "Human in the loop",
     gatesNote: "The agents ingest, calculate, chase data and draft disclosures autonomously. The decisions that carry regulatory weight stay with the sustainability and finance teams.",
     gates: [
-        "Categorisation exceptions — ambiguous mappings are escalated, not guessed.",
-        "Emission-factor changes — material updates to the factor library need approval.",
-        "Disclosure sign-off — every regulatory submission is reviewed before release.",
-        "Reduction commitments — material targets and supplier switches go to the team."
+        "Categorisation exceptions: ambiguous mappings are escalated, not guessed.",
+        "Emission-factor changes: material updates to the factor library need approval.",
+        "Disclosure sign-off: every regulatory submission is reviewed before release.",
+        "Reduction commitments: material targets and supplier switches go to the team."
     ],
     outcomesHead: "What the Scope 3 team delivers",
     outcomes: [
@@ -2463,11 +2463,11 @@ const scope3 = {
         },
         {
             q: "Which frameworks are supported?",
-            a: "CSRD ESRS E1, the GHG Protocol, CDP and ISSB IFRS S2 — all generated from the same underlying ledger, so there's no recalculation between frameworks."
+            a: "CSRD ESRS E1, the GHG Protocol, CDP and ISSB IFRS S2, all generated from the same underlying ledger, so there's no recalculation between frameworks."
         },
         {
             q: "How does data quality improve over time?",
-            a: "Spend-based and average factors are systematically replaced with primary supplier data — EPDs and verified product carbon footprints — moving figures from tier 3 toward tier 1, with every change logged."
+            a: "Spend-based and average factors are systematically replaced with primary supplier data (EPDs and verified product carbon footprints), moving figures from tier 3 toward tier 1, with every change logged."
         }
     ],
     ctaTitle: "Know your footprint at line-item resolution",
@@ -2642,7 +2642,7 @@ function DetailPage({ d }) {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    children: d.flow.title.replace(/ — .*/, "")
+                                    children: d.flow.title.replace(/ [-—].*/, "")
                                 }, void 0, false, {
                                     fileName: "[project]/components/ib/detail-page.tsx",
                                     lineNumber: 45,
