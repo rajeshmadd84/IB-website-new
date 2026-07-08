@@ -36,7 +36,7 @@
 .ib-root{
   background:var(--ib-ink);color:var(--ib-text-body);
   font-family:var(--ib-body);font-size:16px;line-height:1.6;
-  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;overflow-x:clip;
 }
 .ib-root ::selection{background:var(--ib-cyan);color:#fff}
 .ib-root a{color:inherit;text-decoration:none}
@@ -87,6 +87,13 @@
 .ib-nav-cta{display:flex;align-items:center;gap:1rem}
 .ib-nav-links .ib-nav-cta-mobile{display:none}
 .ib-menu-toggle{display:none;background:none;border:1px solid var(--ib-line-2);border-radius:7px;color:var(--ib-text);padding:.5em .7em;font-size:1rem;cursor:pointer}
+
+/* back to top */
+.ib-to-top{position:fixed;right:1.4rem;bottom:1.4rem;z-index:65;width:46px;height:46px;border-radius:50%;background:var(--ib-cyan);border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 10px 24px -10px rgba(30,86,214,.55);opacity:0;visibility:hidden;pointer-events:none;transform:translateY(10px);transition:opacity .2s,transform .2s,visibility .2s,background .18s}
+.ib-to-top svg{stroke:#fff;width:20px;height:20px}
+.ib-to-top:hover{background:var(--ib-cyan-deep)}
+.ib-to-top.show{opacity:1;visibility:visible;pointer-events:auto;transform:translateY(0)}
+@media(max-width:920px){.ib-to-top{right:1rem;bottom:1rem;width:42px;height:42px}}
 
 /* ============ HERO ============ */
 .ib-hero{position:relative;padding-top:clamp(3.5rem,8vh,5.5rem);padding-bottom:clamp(2.5rem,6vh,4rem);overflow:hidden;background:radial-gradient(ellipse 85% 62% at 50% -8%,rgba(30,86,214,.07),transparent 68%)}

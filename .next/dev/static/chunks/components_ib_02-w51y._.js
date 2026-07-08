@@ -4,6 +4,8 @@
 
 /* Inline stroke icons. Paths omit `stroke` so it inherits from the
    parent <svg>'s CSS stroke (stroke is an inherited SVG property). */ __turbopack_context__.s([
+    "IconArrowUp",
+    ()=>IconArrowUp,
     "IconBlocks",
     ()=>IconBlocks,
     "IconBot",
@@ -965,7 +967,22 @@ const IconMail = (p)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$proje
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 _c26 = IconMail;
-var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9, _c10, _c11, _c12, _c13, _c14, _c15, _c16, _c17, _c18, _c19, _c20, _c21, _c22, _c23, _c24, _c25, _c26;
+const IconArrowUp = (p)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        ...base(p),
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+            d: "M12 19V5M6 11l6-6 6 6"
+        }, void 0, false, {
+            fileName: "[project]/components/ib/icons.tsx",
+            lineNumber: 228,
+            columnNumber: 5
+        }, ("TURBOPACK compile-time value", void 0))
+    }, void 0, false, {
+        fileName: "[project]/components/ib/icons.tsx",
+        lineNumber: 227,
+        columnNumber: 3
+    }, ("TURBOPACK compile-time value", void 0));
+_c27 = IconArrowUp;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9, _c10, _c11, _c12, _c13, _c14, _c15, _c16, _c17, _c18, _c19, _c20, _c21, _c22, _c23, _c24, _c25, _c26, _c27;
 __turbopack_context__.k.register(_c, "IconCpu");
 __turbopack_context__.k.register(_c1, "IconLayers");
 __turbopack_context__.k.register(_c2, "IconBot");
@@ -993,6 +1010,7 @@ __turbopack_context__.k.register(_c23, "IconGear");
 __turbopack_context__.k.register(_c24, "IconSwap");
 __turbopack_context__.k.register(_c25, "IconBriefcase");
 __turbopack_context__.k.register(_c26, "IconMail");
+__turbopack_context__.k.register(_c27, "IconArrowUp");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }

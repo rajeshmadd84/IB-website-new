@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Nav from "@/components/ib/nav";
 import Footer from "@/components/ib/footer";
+import BackToTop from "@/components/ib/back-to-top";
 import "@/components/ib/theme.css";
 
 export const metadata: Metadata = {
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Nav />
           {children}
           <Footer />
+          <BackToTop />
         </div>
       </body>
     </html>

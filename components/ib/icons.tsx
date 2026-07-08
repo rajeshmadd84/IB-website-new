@@ -222,3 +222,9 @@ export const IconMail = (p: SVGProps<SVGSVGElement>) => (
     <path d="M4 7l8 6 8-6" />
   </svg>
 );
+
+export const IconArrowUp = (p: SVGProps<SVGSVGElement>) => (
+  <svg {...base(p)}>
+    <path d="M12 19V5M6 11l6-6 6 6" />
+  </svg>
+);
