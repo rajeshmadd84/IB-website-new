@@ -43,7 +43,7 @@ export default function Sustainability() {
             <IconLeaf /> Carbon Accountability
           </span>
           <h1>
-            Embodied carbon, from <span className="cy">real</span> delivery data
+            <span className="cy">Embodied carbon,</span> from real delivery data
           </h1>
           <p>
             IntelliByld tracks embodied-carbon emissions from material deliveries in real time, based on actual delivery data rather than estimates. Every movement is logged with its footprint, and reports generate automatically.
@@ -73,7 +73,7 @@ export default function Sustainability() {
               <span className="ib-eyebrow">
                 <IconCheck /> Why actual-data carbon wins
               </span>
-              <h2>The footprint you can defend</h2>
+              <h2>The <span style={{ color: "var(--ib-cyan)" }}>footprint</span> you can defend</h2>
               <p>Estimate-based carbon falls apart under scrutiny because it never reflects substitutions, reorders, or what really showed up. A ledger built from delivery data holds up to auditors, to clients, and to your own targets.</p>
               <ul className="ib-checks">
                 <li>

@@ -2,6 +2,7 @@ import type { FCNode, FCEdge } from "@/components/ib/flowchart";
 
 export interface DetailFlow {
   title: string;
+  titleCy?: string; // substring of title to accent
   caption: string;
   height: number;
   legend?: boolean;
@@ -37,10 +38,12 @@ export interface Detail {
   flow: DetailFlow;
   // use-case layout (split with checks):
   splitHead?: string;
+  splitCy?: string; // substring of splitHead to accent
   splitBody?: string;
   checks?: { b: string; rest: string }[];
   // team layout extras:
   agentsHead?: string;
+  agentsCy?: string; // substring of agentsHead to accent
   agents?: AgentSpec[];
   workflowHead?: string;
   workflow?: WorkflowStep[];
@@ -63,7 +66,7 @@ const supplierDelay: Detail = {
   eyebrow: "Use Case",
   kicker: "USE CASE · 01",
   title: "Neutralize supplier delays before they hit the site",
-  cy: "delays",
+  cy: "supplier delays",
   lead: "A late shipment used to mean a scramble of phone calls and a slipped pour. IntelliByld catches the slip the moment it appears, and models the schedule impact often before anyone on site would have noticed.",
   metaDescription: "IntelliByld detects supplier delays the moment they appear, models the schedule impact, and autonomously resources from ranked vendors neutralizing slips before they reach the site.",
   flow: {
@@ -89,6 +92,7 @@ const supplierDelay: Detail = {
     ],
   },
   splitHead: "From three day fire-drill to three minute reroute",
+  splitCy: "three minute reroute",
   splitBody: "The cost of a delay isn't the delay: it's the hours lost discovering it, the idle crew, and the panic-priced replacement order. IntelliByld compresses all of that into an automatic loop that runs the moment an ETA moves.",
   checks: [
     { b: "Caught at the source.", rest: "A supplier's own ETA update is enough to trigger analysis no waiting for the missed delivery." },
@@ -106,7 +110,7 @@ const supplierDelay: Detail = {
     { q: "Does it reorder without my approval?", a: "You set the guardrails. Within them, the agents can dispatch RFQs and surface ranked options automatically; awarding can require a human approval where you want one. Every step is logged." },
   ],
   ctaTitle: "Stop discovering delays on site",
-  ctaCy: "delays",
+  ctaCy: "delays on site",
 };
 
 const multiSite: Detail = {
@@ -140,6 +144,7 @@ const multiSite: Detail = {
     ],
   },
   splitHead: "Balance the portfolio, not just the project",
+  splitCy: "Balance the portfolio",
   splitBody: "When one site is short on rebar and another is sitting on a surplus, the answer is obvious but only if someone can see both at once. A shared twin makes cross-site moves visible and actionable instead of accidental.",
   checks: [
     { b: "One source of truth.", rest: "Every site's materials, schedule, and risk live in the same model, at the same freshness." },
@@ -189,6 +194,7 @@ const embodiedCarbon: Detail = {
     ],
   },
   splitHead: "A footprint you can actually defend",
+  splitCy: "defend",
   splitBody: "Because the ledger is built from delivery data, it reflects substitutions, reorders, and what truly showed up. That's the difference between a number you present nervously and one that holds up to an auditor or a client.",
   checks: [
     { b: "Audit ready.", rest: "Every kilogram of CO₂e traces back to a specific logged delivery." },
@@ -223,6 +229,7 @@ const procurement: Detail = {
   metaDescription: "IntelliByld's Procurement team (Orchestrator, RFQ, Bid Evaluation, Supplier Intelligence and Negotiation agents) runs construction sourcing end-to-end, from BoQ to a recommended award, with humans in the loop.",
   flow: {
     title: "Sourcing - RFQ to award",
+    titleCy: "RFQ to award",
     caption: "The orchestrator routes work; the award is always a human sign-off.",
     height: 318,
     legend: true,
@@ -246,6 +253,7 @@ const procurement: Detail = {
     ],
   },
   agentsHead: "Five agents, one sourcing team",
+  agentsCy: "Five agents",
   agents: [
     { ref: "00", name: "Procurement Orchestrator", tag: "Orchestrator · both phases", role: "The conductor of the team: owns workflow state, routes tasks, and manages every approval gate.", duties: ["Maintains the master state of each procurement case", "Routes tasks to the right specialist at each step", "Surfaces decisions to managers at defined gates", "Keeps a full audit trail of actions and approvals"] },
     { ref: "01", name: "RFQ Agent", tag: "Phase 1", role: "Owns the outbound RFQ process, from bill of materials to structured quotations.", duties: ["Drafts RFQs from the BoQ and project specifications", "Shortlists suppliers by category, geography and history", "Dispatches RFQs and handles clarifications inline", "Parses inbound quotations for evaluation"] },

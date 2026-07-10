@@ -1498,6 +1498,7 @@
 }
 
 .ib-agent h3 {
+  color: var(--ib-cyan);
   margin: 0;
   font-size: 1.12rem;
 }

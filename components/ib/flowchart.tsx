@@ -37,8 +37,22 @@ interface FlowchartProps {
   width?: number; // viewBox width
   height: number; // viewBox height
   title?: string;
+  titleCy?: string; // substring of title to accent
   caption?: string;
   legend?: boolean;
+}
+
+function highlightTitle(title: string, cy?: string) {
+  if (!cy) return title;
+  const i = title.indexOf(cy);
+  if (i < 0) return title;
+  return (
+    <>
+      {title.slice(0, i)}
+      <span style={{ color: "var(--ib-cyan)" }}>{cy}</span>
+      {title.slice(i + cy.length)}
+    </>
+  );
 }
 
 const NODE_W = 170;
@@ -59,14 +73,14 @@ function anchor(n: FCNode, side: Side): [number, number] {
   }
 }
 
-export function Flowchart({ nodes, edges, width = 1000, height, title, caption, legend }: FlowchartProps) {
+export function Flowchart({ nodes, edges, width = 1000, height, title, titleCy, caption, legend }: FlowchartProps) {
   const byId = new Map(nodes.map((n) => [n.id, n]));
 
   return (
     <div className="ib-fc">
       {title && (
         <div className="ib-fc-bar">
-          <span>{title}</span>
+          <span>{highlightTitle(title, titleCy)}</span>
           <span className="live">
             <i />
             LIVE

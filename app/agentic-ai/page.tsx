@@ -91,7 +91,7 @@ export default function AgenticAI() {
             <span className="ib-eyebrow">
               <IconWorkflow /> One workflow
             </span>
-            <h2>From requirement to delivery with carbon in view</h2>
+            <h2>From <span style={{ color: "var(--ib-cyan)" }}>requirement</span> to <span style={{ color: "var(--ib-cyan)" }}>delivery</span> with <span style={{ color: "var(--ib-cyan)" }}>carbon</span> in view</h2>
             <p>Sourcing confirms a supplier, logistics gets it to site, and the Scope 3 team reads the same RFQ, PO and shipment data to calculate and disclose emissions in the same flow.</p>
           </div>
           <div className="ib-reveal">
@@ -106,7 +106,7 @@ export default function AgenticAI() {
             <span className="ib-eyebrow">
               <IconUsers /> Meet the teams
             </span>
-            <h2>Three teams of specialists, not one monolith</h2>
+            <h2><span style={{ color: "var(--ib-cyan)" }}>Three teams of specialists,</span> not one monolith</h2>
             <p>Each team owns a distinct slice of the supply chain. A supervising orchestrator conducts each one, and the procurement and carbon teams share a single data flow.</p>
           </div>
           <div className="ib-cards c3">
@@ -158,7 +158,7 @@ export default function AgenticAI() {
             <span className="ib-eyebrow">
               <IconShield /> Authority stays human
             </span>
-            <h2>Agents do the work; humans hold the decisions</h2>
+            <h2><span style={{ color: "var(--ib-cyan)" }}>Agents do the work;</span> humans hold the decisions</h2>
             <p>Autonomy without accountability is risky in procurement. The agents draft, analyse, compare and track autonomously but the decisions that carry commercial or regulatory weight sit behind approval gates.</p>
           </div>
           <div className="ib-gates ib-reveal">
@@ -178,7 +178,7 @@ export default function AgenticAI() {
             <span className="ib-eyebrow">
               <IconTrendingUp /> Outcomes
             </span>
-            <h2>What a coordinated workforce delivers</h2>
+            <h2>What a <span style={{ color: "var(--ib-cyan)" }}>coordinated workforce</span> delivers</h2>
           </div>
           <div className="ib-cards c3">
             {outcomes.map((o, i) => (

@@ -303,7 +303,7 @@
 .ib-agent:hover{border-color:rgba(30,86,214,.35);box-shadow:var(--ib-shadow-md)}
 .ib-agent .top{display:flex;align-items:center;gap:.7rem;flex-wrap:wrap;margin-bottom:.2rem}
 .ib-agent .ref{font-family:var(--ib-mono);font-size:.7rem;color:#fff;background:var(--ib-cyan);border-radius:6px;padding:.3em .55em;font-weight:600}
-.ib-agent h3{font-size:1.12rem;margin:0}
+.ib-agent h3{font-size:1.12rem;margin:0;color:var(--ib-cyan)}
 .ib-agent .atag{font-family:var(--ib-mono);font-size:.58rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ib-text-muted);border:1px solid var(--ib-line);border-radius:20px;padding:.25em .6em;margin-left:auto}
 .ib-agent .role{font-size:.93rem;color:var(--ib-text-body);margin:.55rem 0 1rem}
 .ib-agent ul{list-style:none;display:flex;flex-direction:column;gap:.5rem;margin-top:auto}

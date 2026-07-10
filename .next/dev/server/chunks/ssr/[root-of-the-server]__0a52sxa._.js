@@ -20,6 +20,27 @@ module.exports = mod;
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 ;
+function highlightTitle(title, cy) {
+    if (!cy) return title;
+    const i = title.indexOf(cy);
+    if (i < 0) return title;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
+        children: [
+            title.slice(0, i),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                style: {
+                    color: "var(--ib-cyan)"
+                },
+                children: cy
+            }, void 0, false, {
+                fileName: "[project]/components/ib/flowchart.tsx",
+                lineNumber: 52,
+                columnNumber: 7
+            }, this),
+            title.slice(i + cy.length)
+        ]
+    }, void 0, true);
+}
 const NODE_W = 170;
 const NODE_H = 62;
 function anchor(n, side) {
@@ -48,7 +69,7 @@ function anchor(n, side) {
             ];
     }
 }
-function Flowchart({ nodes, edges, width = 1000, height, title, caption, legend }) {
+function Flowchart({ nodes, edges, width = 1000, height, title, titleCy, caption, legend }) {
     const byId = new Map(nodes.map((n)=>[
             n.id,
             n
@@ -60,10 +81,10 @@ function Flowchart({ nodes, edges, width = 1000, height, title, caption, legend 
                 className: "ib-fc-bar",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        children: title
+                        children: highlightTitle(title, titleCy)
                     }, void 0, false, {
                         fileName: "[project]/components/ib/flowchart.tsx",
-                        lineNumber: 69,
+                        lineNumber: 83,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -71,20 +92,20 @@ function Flowchart({ nodes, edges, width = 1000, height, title, caption, legend 
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {}, void 0, false, {
                                 fileName: "[project]/components/ib/flowchart.tsx",
-                                lineNumber: 71,
+                                lineNumber: 85,
                                 columnNumber: 13
                             }, this),
                             "LIVE"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/ib/flowchart.tsx",
-                        lineNumber: 70,
+                        lineNumber: 84,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/ib/flowchart.tsx",
-                lineNumber: 68,
+                lineNumber: 82,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -108,17 +129,17 @@ function Flowchart({ nodes, edges, width = 1000, height, title, caption, legend 
                                     fill: "var(--ib-line-2)"
                                 }, void 0, false, {
                                     fileName: "[project]/components/ib/flowchart.tsx",
-                                    lineNumber: 80,
+                                    lineNumber: 94,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/ib/flowchart.tsx",
-                                lineNumber: 79,
+                                lineNumber: 93,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/ib/flowchart.tsx",
-                            lineNumber: 78,
+                            lineNumber: 92,
                             columnNumber: 11
                         }, this),
                         edges.map((e, i)=>{
@@ -148,7 +169,7 @@ function Flowchart({ nodes, edges, width = 1000, height, title, caption, legend 
                                         markerEnd: e.arrow === false ? undefined : "url(#ib-arrow)"
                                     }, void 0, false, {
                                         fileName: "[project]/components/ib/flowchart.tsx",
-                                        lineNumber: 106,
+                                        lineNumber: 120,
                                         columnNumber: 17
                                     }, this),
                                     Array.from({
@@ -164,13 +185,13 @@ function Flowchart({ nodes, edges, width = 1000, height, title, caption, legend 
                                             }
                                         }, p, false, {
                                             fileName: "[project]/components/ib/flowchart.tsx",
-                                            lineNumber: 108,
+                                            lineNumber: 122,
                                             columnNumber: 19
                                         }, this))
                                 ]
                             }, `e${i}`, true, {
                                 fileName: "[project]/components/ib/flowchart.tsx",
-                                lineNumber: 105,
+                                lineNumber: 119,
                                 columnNumber: 15
                             }, this);
                         }),
@@ -190,7 +211,7 @@ function Flowchart({ nodes, edges, width = 1000, height, title, caption, legend 
                                         rx: 11
                                     }, void 0, false, {
                                         fileName: "[project]/components/ib/flowchart.tsx",
-                                        lineNumber: 129,
+                                        lineNumber: 143,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("text", {
@@ -201,7 +222,7 @@ function Flowchart({ nodes, edges, width = 1000, height, title, caption, legend 
                                         children: n.label
                                     }, void 0, false, {
                                         fileName: "[project]/components/ib/flowchart.tsx",
-                                        lineNumber: 130,
+                                        lineNumber: 144,
                                         columnNumber: 17
                                     }, this),
                                     n.sub && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("text", {
@@ -212,25 +233,25 @@ function Flowchart({ nodes, edges, width = 1000, height, title, caption, legend 
                                         children: n.sub
                                     }, void 0, false, {
                                         fileName: "[project]/components/ib/flowchart.tsx",
-                                        lineNumber: 134,
+                                        lineNumber: 148,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, n.id, true, {
                                 fileName: "[project]/components/ib/flowchart.tsx",
-                                lineNumber: 128,
+                                lineNumber: 142,
                                 columnNumber: 15
                             }, this);
                         })
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/ib/flowchart.tsx",
-                    lineNumber: 77,
+                    lineNumber: 91,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/ib/flowchart.tsx",
-                lineNumber: 76,
+                lineNumber: 90,
                 columnNumber: 7
             }, this),
             legend && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -242,14 +263,14 @@ function Flowchart({ nodes, edges, width = 1000, height, title, caption, legend 
                                 className: "ag"
                             }, void 0, false, {
                                 fileName: "[project]/components/ib/flowchart.tsx",
-                                lineNumber: 147,
+                                lineNumber: 161,
                                 columnNumber: 13
                             }, this),
                             "AI agent"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/ib/flowchart.tsx",
-                        lineNumber: 146,
+                        lineNumber: 160,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -258,14 +279,14 @@ function Flowchart({ nodes, edges, width = 1000, height, title, caption, legend 
                                 className: "ph"
                             }, void 0, false, {
                                 fileName: "[project]/components/ib/flowchart.tsx",
-                                lineNumber: 151,
+                                lineNumber: 165,
                                 columnNumber: 13
                             }, this),
                             "Physical / site"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/ib/flowchart.tsx",
-                        lineNumber: 150,
+                        lineNumber: 164,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -274,20 +295,20 @@ function Flowchart({ nodes, edges, width = 1000, height, title, caption, legend 
                                 className: "tw"
                             }, void 0, false, {
                                 fileName: "[project]/components/ib/flowchart.tsx",
-                                lineNumber: 155,
+                                lineNumber: 169,
                                 columnNumber: 13
                             }, this),
                             "Digital twin"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/ib/flowchart.tsx",
-                        lineNumber: 154,
+                        lineNumber: 168,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/ib/flowchart.tsx",
-                lineNumber: 145,
+                lineNumber: 159,
                 columnNumber: 9
             }, this),
             caption && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -295,13 +316,13 @@ function Flowchart({ nodes, edges, width = 1000, height, title, caption, legend 
                 children: caption
             }, void 0, false, {
                 fileName: "[project]/components/ib/flowchart.tsx",
-                lineNumber: 160,
+                lineNumber: 174,
                 columnNumber: 19
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/ib/flowchart.tsx",
-        lineNumber: 66,
+        lineNumber: 80,
         columnNumber: 5
     }, this);
 }
@@ -1935,8 +1956,20 @@ function Home() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    children: "Autonomous Execution for construction supply chains"
-                                }, void 0, false, {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            style: {
+                                                color: "var(--ib-cyan)"
+                                            },
+                                            children: "Autonomous Execution"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/page.tsx",
+                                            lineNumber: 144,
+                                            columnNumber: 17
+                                        }, this),
+                                        " for construction supply chains"
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/app/page.tsx",
                                     lineNumber: 144,
                                     columnNumber: 13
@@ -2055,8 +2088,21 @@ function Home() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                        children: "A living twin of your entire supply chain"
-                                    }, void 0, false, {
+                                        children: [
+                                            "A ",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                style: {
+                                                    color: "var(--ib-cyan)"
+                                                },
+                                                children: "living twin"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/page.tsx",
+                                                lineNumber: 174,
+                                                columnNumber: 21
+                                            }, this),
+                                            " of your entire supply chain"
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "[project]/app/page.tsx",
                                         lineNumber: 174,
                                         columnNumber: 15
@@ -2253,8 +2299,21 @@ function Home() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    children: "From visibility to action"
-                                }, void 0, false, {
+                                    children: [
+                                        "From ",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            style: {
+                                                color: "var(--ib-cyan)"
+                                            },
+                                            children: "visibility"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/page.tsx",
+                                            lineNumber: 216,
+                                            columnNumber: 22
+                                        }, this),
+                                        " to action"
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/app/page.tsx",
                                     lineNumber: 216,
                                     columnNumber: 13
@@ -2341,8 +2400,20 @@ function Home() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    children: "Meet your digital workforce"
-                                }, void 0, false, {
+                                    children: [
+                                        "Meet your ",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            style: {
+                                                color: "var(--ib-cyan)"
+                                            },
+                                            children: "digital workforce"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/page.tsx",
+                                            lineNumber: 237,
+                                            columnNumber: 27
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/app/page.tsx",
                                     lineNumber: 237,
                                     columnNumber: 13
@@ -2459,8 +2530,21 @@ function Home() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    children: "Zero integration. Zero disruption. Live in 7 days."
-                                }, void 0, false, {
+                                    children: [
+                                        "Zero integration. ",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            style: {
+                                                color: "var(--ib-cyan)"
+                                            },
+                                            children: "Zero disruption."
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/page.tsx",
+                                            lineNumber: 263,
+                                            columnNumber: 35
+                                        }, this),
+                                        " Live in 7 days."
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/app/page.tsx",
                                     lineNumber: 263,
                                     columnNumber: 13
@@ -2556,8 +2640,21 @@ function Home() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                        children: "See autonomous coordination in your own data"
-                                    }, void 0, false, {
+                                        children: [
+                                            "See ",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                style: {
+                                                    color: "var(--ib-cyan)"
+                                                },
+                                                children: "autonomous coordination"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/page.tsx",
+                                                lineNumber: 286,
+                                                columnNumber: 23
+                                            }, this),
+                                            " in your own data"
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "[project]/app/page.tsx",
                                         lineNumber: 286,
                                         columnNumber: 15
@@ -2781,8 +2878,21 @@ function Home() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    children: "The people building the digital workforce"
-                                }, void 0, false, {
+                                    children: [
+                                        "The ",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            style: {
+                                                color: "var(--ib-cyan)"
+                                            },
+                                            children: "people building"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/page.tsx",
+                                            lineNumber: 331,
+                                            columnNumber: 21
+                                        }, this),
+                                        " the digital workforce"
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/app/page.tsx",
                                     lineNumber: 331,
                                     columnNumber: 13
@@ -2997,16 +3107,24 @@ function Home() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 children: [
-                                    "Make your supply chain ",
+                                    "Make your ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "cy",
-                                        children: "visible"
+                                        children: "supply chain visible"
                                     }, void 0, false, {
                                         fileName: "[project]/app/page.tsx",
                                         lineNumber: 380,
-                                        columnNumber: 36
+                                        columnNumber: 23
                                     }, this),
-                                    " and autonomous"
+                                    " and ",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "cy",
+                                        children: "autonomous"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/page.tsx",
+                                        lineNumber: 380,
+                                        columnNumber: 76
+                                    }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/page.tsx",

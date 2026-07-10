@@ -10,7 +10,7 @@ function highlight(title: string, cy: string) {
   return (
     <>
       {title.slice(0, i)}
-      <span className="cy">{cy}</span>
+      <span style={{ color: "var(--ib-cyan)" }}>{cy}</span>
       {title.slice(i + cy.length)}
     </>
   );
@@ -42,10 +42,10 @@ export default function DetailPage({ d }: { d: Detail }) {
             <span className="ib-eyebrow">
               <IconGear /> How it runs
             </span>
-            <h2>{d.flow.title.replace(/ [-—].*/, "")}</h2>
+            <h2 style={{ color: "var(--ib-cyan)" }}>{d.flow.title.replace(/ [-—].*/, "")}</h2>
           </div>
           <div className="ib-reveal">
-            <Flowchart nodes={d.flow.nodes} edges={d.flow.edges} height={d.flow.height} title={d.flow.title} caption={d.flow.caption} legend={d.flow.legend} />
+            <Flowchart nodes={d.flow.nodes} edges={d.flow.edges} height={d.flow.height} title={d.flow.title} titleCy={d.flow.titleCy} caption={d.flow.caption} legend={d.flow.legend} />
           </div>
         </div>
       </section>
@@ -58,7 +58,7 @@ export default function DetailPage({ d }: { d: Detail }) {
               <span className="ib-eyebrow">
                 <IconUsers /> The team
               </span>
-              <h2>{d.agentsHead}</h2>
+              <h2>{d.agentsCy ? highlight(d.agentsHead!, d.agentsCy) : d.agentsHead}</h2>
             </div>
             <div className="ib-roster">
               {d.agents.map((a) => (
@@ -141,7 +141,7 @@ export default function DetailPage({ d }: { d: Detail }) {
                 <span className="ib-eyebrow">
                   <IconSwap /> The shift
                 </span>
-                <h2>{d.splitHead}</h2>
+                <h2>{d.splitCy ? highlight(d.splitHead, d.splitCy) : d.splitHead}</h2>
                 <p>{d.splitBody}</p>
                 <ul className="ib-checks">
                   {d.checks?.map((c, i) => (

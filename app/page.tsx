@@ -141,7 +141,7 @@ export default function Home() {
             <span className="ib-eyebrow">
               <IconInfo /> What is IntelliByld?
             </span>
-            <h2>Autonomous Execution for construction supply chains</h2>
+            <h2><span style={{ color: "var(--ib-cyan)" }}>Autonomous Execution</span> for construction supply chains</h2>
             <p>
               <b>IntelliByld is the OS that turns supply chain data into Autonomous Execution.</b> It helps teams coordinate procurement, shipping, and bid evaluation so execution stays on schedule.
             </p>
@@ -171,7 +171,7 @@ export default function Home() {
               <span className="ib-eyebrow">
                 <IconLayers /> Digital Twins
               </span>
-              <h2>A living twin of your entire supply chain</h2>
+              <h2>A <span style={{ color: "var(--ib-cyan)" }}>living twin</span> of your entire supply chain</h2>
               <p>
                 IntelliByld's Digital Twin is a living, real-time replica of your construction supply chain. It links every material movement to your master schedule closing the "Integration Trap" so your model mirrors physical site reality.
               </p>
@@ -213,7 +213,7 @@ export default function Home() {
             <span className="ib-eyebrow">
               <IconTarget /> Why it matters
             </span>
-            <h2>From visibility to action</h2>
+            <h2>From <span style={{ color: "var(--ib-cyan)" }}>visibility</span> to action</h2>
           </div>
           <div className="ib-cards c4">
             {values.map((v, i) => (
@@ -234,7 +234,7 @@ export default function Home() {
             <span className="ib-eyebrow">
               <IconUsers /> The Teams
             </span>
-            <h2>Meet your digital workforce</h2>
+            <h2>Meet your <span style={{ color: "var(--ib-cyan)" }}>digital workforce</span></h2>
             <p>Three teams of specialised agents working in concert sourcing, logistics and carbon coordinated by supervising orchestrators and a single shared data flow.</p>
           </div>
           <div className="ib-cards c3">
@@ -260,7 +260,7 @@ export default function Home() {
             <span className="ib-eyebrow">
               <IconPlug /> No Rip and Replace
             </span>
-            <h2>Zero integration. Zero disruption. Live in 7 days.</h2>
+            <h2>Zero integration. <span style={{ color: "var(--ib-cyan)" }}>Zero disruption.</span> Live in 7 days.</h2>
             <p>We sit on top of your existing tools. Your team changes nothing. The only thing that changes is that your supply chain becomes visible.</p>
           </div>
           <div className="ib-cards c3">
@@ -283,7 +283,7 @@ export default function Home() {
               <span className="ib-eyebrow">
                 <IconPlay /> Run it on a live project
               </span>
-              <h2>See autonomous coordination in your own data</h2>
+              <h2>See <span style={{ color: "var(--ib-cyan)" }}>autonomous coordination</span> in your own data</h2>
               <p>Free pilot for select developers, GCs, and EPC teams. Connect one site and watch the twin come alive within three weeks.</p>
               <div className="ib-hero-actions" style={{ marginTop: "1.8rem" }}>
                 <a href="/pilot" className="ib-btn ib-btn-primary">
@@ -328,7 +328,7 @@ export default function Home() {
             <span className="ib-eyebrow">
               <IconUsers /> Core team
             </span>
-            <h2>The people building the digital workforce</h2>
+            <h2>The <span style={{ color: "var(--ib-cyan)" }}>people building</span> the digital workforce</h2>
           </div>
           <div className="ib-cards c4">
             {team.map((m, i) => (
@@ -377,7 +377,7 @@ export default function Home() {
             <IconZap /> Build the execution layer
           </span>
           <h2>
-            Make your supply chain <span className="cy">visible</span> and autonomous
+            Make your <span className="cy">supply chain visible</span> and <span className="cy">autonomous</span>
           </h2>
           <p>Connect one site, see autonomous coordination in your own data within three weeks.</p>
           <div className="ib-cta-actions">

@@ -44,7 +44,7 @@ export default function DigitalTwins() {
             <IconLayers /> Digital Twins
           </span>
           <h1>
-            A living twin of your <span className="cy">project</span> supply chain
+            A living twin of your <span className="cy">project supply chain</span>
           </h1>
           <p>
             IntelliByld's Digital Twin is a living, real-time replica of your construction supply chain. It links every material movement to your master schedule, closing the Integration Trap so your digital model mirrors physical site reality.
@@ -59,7 +59,7 @@ export default function DigitalTwins() {
               <span className="ib-eyebrow">
                 <IconSwap /> Physical ↔ digital
               </span>
-              <h2>One model, continuously reconciled</h2>
+              <h2><span style={{ color: "var(--ib-cyan)" }}>One model,</span> continuously reconciled</h2>
               <p>The site feeds the twin; the twin drives the next decision. Deliveries, weather, and crew status stream into a single live state that schedule, procurement, and carbon all read from.</p>
               <ul className="ib-checks">
                 <li>
@@ -95,7 +95,7 @@ export default function DigitalTwins() {
             <span className="ib-eyebrow">
               <IconRadar /> What the twin tracks
             </span>
-            <h2>Four live layers, one picture</h2>
+            <h2>Four live layers, <span style={{ color: "var(--ib-cyan)" }}>one picture</span></h2>
           </div>
           <div className="ib-cards c4">
             {tracks.map((t, i) => (
@@ -132,7 +132,7 @@ export default function DigitalTwins() {
         <div className="ib-cta-bg" />
         <div className="ib-wrap ib-cta-inner ib-reveal">
           <h2>
-            See your project <span className="cy">mirrored</span> in real time
+            See your <span className="cy">project mirrored</span> in real time
           </h2>
           <p>Connect one site and watch the twin come alive from your own data within three weeks.</p>
           <div className="ib-cta-actions">
