@@ -1,5 +1,7 @@
 {
+  "/agentic-ai/page": "app/agentic-ai/page.js",
   "/contact-us/page": "app/contact-us/page.js",
+  "/digital-twins/page": "app/digital-twins/page.js",
   "/page": "app/page.js",
   "/pilot/page": "app/pilot/page.js",
   "/sustainability/page": "app/sustainability/page.js",

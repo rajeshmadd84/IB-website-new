@@ -136,7 +136,7 @@ export default function Sustainability() {
           </h2>
           <p>See an actual-data carbon ledger build from your own deliveries during a pilot.</p>
           <div className="ib-cta-actions">
-            <a href="/pilot" className="ib-btn ib-btn-primary">
+            <a href="/contact-us" className="ib-btn ib-btn-primary">
               Join Pilot <span className="arw">→</span>
             </a>
             <a href="/use-cases/embodied-carbon" className="ib-btn ib-btn-ghost">

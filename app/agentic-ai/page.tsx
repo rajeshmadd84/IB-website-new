@@ -219,7 +219,7 @@ export default function AgenticAI() {
           </h2>
           <p>Connect one site and see sourcing, logistics and carbon run in your own data within three weeks.</p>
           <div className="ib-cta-actions">
-            <a href="/pilot" className="ib-btn ib-btn-primary">
+            <a href="/contact-us" className="ib-btn ib-btn-primary">
               Join Pilot <span className="arw">→</span>
             </a>
             <a href="/digital-twins" className="ib-btn ib-btn-ghost">

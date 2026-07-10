@@ -136,7 +136,7 @@ export default function DigitalTwins() {
           </h2>
           <p>Connect one site and watch the twin come alive from your own data within three weeks.</p>
           <div className="ib-cta-actions">
-            <a href="/pilot" className="ib-btn ib-btn-primary">
+            <a href="/contact-us" className="ib-btn ib-btn-primary">
               Join Pilot <span className="arw">→</span>
             </a>
             <a href="/agentic-ai" className="ib-btn ib-btn-ghost">

@@ -74,7 +74,7 @@ export default function Footer() {
         <div className="ib-foot-bottom">
           <span className="ib-foot-copy">© 2026 IntelliByld. All rights reserved.</span>
           <div className="ib-foot-social">
-            <a href="/pilot">Join Pilot</a>
+            <a href="/contact-us">Join Pilot</a>
             
             <a href={LINKEDIN}>LinkedIn</a>
           </div>

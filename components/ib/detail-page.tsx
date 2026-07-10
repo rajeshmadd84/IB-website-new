@@ -231,7 +231,7 @@ export default function DetailPage({ d }: { d: Detail }) {
           <h2>{highlight(d.ctaTitle, d.ctaCy)}</h2>
           <p>Connect one site and see it run in your own data within three weeks.</p>
           <div className="ib-cta-actions">
-            <a href="/pilot" className="ib-btn ib-btn-primary">
+            <a href="/contact-us" className="ib-btn ib-btn-primary">
               Join Pilot <span className="arw">→</span>
             </a>
             <a href="/contact-us" className="ib-btn ib-btn-ghost">

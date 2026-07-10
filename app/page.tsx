@@ -95,7 +95,7 @@ export default function Home() {
             IntelliByld orchestrates fragmented logistics into Autonomous Execution. A construction-trained SLM keeps your project on schedule and your carbon footprint on target.
           </p>
           <div className="ib-hero-actions">
-            <a href="/pilot" className="ib-btn ib-btn-primary">
+            <a href="/contact-us" className="ib-btn ib-btn-primary">
               Join Pilot <span className="arw">→</span>
             </a>
             <a href="/agentic-ai" className="ib-btn ib-btn-ghost">
@@ -381,7 +381,7 @@ export default function Home() {
           </h2>
           <p>Connect one site, see autonomous coordination in your own data within three weeks.</p>
           <div className="ib-cta-actions">
-            <a href="/pilot" className="ib-btn ib-btn-primary">
+            <a href="/contact-us" className="ib-btn ib-btn-primary">
               Join Pilot <span className="arw">→</span>
             </a>
             <a href="/contact-us" className="ib-btn ib-btn-ghost">

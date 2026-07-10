@@ -272,7 +272,7 @@ function Nav() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                            href: "/pilot",
+                            href: "/contact-us",
                             className: "ib-btn ib-btn-primary ib-nav-cta-mobile",
                             onClick: close,
                             children: [
@@ -301,7 +301,7 @@ function Nav() {
                     className: "ib-nav-cta",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                            href: "/pilot",
+                            href: "/contact-us",
                             className: "ib-btn ib-btn-primary ib-nav-cta-desktop",
                             children: [
                                 "Join Pilot ",
@@ -549,7 +549,7 @@ function Footer() {
                             className: "ib-foot-social",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    href: "/pilot",
+                                    href: "/contact-us",
                                     children: "Join Pilot"
                                 }, void 0, false, {
                                     fileName: "[project]/components/ib/footer.tsx",
