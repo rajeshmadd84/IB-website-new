@@ -1,24 +1,53 @@
 "use client";
 
 import { useState } from "react";
-import { IconCheck, IconRocket } from "@/components/ib/icons";
+import { IconCheck, IconRocket, IconLoader } from "@/components/ib/icons";
 
 const ROLES = ["Developer / Owner", "General Contractor", "EPC", "Consultant / PM", "Other"];
+
+const W3FORMS_ACCESS_KEY = process.env.NEXT_PUBLIC_W3FORMS_ACCESS_KEY || "";
 
 export default function PilotForm() {
   const [f, setF] = useState({ name: "", email: "", company: "", role: "", project: "", note: "" });
   const [err, setErr] = useState("");
   const [done, setDone] = useState(false);
+  const [loading, setLoading] = useState(false);
   const set = (k: string) => (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => setF({ ...f, [k]: e.target.value });
 
-  const submit = () => {
+  const submit = async () => {
     if (!f.name.trim()) return setErr("Please add your name.");
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.email)) return setErr("Please enter a valid work email.");
     if (!f.company.trim()) return setErr("Please add your company.");
-    if (!f.role) return setErr("Please select your role.");
+    if (!f.role) return setErr("Please select your company type.");
     setErr("");
-    // TODO: wire to your backend — POST to /api/pilot (email / CRM / sheet).
-    setDone(true);
+    setLoading(true);
+    try {
+      const body = new FormData();
+      body.append("access_key", W3FORMS_ACCESS_KEY);
+      body.append("subject", "New Pilot Application");
+      body.append("name", f.name);
+      body.append("email", f.email);
+      body.append("company", f.company);
+      body.append("role", f.role);
+      body.append("project", f.project);
+      body.append("message", f.note);
+
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body,
+      });
+
+      const data = await res.json();
+      if (data.success) {
+        setDone(true);
+      } else {
+        setErr(data.message || "Submission failed. Please try again.");
+      }
+    } catch {
+      setErr("Network error. Please check your connection and try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (done) {
@@ -125,7 +154,7 @@ export default function PilotForm() {
                 </div>
                 <div className="ib-field">
                   <label>
-                    Your role <span className="req">*</span>
+                    Company type <span className="req">*</span>
                   </label>
                   <select value={f.role} onChange={set("role")}>
                     <option value="" disabled>
@@ -153,8 +182,15 @@ export default function PilotForm() {
                 </div>
               )}
               <div className="ib-form-foot">
-                <button className="ib-btn ib-btn-primary" onClick={submit}>
-                  Apply for Pilot <span className="arw">→</span>
+                <button className="ib-btn ib-btn-primary" onClick={submit} disabled={loading} style={{ opacity: loading ? 0.7 : 1, cursor: loading ? "not-allowed" : "pointer" }}>
+                  {loading ? (
+                    <>
+                      <IconLoader width={18} height={18} style={{ animation: "spin 1s linear infinite", marginRight: "0.5rem" }} />
+                      Submitting...
+                    </>
+                  ) : (
+                    <>Apply for Pilot <span className="arw">→</span></>
+                  )}
                 </button>
                 <p className="ib-form-note">We review by hand and reply within 2 business days. No spam, ever.</p>
               </div>

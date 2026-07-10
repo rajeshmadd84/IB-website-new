@@ -228,3 +228,10 @@ export const IconArrowUp = (p: SVGProps<SVGSVGElement>) => (
     <path d="M12 19V5M6 11l6-6 6 6" />
   </svg>
 );
+
+export const IconLoader = (p: SVGProps<SVGSVGElement>) => (
+  <svg {...base({ width: 18, height: 18, strokeWidth: 2.5, ...p })} viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" strokeOpacity="0.25" />
+    <path d="M12 2a10 10 0 0 1 10 10" strokeLinecap="round" />
+  </svg>
+);

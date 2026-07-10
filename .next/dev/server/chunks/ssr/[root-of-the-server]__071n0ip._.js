@@ -599,6 +599,8 @@ function Footer() {
     ()=>IconLeaf,
     "IconLink",
     ()=>IconLink,
+    "IconLoader",
+    ()=>IconLoader,
     "IconMail",
     ()=>IconMail,
     "IconPlay",
@@ -1523,6 +1525,39 @@ const IconArrowUp = (p)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$pr
     }, void 0, false, {
         fileName: "[project]/components/ib/icons.tsx",
         lineNumber: 227,
+        columnNumber: 3
+    }, ("TURBOPACK compile-time value", void 0));
+const IconLoader = (p)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        ...base({
+            width: 18,
+            height: 18,
+            strokeWidth: 2.5,
+            ...p
+        }),
+        viewBox: "0 0 24 24",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "12",
+                cy: "12",
+                r: "10",
+                strokeOpacity: "0.25"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 234,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M12 2a10 10 0 0 1 10 10",
+                strokeLinecap: "round"
+            }, void 0, false, {
+                fileName: "[project]/components/ib/icons.tsx",
+                lineNumber: 235,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/ib/icons.tsx",
+        lineNumber: 233,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 }),
