@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/digital-twins/layout,_N_T_/digital-twins/page,_N_T_/digital-twins"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/digital-twins/__PAGE__",
+    "/digital-twins",
+    "/_index",
+    "/_head"
+  ]
+}

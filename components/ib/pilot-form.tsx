@@ -7,7 +7,21 @@ const ROLES = ["Developer / Owner", "General Contractor", "EPC", "Consultant / P
 
 const W3FORMS_ACCESS_KEY = process.env.NEXT_PUBLIC_W3FORMS_ACCESS_KEY || "";
 
-export default function PilotForm() {
+interface PilotFormProps {
+  eyebrow?: string;
+  heading?: React.ReactNode;
+  lead?: string;
+}
+
+export default function PilotForm({
+  eyebrow = "Join Pilot",
+  heading = (
+    <>
+      Run it on a <span className="cy">live</span> project
+    </>
+  ),
+  lead = "Free pilot for select developers, GCs, and EPC teams. Connect one site and see autonomous coordination in your own data within three weeks.",
+}: PilotFormProps = {}) {
   const [f, setF] = useState({ name: "", email: "", company: "", role: "", project: "", note: "" });
   const [err, setErr] = useState("");
   const [done, setDone] = useState(false);
@@ -92,12 +106,10 @@ export default function PilotForm() {
           <div className="ib-form-grid">
             <aside className="ib-aside">
               <span className="ib-eyebrow">
-                <IconRocket /> Join Pilot
+                <IconRocket /> {eyebrow}
               </span>
-              <h1>
-                Run it on a <span className="cy">live</span> project
-              </h1>
-              <p className="ib-lead">Free pilot for select developers, GCs, and EPC teams. Connect one site and see autonomous coordination in your own data within three weeks.</p>
+              <h1>{heading}</h1>
+              <p className="ib-lead">{lead}</p>
               <ul className="ib-steps">
                 <li>
                   <span className="n">01</span>

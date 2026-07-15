@@ -11,7 +11,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const d = getDetail("use-cases", slug);
   if (!d) return {};
-  return { title: d.title, description: d.metaDescription };
+  const url = `/use-cases/${d.slug}`;
+  return {
+    title: d.title,
+    description: d.metaDescription,
+    alternates: { canonical: url },
+    openGraph: { title: d.title, description: d.metaDescription, url },
+    twitter: { title: d.title, description: d.metaDescription },
+  };
 }
 
 export default async function UseCase({ params }: { params: Promise<{ slug: string }> }) {

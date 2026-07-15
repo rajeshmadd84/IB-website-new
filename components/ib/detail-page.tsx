@@ -1,6 +1,7 @@
 import { Flowchart } from "@/components/ib/flowchart";
 import { IconCheck, IconZap, IconShield, IconRoute, IconBriefcase, IconBot, IconGear, IconUsers, IconSwap, IconTrendingUp, IconQuestion } from "@/components/ib/icons";
 import { DETAILS, type Detail } from "@/components/ib/detail-data";
+import { JsonLd, faqPageJsonLd } from "@/components/ib/json-ld";
 
 const OUT_ICONS = [<IconZap key="z" />, <IconShield key="s" />, <IconRoute key="r" />];
 
@@ -23,6 +24,7 @@ export default function DetailPage({ d }: { d: Detail }) {
 
   return (
     <main>
+      <JsonLd data={faqPageJsonLd(d.faqs)} />
       <section className="ib-phero">
         <div className="ib-grid-bg" />
         <div className="ib-wrap" style={{ position: "relative" }}>

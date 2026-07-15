@@ -1,5 +1,6 @@
 import { Flowchart, FCNode, FCEdge } from "@/components/ib/flowchart";
 import { IconCpu, IconLayers, IconBot, IconRadar, IconShield, IconRoute, IconLeaf, IconClock, IconTruck, IconBlocks, IconCheck, IconLink, IconZap, IconInfo, IconTarget, IconUsers, IconPlug, IconPlay, IconQuestion } from "@/components/ib/icons";
+import { JsonLd, faqPageJsonLd } from "@/components/ib/json-ld";
 
 /* ---- hero flowchart: the autonomous execution loop ---- */
 const heroNodes: FCNode[] = [
@@ -81,6 +82,7 @@ const faqs = [
 export default function Home() {
   return (
     <main>
+      <JsonLd data={faqPageJsonLd(faqs)} />
       {/* HERO */}
       <section className="ib-hero">
         <div className="ib-grid-bg" />

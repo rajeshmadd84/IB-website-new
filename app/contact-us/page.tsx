@@ -1,15 +1,29 @@
 import type { Metadata } from "next";
 import PilotForm from "@/components/ib/pilot-form";
 
+const TITLE = "Contact";
+const DESCRIPTION = "Talk to IntelliByld about a pilot, a partnership, or the platform. Headquartered in Singapore.";
+
 export const metadata: Metadata = {
-  title: "Contact",
-  description: "Talk to IntelliByld about a pilot, a partnership, or the platform. Headquartered in Singapore.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/contact-us" },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: "/contact-us" },
+  twitter: { title: TITLE, description: DESCRIPTION },
 };
 
 export default function ContactPage() {
   return (
     <>
-      <PilotForm />
+      <PilotForm
+        eyebrow="Contact Us"
+        heading={
+          <>
+            Talk to the team building the <span className="cy">control tower</span>
+          </>
+        }
+        lead="Pilot, partnership, or platform question, IntelliByld is headquartered in Singapore with a UK & EU entity supporting partners across Europe."
+      />
       <section className="ib-sec alt" aria-labelledby="company-details">
         <div className="ib-wrap">
           <div className="ib-split" style={{ gap: "clamp(2rem,5vw,4rem)" }}>

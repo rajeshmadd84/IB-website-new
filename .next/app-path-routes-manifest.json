@@ -1,0 +1,15 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/agentic-ai/page": "/agentic-ai",
+  "/agents/[slug]/page": "/agents/[slug]",
+  "/contact-us/page": "/contact-us",
+  "/digital-twins/page": "/digital-twins",
+  "/opengraph-image/route": "/opengraph-image",
+  "/page": "/",
+  "/pilot/page": "/pilot",
+  "/robots.txt/route": "/robots.txt",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/sustainability/page": "/sustainability",
+  "/use-cases/[slug]/page": "/use-cases/[slug]"
+}

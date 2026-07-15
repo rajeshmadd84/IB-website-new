@@ -1,0 +1,15 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/agentic-ai/page": "app/agentic-ai/page.js",
+  "/agents/[slug]/page": "app/agents/[slug]/page.js",
+  "/contact-us/page": "app/contact-us/page.js",
+  "/digital-twins/page": "app/digital-twins/page.js",
+  "/opengraph-image/route": "app/opengraph-image/route.js",
+  "/page": "app/page.js",
+  "/pilot/page": "app/pilot/page.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/sustainability/page": "app/sustainability/page.js",
+  "/use-cases/[slug]/page": "app/use-cases/[slug]/page.js"
+}

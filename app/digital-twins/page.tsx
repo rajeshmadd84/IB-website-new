@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
 import { Flowchart, FCNode, FCEdge } from "@/components/ib/flowchart";
 import { IconCheck, IconRadar, IconLayers, IconClock, IconLeaf, IconSwap, IconQuestion } from "@/components/ib/icons";
+import { JsonLd, faqPageJsonLd } from "@/components/ib/json-ld";
+
+const TITLE = "Digital Twins";
+const DESCRIPTION = "A living, real-time replica of your construction supply chain. IntelliByld links every material movement to your master schedule, closing the Integration Trap so the digital model mirrors physical site reality.";
 
 export const metadata: Metadata = {
-  title: "Digital Twins",
-  description: "A living, real-time replica of your construction supply chain. IntelliByld links every material movement to your master schedule, closing the Integration Trap so the digital model mirrors physical site reality.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/digital-twins" },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: "/digital-twins" },
+  twitter: { title: TITLE, description: DESCRIPTION },
 };
 
 const twinNodes: FCNode[] = [
@@ -37,6 +44,7 @@ const faqs = [
 export default function DigitalTwins() {
   return (
     <main>
+      <JsonLd data={faqPageJsonLd(faqs)} />
       <section className="ib-phero">
         <div className="ib-grid-bg" />
         <div className="ib-wrap" style={{ position: "relative" }}>

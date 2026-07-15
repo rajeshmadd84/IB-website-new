@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
 import { Flowchart, FCNode, FCEdge } from "@/components/ib/flowchart";
 import { IconBlocks, IconTruck, IconLeaf, IconCheck, IconShield, IconRadar, IconZap, IconLink, IconRoute, IconBot, IconWorkflow, IconUsers, IconShare, IconTrendingUp, IconQuestion } from "@/components/ib/icons";
+import { JsonLd, faqPageJsonLd } from "@/components/ib/json-ld";
+
+const TITLE = "Agentic AI";
+const DESCRIPTION = "IntelliByld runs construction procurement end-to-end with three coordinated teams of specialist agents, Procurement, Logistics and Scope 3, sharing one workflow and one audit trail, with humans in the loop on every decision that matters.";
 
 export const metadata: Metadata = {
-  title: "Agentic AI",
-  description: "IntelliByld runs construction procurement end-to-end with three coordinated teams of specialist agents, Procurement, Logistics and Scope 3, sharing one workflow and one audit trail, with humans in the loop on every decision that matters.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/agentic-ai" },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: "/agentic-ai" },
+  twitter: { title: TITLE, description: DESCRIPTION },
 };
 
 const flowNodes: FCNode[] = [
@@ -63,6 +70,7 @@ const faqs = [
 export default function AgenticAI() {
   return (
     <main>
+      <JsonLd data={faqPageJsonLd(faqs)} />
       <section className="ib-phero">
         <div className="ib-grid-bg" />
         <div className="ib-wrap" style={{ position: "relative" }}>

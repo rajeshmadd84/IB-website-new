@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
 import { Flowchart, FCNode, FCEdge } from "@/components/ib/flowchart";
 import { IconCheck, IconLeaf, IconRadar, IconLayers, IconGear, IconQuestion } from "@/components/ib/icons";
+import { JsonLd, faqPageJsonLd } from "@/components/ib/json-ld";
+
+const TITLE = "Sustainability";
+const DESCRIPTION = "IntelliByld tracks embodied-carbon emissions from material deliveries in real time, based on actual delivery data rather than estimates supporting sustainability reporting and green-building requirements.";
 
 export const metadata: Metadata = {
-  title: "Sustainability",
-  description: "IntelliByld tracks embodied-carbon emissions from material deliveries in real time, based on actual delivery data rather than estimates supporting sustainability reporting and green-building requirements.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/sustainability" },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: "/sustainability" },
+  twitter: { title: TITLE, description: DESCRIPTION },
 };
 
 const carbonNodes: FCNode[] = [
@@ -36,6 +43,7 @@ const faqs = [
 export default function Sustainability() {
   return (
     <main>
+      <JsonLd data={faqPageJsonLd(faqs)} />
       <section className="ib-phero">
         <div className="ib-grid-bg" />
         <div className="ib-wrap" style={{ position: "relative" }}>
