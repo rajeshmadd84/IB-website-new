@@ -42,8 +42,8 @@ export default function ContactPage() {
               </p>
               <p style={{ fontSize: "1.04rem", marginBottom: "1rem", color: "var(--ib-text-body)" }}>
                 <strong>Address:</strong><br />
-                21 Pandan Avenue #04-A Senkee Logistics Hub<br />
-                Singapore 609388
+                C/O ACE, 67 Ayer Rajah Crescent #04-16 LaunchPad @ One-North<br />
+                Singapore 139950
               </p>
               <p style={{ fontSize: "1.04rem", marginBottom: "1rem", color: "var(--ib-text-body)" }}>
                 <strong>Email:</strong> hello@intellibyld.com<br />

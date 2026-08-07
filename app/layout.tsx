@@ -38,9 +38,9 @@ const organizationJsonLd = {
   sameAs: ["https://www.linkedin.com/company/intellibyld"],
   address: {
     "@type": "PostalAddress",
-    streetAddress: "21 Pandan Avenue #04-A Senkee Logistics Hub",
+    streetAddress: "C/O ACE, 67 Ayer Rajah Crescent #04-16 LaunchPad @ One-North",
     addressLocality: "Singapore",
-    postalCode: "609388",
+    postalCode: "139950",
     addressCountry: "SG",
   },
   email: "hello@intellibyld.com",
