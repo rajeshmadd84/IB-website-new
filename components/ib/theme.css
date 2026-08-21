@@ -98,8 +98,9 @@
 /* ============ HERO ============ */
 .ib-hero{position:relative;padding-top:clamp(3.5rem,8vh,5.5rem);padding-bottom:clamp(2.5rem,6vh,4rem);overflow:hidden;background:radial-gradient(ellipse 85% 62% at 50% -8%,rgba(30,86,214,.07),transparent 68%)}
 .ib-hero-inner{position:relative;z-index:1}
-.ib-hero h1{font-size:clamp(2.5rem,6.6vw,5rem);font-weight:800;letter-spacing:-.035em;line-height:.99;margin:1.4rem 0 1.5rem;max-width:16ch}
+.ib-hero h1{font-size:clamp(2.35rem,5vw,4.2rem);font-weight:800;letter-spacing:-.035em;line-height:1.02;margin:1.4rem 0 1.5rem;max-width:none}
 .ib-hero h1 .cy{color:var(--ib-cyan)}
+.ib-hero-line{display:block;white-space:nowrap}
 .ib-hero-sub{font-size:clamp(1.05rem,2.1vw,1.28rem);color:var(--ib-text-body);max-width:620px;margin-bottom:2rem}
 .ib-hero-actions{display:flex;gap:.9rem;flex-wrap:wrap;align-items:center}
 .ib-hero-note{font-family:var(--ib-mono);font-size:.72rem;color:var(--ib-text-muted);letter-spacing:.04em}
@@ -287,6 +288,8 @@
   .ib-foot-about{grid-column:1/-1}
 }
 @media(max-width:600px){
+  .ib-hero h1{font-size:clamp(2.2rem,11vw,3rem)}
+  .ib-hero-line{white-space:normal}
   .ib-cards.c3,.ib-cards.c4,.ib-cards.c2{grid-template-columns:1fr}
   .ib-field-row{grid-template-columns:1fr}
   .ib-foot-top{grid-template-columns:1fr}

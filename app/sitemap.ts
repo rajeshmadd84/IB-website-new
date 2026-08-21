@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { useCaseSlugs, agentSlugs } from "@/components/ib/detail-data";
 
-const SITE_URL = "https://intellibyld.com";
+const SITE_URL = "https://www.intellibyld.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

@@ -1,6 +1,9 @@
 import { SupplyChainTwinAnimation } from "@/components/ib/supply-chain-twin-animation";
 import { IconBot, IconLayers, IconRadar, IconShield, IconRoute, IconLeaf, IconBlocks, IconCheck, IconLink, IconZap, IconInfo, IconTarget, IconUsers, IconPlug, IconPlay, IconQuestion, IconTruck } from "@/components/ib/icons";
-import { JsonLd, faqPageJsonLd } from "@/components/ib/json-ld";
+import { JsonLd, faqPageJsonLd, webPageJsonLd } from "@/components/ib/json-ld";
+
+const PAGE_TITLE = "IntelliByld — Decision Intelligence for Construction Supply Chains";
+const PAGE_DESCRIPTION = "IntelliByld is the decision-intelligence layer for construction material supply chains, connecting procurement, suppliers, logistics, programme risk and embodied carbon to understand what changed, what it affects and what to do next.";
 
 const features = [
   { icon: <IconBlocks />, h: "Procurement Intelligence", p: "Turn material requirements into RFQs, compare supplier responses, surface commercial and delivery risk, and prepare award recommendations with human approval.", tags: ["RFQ", "supplier", "award"] },
@@ -22,6 +25,13 @@ const values = [
   { icon: <IconLeaf />, h: "Carbon in the decision", p: "Compare cost, lead time, supplier risk and embodied carbon before an award is approved." },
 ];
 
+const decisionStages = [
+  { n: "01", h: "Detect", q: "What changed?", p: "Supplier milestones, quotations, shipments, substitutions, EPDs and project status continuously update the operational picture." },
+  { n: "02", h: "Connect", q: "What does it affect?", p: "The Knowledge Graph links each signal to materials, POs, suppliers, packages, programme activities and carbon records." },
+  { n: "03", h: "Evaluate", q: "What are the consequences?", p: "IntelliByld reasons across cost, schedule, supplier risk and embodied carbon instead of treating each impact separately." },
+  { n: "04", h: "Recommend", q: "What should we do next?", p: "The decision layer evaluates response options and surfaces a recommended next action with supporting context." },
+];
+
 const noRip = [
   { icon: <IconShield />, h: "Start from the data you already have", p: "Begin with BOQs, spreadsheets, RFQs, purchase orders and project documents. Deep ERP or BIM integration is not required for the first pilot." },
   { icon: <IconLink />, h: "Fit around existing workflows", p: "Keep your current procurement, email and project systems. IntelliByld adds an intelligence layer rather than forcing a rip-and-replace programme." },
@@ -36,7 +46,7 @@ const team = [
 ];
 
 const faqs = [
-  { q: "What is IntelliByld?", a: "IntelliByld is an AI intelligence layer for construction material supply chains. It connects procurement, material logistics and embodied-carbon data so project teams can make better decisions across cost, schedule and carbon." },
+  { q: "What is IntelliByld?", a: "IntelliByld is a decision-intelligence layer for construction material supply chains. It maintains a connected operational view of materials, suppliers, orders, logistics, programme dependencies and carbon so teams can understand what changed, what it affects and what to do next across cost, schedule, risk and embodied carbon." },
   { q: "Where does IntelliByld start?", a: "Pilots can begin from the material and procurement data teams already have, such as BOQs, spreadsheets, RFQs, purchase orders and supplier documents. Deeper BIM and ERP integrations can be added as the pilot expands." },
   { q: "Does IntelliByld make procurement decisions automatically?", a: "AI agents can draft RFQs, chase responses, compare suppliers, monitor logistics and prepare recommendations. Commercial, contractual and regulatory decisions remain behind human approval gates." },
   { q: "How does IntelliByld calculate embodied carbon?", a: "IntelliByld links material quantities to product-specific EPDs or approved emission factors and can incorporate supplier and logistics information. This creates a live carbon ledger that can move from design assumptions toward procured and delivered quantities." },
@@ -46,17 +56,19 @@ const faqs = [
 export default function Home() {
   return (
     <main>
+      <JsonLd data={webPageJsonLd({ name: PAGE_TITLE, description: PAGE_DESCRIPTION, path: "/" })} />
       <JsonLd data={faqPageJsonLd(faqs)} />
 
       <section className="ib-hero">
         <div className="ib-grid-bg" />
         <div className="ib-wrap ib-hero-inner">
-          <span className="ib-eyebrow"><IconBot /> AI for Construction Supply Chains</span>
+          <span className="ib-eyebrow"><IconBot /> Decision Intelligence for Construction Supply Chains</span>
           <h1>
-            Construction Supply Chain <span className="cy">Visibility</span>
+            <span className="ib-hero-line">The intelligence layer for</span>
+            <span className="ib-hero-line cy">construction supply chains.</span>
           </h1>
           <p className="ib-hero-sub">
-            See <strong>what’s ordered</strong>, <strong>what’s moving</strong>, what’s at risk, and what carbon it carries — from material requirement to site delivery.
+            IntelliByld acts as the brain of the material supply chain — understanding what changed, what it affects and what the team should do next across cost, schedule, risk and embodied carbon.
           </p>
           <div className="ib-hero-actions">
             <a href="/pilot" className="ib-btn ib-btn-primary">Run IntelliByld on a Project <span className="arw">→</span></a>
@@ -84,8 +96,8 @@ export default function Home() {
         <div className="ib-wrap">
           <div className="ib-head ib-reveal">
             <span className="ib-eyebrow"><IconInfo /> The platform</span>
-            <h2>The intelligence layer for <span style={{ color: "var(--ib-cyan)" }}>construction materials</span></h2>
-            <p><b>IntelliByld connects the commercial, physical and carbon life of a material.</b> Instead of treating procurement, logistics and sustainability as separate data projects, teams work from one connected material record.</p>
+            <h2>One connected view of <span style={{ color: "var(--ib-cyan)" }}>materials, decisions and actions</span></h2>
+            <p><b>IntelliByld connects the commercial, physical and carbon life of a material.</b> The platform creates the shared operational context needed to reason across procurement, logistics, programme risk and embodied carbon.</p>
           </div>
           <div className="ib-cards c3">
             {features.map((f, i) => (
@@ -101,9 +113,37 @@ export default function Home() {
       <section className="ib-sec alt">
         <div className="ib-wrap">
           <div className="ib-head ib-reveal">
-            <span className="ib-eyebrow"><IconRadar /> IntelliByld in action</span>
-            <h2>See what changed. <span style={{ color: "var(--ib-cyan)" }}>Know what it affects.</span></h2>
-            <p>Real construction supply-chain scenarios showing how IntelliByld connects a signal to project context, agent action and a human decision.</p>
+            <span className="ib-eyebrow"><IconTarget /> Decision Intelligence</span>
+            <h2>Not another dashboard. <span style={{ color: "var(--ib-cyan)" }}>A system that understands what needs attention.</span></h2>
+            <p>Visibility tells you what is happening. IntelliByld goes further: it connects the context, evaluates downstream consequences and recommends the next best action before agents help carry it out.</p>
+          </div>
+          <div className="ib-cards c4">
+            {decisionStages.map((stage, i) => (
+              <div className="ib-card ib-reveal" key={stage.h} style={{ transitionDelay: `${i * 70}ms` }}>
+                <span className="ib-eyebrow" style={{ marginBottom: ".8rem" }}>{stage.n} · {stage.h}</span>
+                <h3>{stage.q}</h3>
+                <p>{stage.p}</p>
+              </div>
+            ))}
+          </div>
+          <div className="ib-card ib-reveal" style={{ marginTop: "1.5rem", borderColor: "rgba(0,224,255,.32)" }}>
+            <div className="ib-split" style={{ alignItems: "center" }}>
+              <div>
+                <span className="ib-eyebrow"><IconRadar /> The IntelliByld brain</span>
+                <h3 style={{ marginTop: ".8rem", fontSize: "clamp(1.35rem,2.5vw,2rem)" }}>Cost · Schedule · Risk · Carbon</h3>
+              </div>
+              <p style={{ margin: 0 }}><b>Decision Intelligence sits between the live Construction Supply Chain Digital Twin and the agent teams.</b> It turns connected project context into prioritised recommendations, while humans retain authority over commercial and project decisions.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="ib-sec" id="use-cases">
+        <div className="ib-wrap">
+          <div className="ib-head ib-reveal">
+            <span className="ib-eyebrow"><IconRadar /> Live scenarios</span>
+            <h2>Four supply-chain situations where <span style={{ color: "var(--ib-cyan)" }}>earlier action matters</span></h2>
+            <p>Explore real procurement, delivery, carbon and substitution scenarios using the connected project context behind each decision.</p>
           </div>
           <div className="ib-cards c2">
             {liveUseCases.map((useCase, i) => (
@@ -149,7 +189,7 @@ export default function Home() {
 
       <section className="ib-sec">
         <div className="ib-wrap">
-          <div className="ib-head center ib-reveal"><span className="ib-eyebrow"><IconTarget /> Why it matters</span><h2>Make <span style={{ color: "var(--ib-cyan)" }}>cost, schedule and carbon</span> one decision</h2></div>
+          <div className="ib-head center ib-reveal"><span className="ib-eyebrow"><IconTarget /> Decision support</span><h2>Make <span style={{ color: "var(--ib-cyan)" }}>cost, schedule, risk and carbon</span> one decision</h2><p>IntelliByld prioritises what needs attention and gives teams the context to decide, instead of leaving them to reconcile disconnected dashboards and spreadsheets.</p></div>
           <div className="ib-cards c4">
             {values.map((v, i) => <div className="ib-card ib-reveal" key={i} style={{ transitionDelay: `${i * 70}ms` }}><div className="ib-ic">{v.icon}</div><h3>{v.h}</h3><p>{v.p}</p></div>)}
           </div>
@@ -174,7 +214,7 @@ export default function Home() {
 
       <section className="ib-sec">
         <div className="ib-wrap">
-          <div className="ib-head ib-reveal"><span className="ib-eyebrow"><IconUsers /> Agentic AI</span><h2><span style={{ color: "var(--ib-cyan)" }}>Agents do the work.</span> Humans hold the authority.</h2><p>IntelliByld uses specialised agents to perform repetitive coordination and analysis while keeping commercial, contractual and regulatory decisions behind approval gates.</p></div>
+          <div className="ib-head ib-reveal"><span className="ib-eyebrow"><IconUsers /> Execution layer</span><h2><span style={{ color: "var(--ib-cyan)" }}>Decision intelligence first.</span> Agents execute the follow-through.</h2><p>The IntelliByld brain identifies what matters, evaluates the impact and recommends an action. Specialised agents then perform the repetitive coordination around that decision while commercial, contractual and regulatory authority remains with your team.</p></div>
           <div className="ib-cards c3">
             <div className="ib-card ib-reveal"><div className="ib-ic"><IconBlocks /></div><h3>Procurement agents</h3><p>Draft RFQs, chase quotations, compare bids, enrich supplier intelligence and prepare award recommendations.</p></div>
             <div className="ib-card ib-reveal" style={{ transitionDelay: "80ms" }}><div className="ib-ic"><IconTruck /></div><h3>Logistics agents</h3><p>Monitor supplier commitments and delivery milestones, identify disruption risk and coordinate exceptions.</p></div>

@@ -1,7 +1,7 @@
 import { Flowchart } from "@/components/ib/flowchart";
 import { IconCheck, IconZap, IconShield, IconRoute, IconBriefcase, IconBot, IconGear, IconUsers, IconSwap, IconTrendingUp, IconQuestion } from "@/components/ib/icons";
 import { DETAILS, type Detail } from "@/components/ib/detail-data";
-import { JsonLd, faqPageJsonLd } from "@/components/ib/json-ld";
+import { JsonLd, breadcrumbJsonLd, faqPageJsonLd, webPageJsonLd } from "@/components/ib/json-ld";
 
 const OUT_ICONS = [<IconZap key="z" />, <IconShield key="s" />, <IconRoute key="r" />];
 
@@ -21,9 +21,19 @@ export default function DetailPage({ d }: { d: Detail }) {
   const siblings = DETAILS.filter((x) => x.group === d.group && x.slug !== d.slug);
   const groupHref = d.group === "agents" ? "/agents" : "/use-cases";
   const isTeam = !!d.agents;
+  const pagePath = `${groupHref}/${d.slug}`;
+  const parentCrumb = d.group === "agents"
+    ? { name: "Agentic AI", path: "/agentic-ai" }
+    : { name: "Use Cases", path: "/#use-cases" };
 
   return (
     <main>
+      <JsonLd data={webPageJsonLd({ name: d.title, description: d.metaDescription, path: pagePath })} />
+      <JsonLd data={breadcrumbJsonLd([
+        { name: "Home", path: "/" },
+        parentCrumb,
+        { name: d.title, path: pagePath },
+      ])} />
       <JsonLd data={faqPageJsonLd(d.faqs)} />
       <section className="ib-phero">
         <div className="ib-grid-bg" />

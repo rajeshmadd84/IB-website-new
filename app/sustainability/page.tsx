@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Flowchart, FCNode, FCEdge } from "@/components/ib/flowchart";
 import { IconCheck, IconLeaf, IconRadar, IconLayers, IconGear, IconQuestion } from "@/components/ib/icons";
-import { JsonLd, faqPageJsonLd } from "@/components/ib/json-ld";
+import { JsonLd, faqPageJsonLd, webPageJsonLd } from "@/components/ib/json-ld";
 
 const TITLE = "Embodied Carbon Intelligence";
 const DESCRIPTION = "Connect BOQs, supplier data, EPDs, purchase orders and delivered quantities to build a living embodied-carbon ledger for construction projects.";
@@ -47,6 +47,7 @@ const faqs = [
 export default function Sustainability() {
   return (
     <main>
+      <JsonLd data={webPageJsonLd({ name: TITLE, description: DESCRIPTION, path: "/sustainability" })} />
       <JsonLd data={faqPageJsonLd(faqs)} />
       <section className="ib-phero"><div className="ib-grid-bg" /><div className="ib-wrap" style={{ position: "relative" }}><span className="ib-eyebrow"><IconLeaf /> Embodied Carbon Intelligence</span><h1>Know the carbon of <span className="cy">what you procure.</span></h1><p>IntelliByld connects BOQs, supplier quotations, purchase orders, EPDs and delivery records to build a living embodied-carbon ledger for construction projects.</p><div className="ib-hero-actions" style={{ marginTop: "1.6rem" }}><a href="/pilot" className="ib-btn ib-btn-primary">Pilot Embodied Carbon <span className="arw">→</span></a><a href="/contact-us" className="ib-btn ib-btn-ghost">Talk to us</a></div></div></section>
 

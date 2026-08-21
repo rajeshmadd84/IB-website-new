@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Flowchart, FCNode, FCEdge } from "@/components/ib/flowchart";
 import { IconBlocks, IconTruck, IconLeaf, IconCheck, IconShield, IconBot, IconWorkflow, IconQuestion } from "@/components/ib/icons";
-import { JsonLd, faqPageJsonLd } from "@/components/ib/json-ld";
+import { JsonLd, faqPageJsonLd, webPageJsonLd } from "@/components/ib/json-ld";
 
 const TITLE = "Agentic AI";
 const DESCRIPTION = "IntelliByld uses specialised AI agents to draft, analyse, monitor and coordinate construction procurement, material logistics and embodied-carbon workflows while keeping commercial authority with project teams.";
@@ -43,6 +43,7 @@ const faqs = [
 export default function AgenticAI() {
   return (
     <main>
+      <JsonLd data={webPageJsonLd({ name: TITLE, description: DESCRIPTION, path: "/agentic-ai" })} />
       <JsonLd data={faqPageJsonLd(faqs)} />
       <section className="ib-phero"><div className="ib-grid-bg" /><div className="ib-wrap" style={{ position: "relative" }}><span className="ib-eyebrow"><IconBot /> Agentic AI</span><h1>Agents do the work. <span className="cy">Humans hold the authority.</span></h1><p>IntelliByld uses specialised AI agents to handle repetitive procurement, logistics and carbon work — drafting, analysing, chasing, monitoring and recommending — while your team keeps control of the decisions that matter.</p></div></section>
 

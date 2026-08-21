@@ -1,30 +1,34 @@
 # IntelliByld
 
-> IntelliByld is Agentic AI for construction supply chains. A construction-trained Small Language Model (SLM) and a live Digital Twin turn fragmented procurement and logistics data into Autonomous Execution, keeping construction projects on schedule and embodied carbon on target.
+> IntelliByld provides construction supply-chain visibility by connecting procurement, supplier, logistics and embodied-carbon information around shared material records.
 
-IntelliByld sits on top of a general contractor's or developer's existing BIM (IFC, Revit, Navisworks) and ERP (SAP, Oracle, Procore) tools, no rip-and-replace integration required. Three coordinated teams of specialist AI agents (14 agents total) run procurement sourcing, logistics execution, and Scope 3 carbon accounting end-to-end, with humans approving every decision that carries commercial, contractual, or regulatory weight. The company is headquartered in Singapore, with a UK/EU entity (Logpilot Limited) supporting partners across Europe.
+IntelliByld is a Singapore-based construction technology company. Its platform combines a Construction Supply Chain Digital Twin, a knowledge graph, construction-focused language intelligence and specialised AI agents. The agents draft, analyse, monitor and coordinate work while commercial, contractual, technical and regulatory decisions remain behind human approval gates.
+
+Canonical website: https://www.intellibyld.com
 
 ## Platform
 
-- [Agentic AI](https://intellibyld.com/agentic-ai): The three agent teams, Procurement (5 agents), Logistics (3 agents), and Scope 3 (6 agents), how they share one workflow and audit trail, and where human approval gates sit.
-- [Digital Twins](https://intellibyld.com/digital-twins): The live, real-time replica of a project's supply chain that links every material movement to the master schedule.
-- [Sustainability](https://intellibyld.com/sustainability): Embodied-carbon tracking computed from actual delivery data rather than estimates.
-- [Join Pilot](https://intellibyld.com/pilot): Free pilot program for developers, general contractors, and EPC teams; a live coordination dashboard in 7 days, starting from a bill of materials with no integration work.
-- [Contact](https://intellibyld.com/contact-us): Company details, Singapore and UK/EU entities, and contact information.
+- [Construction Supply Chain Visibility](https://www.intellibyld.com/): Overview of the platform, live use cases and pilot approach.
+- [Agentic AI](https://www.intellibyld.com/agentic-ai): Specialised agent teams for procurement, material logistics and embodied carbon, with human approval gates.
+- [Material Data Layer](https://www.intellibyld.com/material-data-layer): How BIM, BOQs, ERP, supplier and project information connect to a shared operational material state.
+- [Embodied Carbon](https://www.intellibyld.com/sustainability): Material-level carbon intelligence connected to procurement and delivery records.
+- [Join a Pilot](https://www.intellibyld.com/pilot): Apply to evaluate IntelliByld on a focused project or material package.
+- [Contact](https://www.intellibyld.com/contact-us): Contact information and company details.
 
-## Use Cases
+## Live Use Cases
 
-- [Supplier Delay Neutralization](https://intellibyld.com/use-cases/supplier-delay-neutralization): Detecting supplier delays the moment they appear and autonomously re-sourcing from ranked vendors before a slip reaches the site.
-- [Multi-Site Coordination](https://intellibyld.com/use-cases/multi-site-coordination): A single live control tower balancing materials, risk, and capacity across a portfolio of construction sites.
-- [Embodied Carbon](https://intellibyld.com/use-cases/embodied-carbon): Building an audit-ready embodied-carbon ledger from real material deliveries instead of estimates.
+- [Critical Material Delay](https://www.intellibyld.com/use-cases/critical-material-delay): Connect a supplier milestone change to its purchase order, shipment and programme dependency, then evaluate recovery options.
+- [Quotation Mismatch](https://www.intellibyld.com/use-cases/quotation-mismatch): Map inconsistent supplier quotations back to BOQ and RFQ requirements to prepare a comparable bid view.
+- [Lower-Carbon Procurement](https://www.intellibyld.com/use-cases/lower-carbon-procurement): Compare cost, lead time, product carbon data and transport within the procurement decision.
+- [Material Substitution](https://www.intellibyld.com/use-cases/material-substitution): Assess a proposed substitute across specification, commercial, delivery and embodied-carbon impacts before approval.
 
 ## Agent Teams
 
-- [Procurement Team](https://intellibyld.com/agents/procurement): Five agents (Orchestrator, RFQ, Bid Evaluation, Supplier Intelligence, Negotiation) that run sourcing from a bill of materials to a recommended award.
-- [Logistics Team](https://intellibyld.com/agents/logistics): Three agents (Order Coordination, Disruption & Risk, Logistics & Site Sync) that run execution from a confirmed purchase order to goods receipt.
-- [Scope 3 Team](https://intellibyld.com/agents/scope3): Six agents that map, calculate, disclose, and reduce value-chain emissions (CSRD, GHG Protocol, CDP, ISSB) from the same procurement data.
+- [Procurement Agents](https://www.intellibyld.com/agents/procurement): Draft RFQs, structure supplier quotations, compare bids and prepare award recommendations.
+- [Logistics Agents](https://www.intellibyld.com/agents/logistics): Monitor supplier commitments and delivery milestones, surface disruption risk and coordinate exceptions.
+- [Embodied Carbon Agents](https://www.intellibyld.com/agents/scope3): Match materials to EPDs or approved factors, calculate carbon and support lower-carbon procurement comparisons.
 
-## Notes
+## Contact
 
-- Every page above includes an FAQ section marked up with schema.org FAQPage structured data.
-- The platform is a pre-revenue MVP; pilots begin from a project's existing bill of materials.
+- Email: hello@intellibyld.com
+- LinkedIn: https://www.linkedin.com/company/intellibyld

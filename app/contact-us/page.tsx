@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PilotForm from "@/components/ib/pilot-form";
+import { JsonLd, webPageJsonLd } from "@/components/ib/json-ld";
 
 const TITLE = "Contact";
 const DESCRIPTION = "Talk to IntelliByld about a pilot, a partnership, or the platform. Headquartered in Singapore.";
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
+      <JsonLd data={webPageJsonLd({ name: TITLE, description: DESCRIPTION, path: "/contact-us" })} />
       <PilotForm
         eyebrow="Contact Us"
         heading={

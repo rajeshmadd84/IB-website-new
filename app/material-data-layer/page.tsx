@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Flowchart, FCNode, FCEdge } from "@/components/ib/flowchart";
 import { IconCheck, IconLayers, IconLink, IconRadar, IconLeaf, IconQuestion } from "@/components/ib/icons";
-import { JsonLd, faqPageJsonLd } from "@/components/ib/json-ld";
+import { JsonLd, faqPageJsonLd, webPageJsonLd } from "@/components/ib/json-ld";
 
 const TITLE = "Connected Material Data Layer";
 const DESCRIPTION = "IntelliByld connects BOQs, suppliers, RFQs, purchase orders, shipments, delivery records and embodied-carbon data into one shared operational material layer.";
@@ -37,6 +37,7 @@ const faqs = [
 export default function MaterialDataLayer() {
   return (
     <main>
+      <JsonLd data={webPageJsonLd({ name: TITLE, description: DESCRIPTION, path: "/material-data-layer" })} />
       <JsonLd data={faqPageJsonLd(faqs)} />
       <section className="ib-phero"><div className="ib-grid-bg" /><div className="ib-wrap" style={{ position: "relative" }}>
         <span className="ib-eyebrow"><IconLayers /> Connected Material Data Layer</span>
