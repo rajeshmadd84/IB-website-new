@@ -231,7 +231,7 @@ export default function DetailPage({ d }: { d: Detail }) {
         <div className="ib-cta-bg" />
         <div className="ib-wrap ib-cta-inner ib-reveal">
           <h2>{highlight(d.ctaTitle, d.ctaCy)}</h2>
-          <p>Connect one site and see it run in your own data within three weeks.</p>
+          <p>Connect one site and see it run in your own data during a focused project pilot.</p>
           <div className="ib-cta-actions">
             <a href="/contact-us" className="ib-btn ib-btn-primary">
               Join Pilot <span className="arw">→</span>

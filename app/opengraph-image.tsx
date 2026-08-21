@@ -56,7 +56,7 @@ export default async function Image() {
             maxWidth: "820px",
           }}
         >
-          A construction-trained SLM and live Digital Twin turn fragmented logistics into Autonomous Execution.
+          Procurement, material logistics and embodied-carbon intelligence for construction supply chains.
         </div>
       </div>
     ),

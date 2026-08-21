@@ -167,7 +167,7 @@ export function Flowchart({ nodes, edges, width = 1000, height, title, titleCy, 
           </span>
           <span>
             <i className="tw" />
-            Digital twin
+            Shared operational state
           </span>
         </div>
       )}

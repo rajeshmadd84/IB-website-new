@@ -3,9 +3,10 @@
 import { useEffect, useState } from "react";
 
 const useCases = [
-  { href: "/use-cases/supplier-delay-neutralization", label: "Supplier Delay Neutralization", sub: "Reroute before delays hit site" },
-  { href: "/use-cases/multi-site-coordination", label: "Multi-Site Coordination", sub: "One control tower, many sites" },
-  { href: "/use-cases/embodied-carbon", label: "Embodied Carbon", sub: "Carbon from real delivery data" },
+  { href: "/use-cases/critical-material-delay", label: "Critical Material Delay", sub: "See the programme impact early" },
+  { href: "/use-cases/quotation-mismatch", label: "Quotation Mismatch", sub: "Turn supplier bids into a comparable view" },
+  { href: "/use-cases/lower-carbon-procurement", label: "Lower-Carbon Procurement", sub: "Compare cost, schedule and carbon" },
+  { href: "/use-cases/material-substitution", label: "Material Substitution", sub: "See downstream impact before approval" },
 ];
 
 function Mark() {
@@ -76,11 +77,8 @@ export default function Nav() {
           <a href="/agentic-ai" onClick={close}>
             Agentic AI
           </a>
-          <a href="/digital-twins" onClick={close}>
-            Digital Twins
-          </a>
           <a href="/sustainability" onClick={close}>
-            Sustainability
+            Embodied Carbon
           </a>
           <div className={`ib-nav-drop${useCasesOpen ? " open" : ""}`}>
             <span
@@ -111,13 +109,13 @@ export default function Nav() {
             Contact
           </a>
           <a href="/contact-us" className="ib-btn ib-btn-primary ib-nav-cta-mobile" onClick={close}>
-            Join Pilot <span className="arw">→</span>
+            Start Pilot <span className="arw">→</span>
           </a>
         </nav>
         <div className="ib-nav-cta">
 
           <a href="/contact-us" className="ib-btn ib-btn-primary ib-nav-cta-desktop">
-            Join Pilot <span className="arw">→</span>
+            Start Pilot <span className="arw">→</span>
           </a>
           <button className="ib-menu-toggle" onClick={() => setOpen((v) => !v)} aria-expanded={open} aria-label="Toggle menu">
             ☰

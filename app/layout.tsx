@@ -10,21 +10,21 @@ const SITE_URL = "https://intellibyld.com";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "IntelliByld — Agentic AI for Construction Supply Chains",
+    default: "IntelliByld — AI for Construction Material Supply Chains",
     template: "%s — IntelliByld",
   },
   description:
-    "IntelliByld is the Agentic AI for construction supply chains. A construction-trained SLM and live Digital Twin turn fragmented logistics into Autonomous Execution, keeping projects on schedule and carbon on target.",
-  keywords: ["Construction Supply Chain", "Agentic AI", "Digital Twin", "BIM", "Autonomous Logistics", "Embodied Carbon"],
+    "IntelliByld connects construction material procurement, supplier coordination, logistics and embodied-carbon data in one AI-powered workflow, helping teams make better decisions across cost, schedule and carbon.",
+  keywords: ["Construction Supply Chain", "Agentic AI", "Construction Procurement", "Material Logistics", "BIM", "Embodied Carbon", "Singapore Construction Technology"],
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     siteName: "IntelliByld",
-    title: "IntelliByld — Agentic AI for Construction Supply Chains",
-    description: "Transforming fragmented construction data into real-time execution insights.",
+    title: "IntelliByld — AI for Construction Material Supply Chains",
+    description: "AI-powered procurement, material logistics and embodied-carbon intelligence for construction.",
     url: SITE_URL,
   },
-  twitter: { card: "summary_large_image", title: "IntelliByld", description: "Agentic AI for Autonomous Construction Supply Chains." },
+  twitter: { card: "summary_large_image", title: "IntelliByld", description: "Procurement, material logistics and embodied-carbon intelligence for construction." },
 };
 
 const organizationJsonLd = {
@@ -34,7 +34,7 @@ const organizationJsonLd = {
   url: SITE_URL,
   logo: `${SITE_URL}/images/logo.svg`,
   description:
-    "IntelliByld is the Agentic AI for construction supply chains. A construction-trained SLM and live Digital Twin turn fragmented logistics into Autonomous Execution.",
+    "IntelliByld is an AI intelligence layer for construction material supply chains, connecting procurement, logistics and embodied-carbon data.",
   sameAs: ["https://www.linkedin.com/company/intellibyld"],
   address: {
     "@type": "PostalAddress",

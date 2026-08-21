@@ -20,7 +20,7 @@ export default function PilotForm({
       Run it on a <span className="cy">live</span> project
     </>
   ),
-  lead = "Free pilot for select developers, GCs, and EPC teams. Connect one site and see autonomous coordination in your own data within three weeks.",
+  lead = "Free pilot for select developers, GCs, and EPC teams. Connect one site and see AI-assisted coordination in your own data during a focused project pilot.",
 }: PilotFormProps = {}) {
   const [f, setF] = useState({ name: "", email: "", company: "", role: "", project: "", note: "" });
   const [err, setErr] = useState("");

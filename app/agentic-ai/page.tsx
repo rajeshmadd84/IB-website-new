@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Flowchart, FCNode, FCEdge } from "@/components/ib/flowchart";
-import { IconBlocks, IconTruck, IconLeaf, IconCheck, IconShield, IconRadar, IconZap, IconLink, IconRoute, IconBot, IconWorkflow, IconUsers, IconShare, IconTrendingUp, IconQuestion } from "@/components/ib/icons";
+import { IconBlocks, IconTruck, IconLeaf, IconCheck, IconShield, IconBot, IconWorkflow, IconQuestion } from "@/components/ib/icons";
 import { JsonLd, faqPageJsonLd } from "@/components/ib/json-ld";
 
 const TITLE = "Agentic AI";
-const DESCRIPTION = "IntelliByld runs construction procurement end-to-end with three coordinated teams of specialist agents, Procurement, Logistics and Scope 3, sharing one workflow and one audit trail, with humans in the loop on every decision that matters.";
+const DESCRIPTION = "IntelliByld uses specialised AI agents to draft, analyse, monitor and coordinate construction procurement, material logistics and embodied-carbon workflows while keeping commercial authority with project teams.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -14,228 +14,47 @@ export const metadata: Metadata = {
   twitter: { title: TITLE, description: DESCRIPTION },
 };
 
-const flowNodes: FCNode[] = [
-  { id: "req", label: "Requirement", sub: "BoQ · specs", x: 24, y: 44, w: 140, kind: "source" },
-  { id: "src", label: "Sourcing", sub: "5 agents", x: 196, y: 44, w: 152, kind: "agent" },
-  { id: "award", label: "Award", sub: "human sign-off", x: 380, y: 44, w: 150, h: 58, kind: "twin" },
-  { id: "logi", label: "Logistics", sub: "3 agents", x: 562, y: 44, w: 152, kind: "agent" },
-  { id: "site", label: "Site Delivery", sub: "GRN", x: 746, y: 44, w: 146, kind: "physical" },
-  { id: "sc3", label: "Scope 3", sub: "6 agents · CO₂e", x: 380, y: 172, w: 334, kind: "agent" },
-  { id: "disc", label: "Disclosure", sub: "CSRD · CDP", x: 746, y: 172, w: 146 },
+const nodes: FCNode[] = [
+  { id: "req", label: "Material Need", sub: "BOQ · specs", x: 20, y: 46, w: 150, kind: "source" },
+  { id: "ai", label: "AI Agents", sub: "draft · analyse · monitor", x: 220, y: 46, w: 190, kind: "agent" },
+  { id: "approve", label: "Human Approval", sub: "commercial authority", x: 460, y: 46, w: 190, kind: "twin" },
+  { id: "execute", label: "Execution", sub: "supplier · logistics", x: 700, y: 46, w: 170, kind: "physical" },
+  { id: "twin", label: "Construction Supply Chain Digital Twin", sub: "knowledge graph · live operational state", x: 220, y: 190, w: 650, h: 62, kind: "twin" },
 ];
-const flowEdges: FCEdge[] = [
-  { from: "req", to: "src" },
-  { from: "src", to: "award" },
-  { from: "award", to: "logi" },
-  { from: "logi", to: "site" },
-  { from: "src", to: "sc3", fromSide: "bottom", toSide: "top", pulses: 1 },
-  { from: "logi", to: "sc3", fromSide: "bottom", toSide: "top", pulses: 1 },
-  { from: "sc3", to: "disc", fromSide: "right", toSide: "left", pulses: 1 },
+const edges: FCEdge[] = [
+  { from: "req", to: "ai" }, { from: "ai", to: "approve" }, { from: "approve", to: "execute" },
+  { from: "ai", to: "twin", fromSide: "bottom", toSide: "top", dashed: true, arrow: false, pulses: 1 },
+  { from: "execute", to: "twin", fromSide: "bottom", toSide: "top", dashed: true, arrow: false, pulses: 1 },
 ];
 
-const teams = [
-  { icon: <IconBlocks />, h: "Procurement", count: "5 agents · Phase 1", p: "Sourcing, from RFQ to a recommended award. RFQ, bid evaluation, supplier intelligence and negotiation, with an orchestrator conducting and a human signing off the award.", href: "/agents/procurement" },
-  { icon: <IconTruck />, h: "Logistics", count: "3 agents · Phase 2", p: "Execution, from PO to goods receipt. Order coordination, disruption forecasting and last-mile site sync, sharing the procurement orchestrator so nothing is dropped at the handoff.", href: "/agents/logistics" },
-  { icon: <IconLeaf />, h: "Scope 3", count: "6 agents · Integrated", p: "Carbon, mapped, calculated, disclosed and reduced from the same ledger so every supplier decision is weighed on price, technical fit and tonnes of CO₂e at once.", href: "/agents/scope3" },
-];
-
-const flows = [
-  { b: "RFQ → supplier data.", rest: "Emissions data is requested as part of the quotation, not chased afterwards." },
-  { b: "Quotations → reduction.", rest: "Low-carbon alternatives are flagged during bid evaluation, while the award is still open." },
-  { b: "PO → mapping & calc.", rest: "Emissions are quantified the moment an order is placed withno separate carbon entry." },
-  { b: "Shipment → Category 4.", rest: "Logistics tracking feeds accurate upstream-transportation emissions to the same order." },
-  { b: "Supplier scorecards → enriched.", rest: "ESG scores from sourcing are upgraded with verified primary emissions data." },
-];
-
-const gates = [
-  "Final award & PO issuance: always a human decision, never automatic.",
-  "Disruption response: high-impact mitigation is surfaced before it runs.",
-  "Disclosure sign-off: every regulatory submission is reviewed before release.",
-  "Reduction commitments: material targets and supplier switches go to the team.",
-];
-
-const outcomes = [
-  { icon: <IconZap />, h: "Faster sourcing cycles", p: "RFQs go out the same day and quotations are evaluated the moment they arrive; decisions weigh ESG, financial health and history, not just price." },
-  { icon: <IconRadar />, h: "Resilient delivery", p: "Disruptions are forecast before they reach the critical path, and deliveries land in sync with site readiness, manpower and equipment." },
-  { icon: <IconShield />, h: "Disclosure-ready carbon", p: "CSRD, GHG Protocol, CDP and ISSB reports generate from one ledger, with every reported tonne tracing back to a transaction and an approver." },
+const agentTeams = [
+  { number: "01", icon: <IconBlocks />, h: "Procurement Agents", p: "Draft RFQs, chase supplier responses, structure quotations, compare bids and prepare award recommendations.", href: "/agents/procurement", link: "Explore procurement agents" },
+  { number: "02", icon: <IconTruck />, h: "Logistics Agents", p: "Monitor supplier commitments and delivery milestones, surface disruption risk and coordinate exceptions around site needs.", href: "/agents/logistics", link: "Explore logistics agents" },
+  { number: "03", icon: <IconLeaf />, h: "Embodied Carbon Agents", p: "Match materials to EPDs or approved factors, calculate carbon and bring lower-carbon alternatives into procurement decisions.", href: "/agents/scope3", link: "Explore carbon agents" },
 ];
 
 const faqs = [
-  { q: "What does \u201cthree teams, fourteen agents\u201d actually mean?", a: "Rather than one monolithic AI, IntelliByld uses teams of specialised agents each with a clear job, clear inputs and clear handoffs. Eight agents run procurement across sourcing and logistics; six run Scope 3 emissions. A supervising orchestrator conducts each team, and the two share data so carbon is a real input to every purchase." },
-  { q: "Do I have to adopt all three teams at once?", a: "No. The teams are modular. Most partners start with sourcing or logistics and add Scope 3 once procurement data is flowing because the carbon agents read the same RFQ, PO and shipment records, switching it on is a configuration step, not a new data project." },
-  { q: "How much stays under human control?", a: "Every decision that carries commercial, contractual or regulatory weight sits behind an approval gate: award and PO issuance, high-impact disruption responses, disclosure sign-off, reduction commitments. Outside those gates, the agents handle the busywork autonomously." },
-  { q: "Where do pilots begin?", a: "From your BoMs. BIM-native ingestion comes later; sourcing starts from the bill of materials and project specifications you already have." },
+  { q: "What does agentic AI mean in IntelliByld?", a: "It means specialised AI agents can carry out multi-step work such as gathering information, drafting communications, comparing supplier data, monitoring status and preparing recommendations rather than only answering questions." },
+  { q: "Does the AI autonomously award suppliers or issue purchase orders?", a: "No. IntelliByld can automate analysis and coordination around those decisions, but commercial, contractual and regulatory actions remain behind human approval gates." },
+  { q: "Why use specialised agents instead of one chatbot?", a: "Construction supply-chain workflows contain different responsibilities, data sources and approval rules. Specialised agents make those responsibilities explicit while sharing a common project state through IntelliByld's Construction Supply Chain Digital Twin, backed by a knowledge graph and construction-trained SLM." },
+  { q: "Can we start with only one workflow?", a: "Yes. A pilot can begin with a focused workflow or material package, then expand into logistics or embodied-carbon intelligence as useful data becomes available." },
 ];
 
 export default function AgenticAI() {
   return (
     <main>
       <JsonLd data={faqPageJsonLd(faqs)} />
-      <section className="ib-phero">
-        <div className="ib-grid-bg" />
-        <div className="ib-wrap" style={{ position: "relative" }}>
-          <span className="ib-eyebrow">
-            <IconBot /> Agentic AI · A Digital Workforce
-          </span>
-          <h1>
-            Three teams. <span className="cy">Fourteen agents.</span> One supply chain.
-          </h1>
-          <p>
-            IntelliByld runs construction procurement end-to-end from the first Request for Quotation to the moment material arrives on site and quantifies the carbon of every transaction along the way. It is delivered by three coordinated teams of specialist agents that share data, decisions and a single audit trail.
-          </p>
-          <div style={{ display: "flex", gap: ".6rem", flexWrap: "wrap", marginTop: "1.6rem" }}>
-            {["Autonomous Sourcing", "End-to-End Logistics", "Carbon by Design"].map((t) => (
-              <span key={t} style={{ fontFamily: "var(--ib-mono)", fontSize: ".7rem", letterSpacing: ".04em", color: "var(--ib-cyan)", border: "1px solid rgba(30,86,214,.35)", borderRadius: "20px", padding: ".4em .9em" }}>
-                {t}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
+      <section className="ib-phero"><div className="ib-grid-bg" /><div className="ib-wrap" style={{ position: "relative" }}><span className="ib-eyebrow"><IconBot /> Agentic AI</span><h1>Agents do the work. <span className="cy">Humans hold the authority.</span></h1><p>IntelliByld uses specialised AI agents to handle repetitive procurement, logistics and carbon work — drafting, analysing, chasing, monitoring and recommending — while your team keeps control of the decisions that matter.</p></div></section>
 
-      <section className="ib-sec">
-        <div className="ib-wrap">
-          <div className="ib-head ib-reveal">
-            <span className="ib-eyebrow">
-              <IconWorkflow /> One workflow
-            </span>
-            <h2>From <span style={{ color: "var(--ib-cyan)" }}>requirement</span> to <span style={{ color: "var(--ib-cyan)" }}>delivery</span> with <span style={{ color: "var(--ib-cyan)" }}>carbon</span> in view</h2>
-            <p>Sourcing confirms a supplier, logistics gets it to site, and the Scope 3 team reads the same RFQ, PO and shipment data to calculate and disclose emissions in the same flow.</p>
-          </div>
-          <div className="ib-reveal">
-            <Flowchart nodes={flowNodes} edges={flowEdges} height={270} title="Procurement & carbon end to end" caption="Two procurement phases plus an integrated Scope 3 team, on one ledger." legend />
-          </div>
-        </div>
-      </section>
+      <section className="ib-sec"><div className="ib-wrap"><div className="ib-head ib-reveal"><span className="ib-eyebrow"><IconWorkflow /> How it works</span><h2>AI execution with <span style={{ color: "var(--ib-cyan)" }}>clear approval gates</span></h2><p>The goal is not autonomy for its own sake. The goal is faster, better-informed construction supply-chain decisions with a clear audit trail.</p></div><div className="ib-reveal"><Flowchart nodes={nodes} edges={edges} height={280} title="Agentic workflow" caption="Agents act on the live Construction Supply Chain Digital Twin; humans approve decisions with commercial or regulatory consequence." legend /></div></div></section>
 
-      <section className="ib-sec alt">
-        <div className="ib-wrap">
-          <div className="ib-head ib-reveal">
-            <span className="ib-eyebrow">
-              <IconUsers /> Meet the teams
-            </span>
-            <h2><span style={{ color: "var(--ib-cyan)" }}>Three teams of specialists,</span> not one monolith</h2>
-            <p>Each team owns a distinct slice of the supply chain. A supervising orchestrator conducts each one, and the procurement and carbon teams share a single data flow.</p>
-          </div>
-          <div className="ib-cards c3">
-            {teams.map((t, i) => (
-              <a className="ib-card team ib-reveal" key={i} href={t.href} style={{ transitionDelay: `${i * 80}ms` }}>
-                <div className="ib-ic">{t.icon}</div>
-                <h3>{t.h}</h3>
-                <p>{t.p}</p>
-                <div className="acount">{t.count}</div>
-                <div className="tags">
-                  <span>Explore the team →</span>
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
+      <section className="ib-sec alt"><div className="ib-wrap"><div className="ib-head ib-reveal"><span className="ib-eyebrow"><IconBot /> The digital workforce</span><h2>Meet the specialised <span style={{ color: "var(--ib-cyan)" }}>agent teams</span></h2><p>Each team reads and writes to the same material-centric project state, so procurement, delivery and carbon do not become separate data silos.</p></div><div className="ib-cards c3">{agentTeams.map((team, i) => <a className="ib-card ib-reveal" href={team.href} key={team.h} style={{ transitionDelay: `${i * 80}ms` }}><div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}><div className="ib-ic">{team.icon}</div><span className="knum">{team.number}</span></div><h3>{team.h}</h3><p>{team.p}</p><span style={{ marginTop: "1.25rem", color: "var(--ib-cyan)", fontSize: ".85rem", fontWeight: 600 }}>{team.link} →</span></a>)}</div></div></section>
 
-      <section className="ib-sec">
-        <div className="ib-wrap">
-          <div className="ib-split">
-            <div className="ib-reveal">
-              <span className="ib-eyebrow">
-                <IconShare /> Shared data flows
-              </span>
-              <h2>Carbon shares the procurement bloodstream</h2>
-              <p>The Scope 3 agents are not a module bolted on after the fact; they share data and decisions with the procurement team, so every award can be weighed on price, technical fit and tonnes of CO₂e in the same workflow.</p>
-              <a href="/agents/scope3" className="ib-btn ib-btn-primary" style={{ marginTop: "1.6rem" }}>
-                See the Scope 3 team <span className="arw">→</span>
-              </a>
-            </div>
-            <ul className="ib-checks ib-reveal" style={{ transitionDelay: "100ms" }}>
-              {flows.map((f, i) => (
-                <li key={i}>
-                  <IconLink />
-                  <span>
-                    <b>{f.b}</b> {f.rest}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
+      <section className="ib-sec"><div className="ib-wrap"><div className="ib-head ib-reveal"><span className="ib-eyebrow"><IconShield /> Human authority</span><h2>Automate the busywork, <span style={{ color: "var(--ib-cyan)" }}>not accountability</span></h2><p>IntelliByld can move quickly around a decision without silently taking ownership of the decision itself.</p></div><div className="ib-gates ib-reveal"><div className="ib-gate"><IconCheck width={18} height={18} /><span>Supplier award and purchase-order issuance remain human decisions.</span></div><div className="ib-gate"><IconCheck width={18} height={18} /><span>Material substitutions and high-impact mitigation can be routed for approval.</span></div><div className="ib-gate"><IconCheck width={18} height={18} /><span>Carbon factors and exceptions can be reviewed where confidence or data quality is insufficient.</span></div><div className="ib-gate"><IconCheck width={18} height={18} /><span>Formal disclosures and commitments remain subject to the organisation's sign-off process.</span></div></div></div></section>
 
-      <section className="ib-sec alt">
-        <div className="ib-wrap">
-          <div className="ib-head ib-reveal">
-            <span className="ib-eyebrow">
-              <IconShield /> Authority stays human
-            </span>
-            <h2><span style={{ color: "var(--ib-cyan)" }}>Agents do the work;</span> humans hold the decisions</h2>
-            <p>Autonomy without accountability is risky in procurement. The agents draft, analyse, compare and track autonomously but the decisions that carry commercial or regulatory weight sit behind approval gates.</p>
-          </div>
-          <div className="ib-gates ib-reveal">
-            {gates.map((g, i) => (
-              <div className="ib-gate" key={i}>
-                <IconCheck width={18} height={18} />
-                <span>{g}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <section className="ib-sec alt"><div className="ib-wrap"><div className="ib-head ib-reveal"><span className="ib-eyebrow"><IconQuestion /> FAQs</span><h2>Agentic AI, answered</h2></div><div className="ib-faq ib-reveal">{faqs.map((f, i) => <details key={i} open={i === 0}><summary>{f.q}</summary><p>{f.a}</p></details>)}</div></div></section>
 
-      <section className="ib-sec">
-        <div className="ib-wrap">
-          <div className="ib-head center ib-reveal">
-            <span className="ib-eyebrow">
-              <IconTrendingUp /> Outcomes
-            </span>
-            <h2>What a <span style={{ color: "var(--ib-cyan)" }}>coordinated workforce</span> delivers</h2>
-          </div>
-          <div className="ib-cards c3">
-            {outcomes.map((o, i) => (
-              <div className="ib-card ib-reveal" key={i} style={{ transitionDelay: `${i * 70}ms` }}>
-                <div className="ib-ic">{o.icon}</div>
-                <h3>{o.h}</h3>
-                <p>{o.p}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="ib-sec alt">
-        <div className="ib-wrap">
-          <div className="ib-head ib-reveal">
-            <span className="ib-eyebrow">
-              <IconQuestion /> FAQs
-            </span>
-            <h2>The agent architecture, answered</h2>
-          </div>
-          <div className="ib-faq ib-reveal">
-            {faqs.map((f, i) => (
-              <details key={i} open={i === 0}>
-                <summary>{f.q}</summary>
-                <p>{f.a}</p>
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="ib-cta">
-        <div className="ib-cta-bg" />
-        <div className="ib-wrap ib-cta-inner ib-reveal">
-          <h2>
-            Put the <span className="cy">workforce</span> to work
-          </h2>
-          <p>Connect one site and see sourcing, logistics and carbon run in your own data within three weeks.</p>
-          <div className="ib-cta-actions">
-            <a href="/contact-us" className="ib-btn ib-btn-primary">
-              Join Pilot <span className="arw">→</span>
-            </a>
-            <a href="/digital-twins" className="ib-btn ib-btn-ghost">
-              See the Digital Twin
-            </a>
-          </div>
-        </div>
-      </section>
+      <section className="ib-cta"><div className="ib-cta-bg" /><div className="ib-wrap ib-cta-inner ib-reveal"><h2>Put AI to work on a <span className="cy">real material workflow</span></h2><p>Start with one project or package and prove the workflow using your own procurement and delivery data.</p><div className="ib-cta-actions"><a href="/pilot" className="ib-btn ib-btn-primary">Start a Pilot <span className="arw">→</span></a><a href="/material-data-layer" className="ib-btn ib-btn-ghost">See the Data Layer</a></div></div></section>
     </main>
   );
 }

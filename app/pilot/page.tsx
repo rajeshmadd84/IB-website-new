@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import PilotForm from "@/components/ib/pilot-form";
 
 const TITLE = "Join Pilot";
-const DESCRIPTION = "Free pilot for select developers, GCs, and EPC teams. Connect one site and see autonomous coordination in your own data within three weeks.";
+const DESCRIPTION = "Free pilot for select developers, GCs, and EPC teams. Connect one site and see AI-assisted coordination in your own data during a focused project pilot.";
 
 export const metadata: Metadata = {
   title: TITLE,

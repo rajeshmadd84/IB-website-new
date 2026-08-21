@@ -9,25 +9,26 @@ const cols = [
     h: "Platform",
     links: [
       ["Agentic AI", "/agentic-ai"],
-      ["Digital Twins", "/digital-twins"],
-      ["Sustainability", "/sustainability"],
+      ["Material Data Layer", "/material-data-layer"],
+      ["Embodied Carbon", "/sustainability"],
       ["Contact Us", "/contact-us"],
     ],
   },
   {
     h: "Use Cases",
     links: [
-      ["Supplier Delay Neutralization", "/use-cases/supplier-delay-neutralization"],
-      ["Multi-Site Coordination", "/use-cases/multi-site-coordination"],
-      ["Embodied Carbon", "/use-cases/embodied-carbon"],
+      ["Critical Material Delay", "/use-cases/critical-material-delay"],
+      ["Quotation Mismatch", "/use-cases/quotation-mismatch"],
+      ["Lower-Carbon Procurement", "/use-cases/lower-carbon-procurement"],
+      ["Material Substitution", "/use-cases/material-substitution"],
     ],
   },
   {
     h: "Agents",
     links: [
-      ["Procurement", "/agents/procurement"],
-      ["Logistics", "/agents/logistics"],
-      ["Scope 3", "/agents/scope3"],
+      ["Procurement Agents", "/agents/procurement"],
+      ["Logistics Agents", "/agents/logistics"],
+      ["Embodied Carbon Agents", "/agents/scope3"],
     ],
   },
 ];
@@ -55,7 +56,7 @@ export default function Footer() {
                 </>
               )}
             </span>
-            <p>The execution layer for construction, turning fragmented site and supply-chain data into autonomous, real-time decisions.</p>
+            <p>Singapore-based AI for construction material supply chains, connecting procurement, logistics and embodied carbon.</p>
             <a href={LINKEDIN} className="ib-btn ib-btn-ghost" style={{ padding: ".6em 1.1em", fontSize: ".85rem" }}>
               LinkedIn ↗
             </a>
@@ -74,7 +75,7 @@ export default function Footer() {
         <div className="ib-foot-bottom">
           <span className="ib-foot-copy">© 2026 IntelliByld. All rights reserved.</span>
           <div className="ib-foot-social">
-            <a href="/contact-us">Join Pilot</a>
+            <a href="/contact-us">Start Pilot</a>
             
             <a href={LINKEDIN}>LinkedIn</a>
           </div>

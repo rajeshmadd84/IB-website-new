@@ -6,7 +6,7 @@ const SITE_URL = "https://intellibyld.com";
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
-  const staticRoutes = ["", "/agentic-ai", "/digital-twins", "/sustainability", "/pilot", "/contact-us"].map((path) => ({
+  const staticRoutes = ["", "/agentic-ai", "/material-data-layer", "/sustainability", "/pilot", "/contact-us"].map((path) => ({
     url: `${SITE_URL}${path}`,
     lastModified: now,
     changeFrequency: "monthly" as const,
