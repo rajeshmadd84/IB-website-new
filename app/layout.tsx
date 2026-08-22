@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Nav from "@/components/ib/nav";
 import Footer from "@/components/ib/footer";
 import BackToTop from "@/components/ib/back-to-top";
+import GoogleAnalytics from "@/components/ib/google-analytics";
 import { JsonLd, ORGANIZATION_ID, SITE_URL, WEBSITE_ID } from "@/components/ib/json-ld";
 import "@/components/ib/theme.css";
 
@@ -90,6 +91,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
+        <GoogleAnalytics />
         <JsonLd data={siteJsonLd} />
         <div className="ib-root">
           <Nav />

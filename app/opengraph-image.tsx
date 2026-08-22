@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "IntelliByld — Agentic AI for Construction Supply Chains";
+export const alt = "IntelliByld: Decision Intelligence for Construction Supply Chains";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -45,7 +45,7 @@ export default async function Image() {
             maxWidth: "920px",
           }}
         >
-          Agentic AI for construction supply chains
+          Decision intelligence for construction supply chains
         </div>
         <div
           style={{
@@ -56,7 +56,7 @@ export default async function Image() {
             maxWidth: "820px",
           }}
         >
-          Procurement, material logistics and embodied-carbon intelligence for construction supply chains.
+          Understand what changed, what it affects and what to do next across cost, schedule, risk and embodied carbon.
         </div>
       </div>
     ),

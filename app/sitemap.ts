@@ -2,29 +2,22 @@ import type { MetadataRoute } from "next";
 import { useCaseSlugs, agentSlugs } from "@/components/ib/detail-data";
 
 const SITE_URL = "https://www.intellibyld.com";
+const LAST_SIGNIFICANT_UPDATE = new Date("2026-08-21");
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
-
   const staticRoutes = ["", "/agentic-ai", "/material-data-layer", "/sustainability", "/pilot", "/contact-us"].map((path) => ({
     url: `${SITE_URL}${path}`,
-    lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: path === "" ? 1 : 0.8,
+    lastModified: LAST_SIGNIFICANT_UPDATE,
   }));
 
   const useCaseRoutes = useCaseSlugs.map((slug) => ({
     url: `${SITE_URL}/use-cases/${slug}`,
-    lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
+    lastModified: LAST_SIGNIFICANT_UPDATE,
   }));
 
   const agentRoutes = agentSlugs.map((slug) => ({
     url: `${SITE_URL}/agents/${slug}`,
-    lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
+    lastModified: LAST_SIGNIFICANT_UPDATE,
   }));
 
   return [...staticRoutes, ...useCaseRoutes, ...agentRoutes];

@@ -68,7 +68,7 @@ export default function Home() {
             <span className="ib-hero-line cy">construction supply chains.</span>
           </h1>
           <p className="ib-hero-sub">
-            IntelliByld acts as the brain of the material supply chain — understanding what changed, what it affects and what the team should do next across cost, schedule, risk and embodied carbon.
+            IntelliByld turns fragmented site and supplier information into real-time decision intelligence — helping construction teams detect material disruptions earlier, understand project impact and act before delays reach site.
           </p>
           <div className="ib-hero-actions">
             <a href="/pilot" className="ib-btn ib-btn-primary">Run IntelliByld on a Project <span className="arw">→</span></a>
