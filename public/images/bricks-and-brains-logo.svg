@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="120" viewBox="0 0 760 120" role="img" aria-labelledby="title desc">
+  <title id="title">Bricks &amp; Brains</title>
+  <desc id="desc">Bricks and Brains brand mark and wordmark</desc>
+  <rect x="4" y="4" width="112" height="112" rx="18" fill="#2563eb"/>
+  <path d="M28 35h29v21H28zm35 0h29v21H63zM28 62h29v21H28zm35 0h29v21H63z" fill="#fff" opacity=".96"/>
+  <path d="M36 29v60M84 29v60M22 45h76M22 73h76" stroke="#bfdbfe" stroke-width="2" opacity=".9"/>
+  <text x="144" y="79" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="750" letter-spacing="-2">Bricks <tspan fill="#2563eb">&amp;</tspan> Brains</text>
+</svg>

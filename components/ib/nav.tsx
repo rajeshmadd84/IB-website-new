@@ -9,15 +9,6 @@ const useCases = [
   { href: "/use-cases/material-substitution", label: "Material Substitution", sub: "See downstream impact before approval" },
 ];
 
-function Mark() {
-  return (
-    <svg className="mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <path d="M12 2l9 5v10l-9 5-9-5V7l9-5z" stroke="var(--ib-cyan)" strokeWidth="1.6" strokeLinejoin="round" />
-      <path d="M12 12l9-5M12 12v10M12 12L3 7" stroke="var(--ib-cyan)" strokeWidth="1.6" strokeLinejoin="round" opacity="0.85" />
-    </svg>
-  );
-}
-
 function Chevron() {
   return (
     <svg className="ib-drop-caret" width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden="true">
@@ -29,7 +20,6 @@ function Chevron() {
 export default function Nav() {
   const [open, setOpen] = useState(false);
   const [useCasesOpen, setUseCasesOpen] = useState(false);
-  const [showImage, setShowImage] = useState(true);
   const close = () => {
     setOpen(false);
     setUseCasesOpen(false);
@@ -57,28 +47,20 @@ export default function Nav() {
     <header className="ib-nav">
       <div className="ib-wrap ib-nav-inner">
         <a href="/" className="ib-brand" onClick={close}>
-          <img
-            src="/images/logo.svg"
-            alt="IntelliByld"
-            className="ib-logo"
-            style={{ display: showImage ? undefined : "none" }}
-            onError={() => setShowImage(false)}
-            onLoad={() => setShowImage(true)}
-          />
-          {!showImage && (
-            <>
-              <Mark />
-              Intelli<b>Byld</b>
-            </>
-          )}
+          <span className="ib-logo-crop">
+            <img src="/images/bb-logo.svg" alt="Bricks &amp; Brains" className="ib-logo" />
+          </span>
         </a>
         <nav className={`ib-nav-links${open ? " open" : ""}`}>
          
+          <a href="/b2-intelligence" onClick={close}>
+            <span className="ib-b2">B<sub>2</sub></span> Intelligence
+          </a>
           <a href="/agentic-ai" onClick={close}>
-            Agentic AI
+            <span className="ib-b2">B<sub>2</sub></span> Agents
           </a>
           <a href="/sustainability" onClick={close}>
-            Embodied Carbon
+            <span className="ib-b2">B<sub>2</sub></span> Carbon
           </a>
           <div className={`ib-nav-drop${useCasesOpen ? " open" : ""}`}>
             <span

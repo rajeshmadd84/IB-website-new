@@ -43,7 +43,7 @@ export default function ContactForm() {
 
   return (
     <main>
-      <section className="ib-sec" style={{ paddingTop: "clamp(2.5rem,6vh,4rem)", position: "relative" }}>
+      <section className="ib-sec ib-form-hero" style={{ paddingTop: "clamp(2.5rem,6vh,4rem)", position: "relative" }}>
         <div className="ib-grid-bg" />
         <div className="ib-wrap" style={{ position: "relative" }}>
           <div className="ib-form-grid">

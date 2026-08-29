@@ -2,6 +2,7 @@ import { Flowchart } from "@/components/ib/flowchart";
 import { IconCheck, IconZap, IconShield, IconRoute, IconBriefcase, IconBot, IconGear, IconUsers, IconSwap, IconTrendingUp, IconQuestion } from "@/components/ib/icons";
 import { DETAILS, type Detail } from "@/components/ib/detail-data";
 import { JsonLd, breadcrumbJsonLd, faqPageJsonLd, webPageJsonLd } from "@/components/ib/json-ld";
+import { formatB2 } from "@/components/ib/b2-mark";
 
 const OUT_ICONS = [<IconZap key="z" />, <IconShield key="s" />, <IconRoute key="r" />];
 
@@ -23,7 +24,7 @@ export default function DetailPage({ d }: { d: Detail }) {
   const isTeam = !!d.agents;
   const pagePath = `${groupHref}/${d.slug}`;
   const parentCrumb = d.group === "agents"
-    ? { name: "Agentic AI", path: "/agentic-ai" }
+    ? { name: "B₂ Agents", path: "/agentic-ai" }
     : { name: "Use Cases", path: "/#use-cases" };
 
   return (
@@ -39,7 +40,7 @@ export default function DetailPage({ d }: { d: Detail }) {
         <div className="ib-grid-bg" />
         <div className="ib-wrap" style={{ position: "relative" }}>
           <span className="ib-eyebrow">
-            {d.eyebrow === "Use Case" ? <IconBriefcase /> : <IconBot />} {d.eyebrow}
+            {d.eyebrow === "Use Case" ? <IconBriefcase /> : <IconBot />} {formatB2(d.eyebrow)}
           </span>
           <h1>{highlight(d.title, d.cy)}</h1>
           <p>{d.lead}</p>
@@ -218,8 +219,8 @@ export default function DetailPage({ d }: { d: Detail }) {
           <div className="ib-faq ib-reveal">
             {d.faqs.map((f, i) => (
               <details key={i} open={i === 0}>
-                <summary>{f.q}</summary>
-                <p>{f.a}</p>
+                <summary>{formatB2(f.q)}</summary>
+                <p>{formatB2(f.a)}</p>
               </details>
             ))}
           </div>

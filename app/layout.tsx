@@ -9,21 +9,24 @@ import "@/components/ib/theme.css";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "IntelliByld — Decision Intelligence for Construction Supply Chains",
-    template: "%s — IntelliByld",
+    default: "Bricks & Brains — Decision Intelligence for Construction Supply Chains",
+    template: "%s — Bricks & Brains",
   },
   description:
-    "IntelliByld is the decision-intelligence layer for construction material supply chains, connecting procurement, suppliers, logistics, programme risk and embodied carbon to understand what changed, what it affects and what to do next.",
-  keywords: ["Construction Supply Chain", "Agentic AI", "Construction Procurement", "Material Logistics", "BIM", "Embodied Carbon", "Singapore Construction Technology"],
+    "Bricks & Brains is the decision-intelligence layer for construction material supply chains, connecting procurement, suppliers, logistics, programme risk and embodied carbon to understand what changed, what it affects and what to do next.",
+  keywords: ["Construction Supply Chain", "B₂ Agents", "Construction Procurement", "Material Logistics", "BIM", "Embodied Carbon", "Singapore Construction Technology"],
+  icons: {
+    icon: [{ url: "/images/icon.svg", type: "image/svg+xml" }],
+  },
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
-    siteName: "IntelliByld",
-    title: "IntelliByld — Decision Intelligence for Construction Supply Chains",
+    siteName: "Bricks & Brains",
+    title: "Bricks & Brains — Decision Intelligence for Construction Supply Chains",
     description: "Decision intelligence and agentic execution for construction procurement, material logistics, risk and embodied carbon.",
     url: SITE_URL,
   },
-  twitter: { card: "summary_large_image", title: "IntelliByld", description: "Decision intelligence and agentic execution for construction supply chains." },
+  twitter: { card: "summary_large_image", title: "Bricks & Brains", description: "Decision intelligence and agent-powered execution for construction supply chains." },
 };
 
 const siteJsonLd = {
@@ -32,10 +35,10 @@ const siteJsonLd = {
     {
       "@type": "Organization",
       "@id": ORGANIZATION_ID,
-      name: "IntelliByld",
+      name: "Bricks & Brains",
       url: SITE_URL,
-      logo: { "@type": "ImageObject", url: `${SITE_URL}/images/logo.svg` },
-      description: "IntelliByld is a decision-intelligence layer for construction material supply chains, connecting procurement, logistics, programme risk and embodied-carbon data.",
+      logo: { "@type": "ImageObject", url: `${SITE_URL}/images/bb-logo.svg` },
+      description: "Bricks & Brains is a decision-intelligence layer for construction material supply chains, connecting procurement, logistics, programme risk and embodied-carbon data.",
       sameAs: ["https://www.linkedin.com/company/intellibyld"],
       founder: [
         { "@id": `${SITE_URL}/#rajesh-maddineni` },
@@ -55,7 +58,7 @@ const siteJsonLd = {
       "@type": "WebSite",
       "@id": WEBSITE_ID,
       url: SITE_URL,
-      name: "IntelliByld",
+      name: "Bricks & Brains",
       description: "Decision intelligence and agentic execution across construction procurement, material logistics, programme risk and embodied carbon.",
       publisher: { "@id": ORGANIZATION_ID },
       inLanguage: "en",

@@ -67,8 +67,8 @@ const deliveryRisk: Detail = {
   kicker: "USE CASE · 01",
   title: "A critical material delivery starts slipping",
   cy: "starts slipping",
-  lead: "A structural-steel package is approaching its required-on-site date when the supplier moves a production milestone. IntelliByld connects that change to the order, shipment and programme dependency so the team sees the risk before the material misses site.",
-  metaDescription: "See how IntelliByld detects a critical material delay, connects it to project dependencies, evaluates recovery options and routes the decision to the project team.",
+  lead: "A structural-steel package is approaching its required-on-site date when the supplier moves a production milestone. Bricks & Brains connects that change to the order, shipment and programme dependency so the team sees the risk before the material misses site.",
+  metaDescription: "See how Bricks & Brains detects a critical material delay, connects it to project dependencies, evaluates recovery options and routes the decision to the project team.",
   flow: {
     title: "Supplier delay - live scenario",
     caption: "Something changes → the supply-chain twin updates → agents assess impact → the team gets an actionable decision.",
@@ -92,7 +92,7 @@ const deliveryRisk: Detail = {
   },
   splitHead: "From a changed ETA to a decision that protects the programme",
   splitCy: "protects the programme",
-  splitBody: "The value is not another red status. IntelliByld explains what changed, what project activity it touches and which response options are available, while the project team keeps authority over commercial or programme-changing actions.",
+  splitBody: "The value is not another red status. Bricks & Brains explains what changed, what project activity it touches and which response options are available, while the project team keeps authority over commercial or programme-changing actions.",
   checks: [
     { b: "Detect the signal.", rest: "Supplier updates, missed milestones and shipment events update the operational state." },
     { b: "Connect the impact.", rest: "The Knowledge Graph links the affected material to the PO, package, required-on-site date and programme activity." },
@@ -105,7 +105,7 @@ const deliveryRisk: Detail = {
     { h: "The decision required", p: "The right project or commercial owner receives a clear action with the supporting context." },
   ],
   faqs: [
-    { q: "Does IntelliByld automatically change the supplier or programme?", a: "Not by default. Agents can monitor, analyse, prepare options and automate low-risk coordination, while supplier changes, commercial awards and material programme decisions can remain behind human approval gates." },
+    { q: "Does Bricks & Brains automatically change the supplier or programme?", a: "Not by default. Agents can monitor, analyse, prepare options and automate low-risk coordination, while supplier changes, commercial awards and material programme decisions can remain behind human approval gates." },
     { q: "What data does this use case need?", a: "A pilot can start with the relevant material package, supplier commitment, purchase-order or procurement information, required-on-site dates and available programme dependencies. Deeper integrations can be added later." },
   ],
   ctaTitle: "See a material risk before it reaches site",
@@ -119,8 +119,8 @@ const quotationMismatch: Detail = {
   kicker: "USE CASE · 02",
   title: "A supplier quotation does not match the RFQ",
   cy: "does not match",
-  lead: "Five quotations arrive for a material package. One excludes required items, another uses different units and two contain commercial assumptions buried in attachments. IntelliByld turns the responses into one comparable view before evaluation begins.",
-  metaDescription: "See how IntelliByld reads supplier quotations, maps them against BOQ and RFQ requirements, flags exclusions and prepares a comparable bid view for procurement teams.",
+  lead: "Five quotations arrive for a material package. One excludes required items, another uses different units and two contain commercial assumptions buried in attachments. Bricks & Brains turns the responses into one comparable view before evaluation begins.",
+  metaDescription: "See how Bricks & Brains reads supplier quotations, maps them against BOQ and RFQ requirements, flags exclusions and prepares a comparable bid view for procurement teams.",
   flow: {
     title: "Quotation reconciliation - live scenario",
     caption: "Supplier documents are interpreted, mapped to requirements and converted into a comparable procurement decision.",
@@ -145,7 +145,7 @@ const quotationMismatch: Detail = {
   },
   splitHead: "From five different quotations to one decision-ready comparison",
   splitCy: "decision-ready comparison",
-  splitBody: "Procurement teams should not spend their time reconstructing what suppliers meant. IntelliByld uses construction context to extract commercial and technical details, relate them back to the requirement and make exceptions visible before a recommendation is prepared.",
+  splitBody: "Procurement teams should not spend their time reconstructing what suppliers meant. Bricks & Brains uses construction context to extract commercial and technical details, relate them back to the requirement and make exceptions visible before a recommendation is prepared.",
   checks: [
     { b: "Read construction documents.", rest: "The construction-trained SLM interprets quotation text, schedules, exclusions, units and commercial terms." },
     { b: "Map back to the requirement.", rest: "The Knowledge Graph connects quoted line items to the relevant BOQ, specification and RFQ scope." },
@@ -158,7 +158,7 @@ const quotationMismatch: Detail = {
     { h: "Faster clarification", p: "Supplier questions can be prepared from the identified gaps instead of manually rebuilt line by line." },
   ],
   faqs: [
-    { q: "Can IntelliByld understand supplier PDFs and spreadsheets?", a: "The architecture is designed to interpret common procurement documents and connect extracted information to structured project records. Document quality and project-specific terminology can still require review during implementation." },
+    { q: "Can Bricks & Brains understand supplier PDFs and spreadsheets?", a: "The architecture is designed to interpret common procurement documents and connect extracted information to structured project records. Document quality and project-specific terminology can still require review during implementation." },
     { q: "Does the AI choose the winning bidder?", a: "It can prepare a ranked or normalised comparison using agreed criteria, but the commercial award can remain a human approval decision with a recorded audit trail." },
   ],
   ctaTitle: "Turn supplier responses into a comparable decision",
@@ -172,8 +172,8 @@ const lowerCarbonOption: Detail = {
   kicker: "USE CASE · 03",
   title: "A lower-carbon material option appears during procurement",
   cy: "lower-carbon material option",
-  lead: "Two compliant suppliers can meet the specification, but they differ on price, lead time, product carbon data and transport. IntelliByld brings those dimensions into the same procurement view before the award is approved.",
-  metaDescription: "See how IntelliByld combines supplier quotations, EPDs, material quantities and logistics data so construction teams can compare cost, schedule and embodied carbon during procurement.",
+  lead: "Two compliant suppliers can meet the specification, but they differ on price, lead time, product carbon data and transport. Bricks & Brains brings those dimensions into the same procurement view before the award is approved.",
+  metaDescription: "See how Bricks & Brains combines supplier quotations, EPDs, material quantities and logistics data so construction teams can compare cost, schedule and embodied carbon during procurement.",
   flow: {
     title: "Cost + schedule + carbon - live scenario",
     caption: "Carbon is evaluated at the point of procurement, using the same connected material record as price and delivery.",
@@ -198,7 +198,7 @@ const lowerCarbonOption: Detail = {
   },
   splitHead: "Move embodied carbon into the award decision",
   splitCy: "award decision",
-  splitBody: "Instead of calculating carbon after procurement is complete, IntelliByld connects product-specific carbon information to the supplier and material records already being evaluated. That lets teams see trade-offs while there is still time to choose differently.",
+  splitBody: "Instead of calculating carbon after procurement is complete, Bricks & Brains connects product-specific carbon information to the supplier and material records already being evaluated. That lets teams see trade-offs while there is still time to choose differently.",
   checks: [
     { b: "Use the same quantities.", rest: "Carbon calculations are tied to the material quantities and suppliers involved in procurement." },
     { b: "Prefer product-specific data.", rest: "Where available, EPDs can replace generic assumptions and remain linked to the selected product." },
@@ -211,7 +211,7 @@ const lowerCarbonOption: Detail = {
     { h: "Visible trade-offs", p: "Procurement can discuss cost, schedule and carbon from one decision context rather than separate spreadsheets." },
   ],
   faqs: [
-    { q: "Does IntelliByld claim to directly measure emissions?", a: "No. Embodied carbon is calculated from material quantities combined with product-specific EPDs or approved emission factors, with logistics information incorporated where appropriate. The value is the connection to actual procurement and delivery records." },
+    { q: "Does Bricks & Brains claim to directly measure emissions?", a: "No. Embodied carbon is calculated from material quantities combined with product-specific EPDs or approved emission factors, with logistics information incorporated where appropriate. The value is the connection to actual procurement and delivery records." },
     { q: "What happens when a supplier has no EPD?", a: "The workflow can use an approved fallback factor and record the data-quality level, while the supplier or sustainability team is prompted to improve the record when better product-specific data becomes available." },
   ],
   ctaTitle: "Put carbon into the procurement decision",
@@ -225,8 +225,8 @@ const materialSubstitution: Detail = {
   kicker: "USE CASE · 04",
   title: "A supplier proposes a material substitution after award",
   cy: "material substitution",
-  lead: "An awarded product becomes unavailable and the supplier proposes an alternative. IntelliByld connects the proposed substitute to the specification, order, delivery milestone and embodied-carbon record so the team can see the downstream implications before approving the change.",
-  metaDescription: "See how IntelliByld evaluates a proposed construction material substitution across specification, procurement, delivery and embodied carbon before human approval.",
+  lead: "An awarded product becomes unavailable and the supplier proposes an alternative. Bricks & Brains connects the proposed substitute to the specification, order, delivery milestone and embodied-carbon record so the team can see the downstream implications before approving the change.",
+  metaDescription: "See how Bricks & Brains evaluates a proposed construction material substitution across specification, procurement, delivery and embodied carbon before human approval.",
   flow: {
     title: "Material substitution - live scenario",
     caption: "One proposed change is propagated across the connected supply-chain state before approval.",
@@ -250,7 +250,7 @@ const materialSubstitution: Detail = {
   },
   splitHead: "Understand the ripple effect before approving the change",
   splitCy: "ripple effect",
-  splitBody: "A substitution is not just a document revision. It can change technical compliance, price, delivery timing and carbon. IntelliByld keeps those relationships connected so a proposed alternative is assessed against the project context before the new state is accepted.",
+  splitBody: "A substitution is not just a document revision. It can change technical compliance, price, delivery timing and carbon. Bricks & Brains keeps those relationships connected so a proposed alternative is assessed against the project context before the new state is accepted.",
   checks: [
     { b: "Connect affected records.", rest: "The proposed product is related to specification, supplier, PO, delivery and carbon information." },
     { b: "Assess multiple impacts.", rest: "Agents can identify commercial, schedule and embodied-carbon differences rather than reviewing each in isolation." },
@@ -263,7 +263,7 @@ const materialSubstitution: Detail = {
     { h: "Controlled state change", p: "The operational record changes only after the appropriate human decision, preserving traceability." },
   ],
   faqs: [
-    { q: "Does IntelliByld approve technical substitutions?", a: "No. It can organise the information, identify affected records and prepare impact analysis. Technical or contractual approval remains with the authorised project stakeholders." },
+    { q: "Does Bricks & Brains approve technical substitutions?", a: "No. It can organise the information, identify affected records and prepare impact analysis. Technical or contractual approval remains with the authorised project stakeholders." },
     { q: "Why is the Knowledge Graph important here?", a: "Because the substitute can touch several records at once. The graph preserves the relationships between material, specification, supplier, order, schedule and carbon data so the system can identify the relevant downstream context." },
   ],
   ctaTitle: "See every consequence before approving a substitution",
@@ -275,13 +275,13 @@ const materialSubstitution: Detail = {
 const procurement: Detail = {
   slug: "procurement",
   group: "agents",
-  eyebrow: "Agentic AI · Team",
+  eyebrow: "B₂ Agents · Team",
   kicker: "TEAM · SOURCING",
   title: "The Procurement team",
   cy: "Procurement",
   lead: "Five agents that turn a material requirement into a confirmed supplier drafting RFQs, evaluating bids, scoring supplier risk, and negotiating terms. The sourcing team runs end-to-end and surfaces a recommended award for your sign-off.",
   intro2: "Rather than one monolithic AI, a supervising orchestrator coordinates the team and owns every human-in-the-loop checkpoint, so the agents do the analytical heavy lifting while procurement managers keep authority over each commercial decision.",
-  metaDescription: "IntelliByld's Procurement team (Orchestrator, RFQ, Bid Evaluation, Supplier Intelligence and Negotiation agents) runs construction sourcing end-to-end, from BoQ to a recommended award, with humans in the loop.",
+  metaDescription: "The Bricks & Brains Procurement team (Orchestrator, RFQ, Bid Evaluation, Supplier Intelligence and Negotiation agents) runs construction sourcing end-to-end, from BoQ to a recommended award, with humans in the loop.",
   flow: {
     title: "Sourcing - RFQ to award",
     titleCy: "RFQ to award",
@@ -351,13 +351,13 @@ const procurement: Detail = {
 const logistics: Detail = {
   slug: "logistics",
   group: "agents",
-  eyebrow: "Agentic AI · Team",
+  eyebrow: "B₂ Agents · Team",
   kicker: "TEAM · LOGISTICS",
   title: "The Logistics team",
   cy: "Logistics",
   lead: "Three agents that turn a confirmed supplier into a received delivery by confirming POs, watching for disruption, tracking shipments, and aligning arrivals with site readiness. Phase 2 picks up where sourcing ends and runs to goods receipt.",
   intro2: "The Logistics team shares the Procurement Orchestrator, so the handoff from award to execution carries full context, with no dropped balls between sourcing and the site.",
-  metaDescription: "IntelliByld's Logistics team (Order Coordination, Disruption & Risk and Logistics & Site Sync agents) runs construction order execution from PO confirmation to goods receipt, syncing deliveries with site readiness.",
+  metaDescription: "The Bricks & Brains Logistics team (Order Coordination, Disruption & Risk and Logistics & Site Sync agents) runs construction order execution from PO confirmation to goods receipt, syncing deliveries with site readiness.",
   flow: {
     title: "Execution - PO to goods receipt",
     caption: "Coordinate, watch for disruption, then sync the last mile.",
@@ -421,13 +421,13 @@ const logistics: Detail = {
 const scope3: Detail = {
   slug: "scope3",
   group: "agents",
-  eyebrow: "Agentic AI · Team",
+  eyebrow: "B₂ Agents · Team",
   kicker: "TEAM · SCOPE 3",
   title: "The Scope 3 team",
   cy: "Scope 3",
   lead: "Six agents that quantify, disclose and reduce value-chain emissions by mapping every transaction to a GHG Protocol category, calculating CO₂e at the right data-quality tier, engaging suppliers for primary data, and generating audit-ready disclosures. Carbon becomes a real input to procurement, not a number reported six months late.",
   intro2: "The Scope 3 agents share data with the procurement team, drawing on the same RFQ, supplier and shipment records, so emissions are calculated the moment an order is placed, with no separate carbon data entry.",
-  metaDescription: "IntelliByld's Scope 3 team (Orchestrator, Category Mapping, Emissions Calculation, Supplier Data Engagement, Disclosure & Reporting and Reduction Strategy agents) quantifies, discloses and reduces construction value-chain emissions, integrated with procurement.",
+  metaDescription: "The Bricks & Brains Scope 3 team (Orchestrator, Category Mapping, Emissions Calculation, Supplier Data Engagement, Disclosure & Reporting and Reduction Strategy agents) quantifies, discloses and reduces construction value-chain emissions, integrated with procurement.",
   flow: {
     title: "Carbon - PO to disclosure",
     caption: "Map, calculate, collect primary data, then disclose.",

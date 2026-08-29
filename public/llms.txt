@@ -1,18 +1,19 @@
-# IntelliByld
+# Bricks & Brains
 
-> IntelliByld provides construction supply-chain visibility by connecting procurement, supplier, logistics and embodied-carbon information around shared material records.
+> Bricks & Brains provides construction supply-chain visibility by connecting procurement, supplier, logistics and embodied-carbon information around shared material records.
 
-IntelliByld is a Singapore-based construction technology company. Its platform combines a Construction Supply Chain Digital Twin, a knowledge graph, construction-focused language intelligence and specialised AI agents. The agents draft, analyse, monitor and coordinate work while commercial, contractual, technical and regulatory decisions remain behind human approval gates.
+Bricks & Brains is a Singapore-based construction technology company. Its platform combines a Construction Supply Chain Digital Twin, a knowledge graph, construction-focused language intelligence and specialised AI agents. The agents draft, analyse, monitor and coordinate work while commercial, contractual, technical and regulatory decisions remain behind human approval gates.
 
 Canonical website: https://www.intellibyld.com
 
 ## Platform
 
 - [Construction Supply Chain Visibility](https://www.intellibyld.com/): Overview of the platform, live use cases and pilot approach.
-- [Agentic AI](https://www.intellibyld.com/agentic-ai): Specialised agent teams for procurement, material logistics and embodied carbon, with human approval gates.
+- [B₂ Intelligence](https://www.intellibyld.com/b2-intelligence): The shared intelligence layer connecting project, procurement, supplier, logistics and site information.
+- [B₂ Agents](https://www.intellibyld.com/agentic-ai): Specialised agent teams for procurement, material logistics and embodied carbon, with human approval gates.
 - [Material Data Layer](https://www.intellibyld.com/material-data-layer): How BIM, BOQs, ERP, supplier and project information connect to a shared operational material state.
-- [Embodied Carbon](https://www.intellibyld.com/sustainability): Material-level carbon intelligence connected to procurement and delivery records.
-- [Join a Pilot](https://www.intellibyld.com/pilot): Apply to evaluate IntelliByld on a focused project or material package.
+- [B₂ ESG](https://www.intellibyld.com/sustainability): Material-level carbon intelligence connected to procurement and delivery records.
+- [Join a Pilot](https://www.intellibyld.com/pilot): Apply to evaluate Bricks & Brains on a focused project or material package.
 - [Contact](https://www.intellibyld.com/contact-us): Contact information and company details.
 
 ## Live Use Cases
@@ -26,7 +27,7 @@ Canonical website: https://www.intellibyld.com
 
 - [Procurement Agents](https://www.intellibyld.com/agents/procurement): Draft RFQs, structure supplier quotations, compare bids and prepare award recommendations.
 - [Logistics Agents](https://www.intellibyld.com/agents/logistics): Monitor supplier commitments and delivery milestones, surface disruption risk and coordinate exceptions.
-- [Embodied Carbon Agents](https://www.intellibyld.com/agents/scope3): Match materials to EPDs or approved factors, calculate carbon and support lower-carbon procurement comparisons.
+- [B₂ ESG Agents](https://www.intellibyld.com/agents/scope3): Match materials to EPDs or approved factors, calculate carbon and support lower-carbon procurement comparisons.
 
 ## Contact
 

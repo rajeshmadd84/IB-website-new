@@ -5,7 +5,7 @@ const SITE_URL = "https://www.intellibyld.com";
 const LAST_SIGNIFICANT_UPDATE = new Date("2026-08-21");
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = ["", "/agentic-ai", "/material-data-layer", "/sustainability", "/pilot", "/contact-us"].map((path) => ({
+  const staticRoutes = ["", "/b2-intelligence", "/agentic-ai", "/material-data-layer", "/sustainability", "/pilot", "/contact-us"].map((path) => ({
     url: `${SITE_URL}${path}`,
     lastModified: LAST_SIGNIFICANT_UPDATE,
   }));

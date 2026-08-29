@@ -14,7 +14,7 @@ export function SupplyChainTwinAnimation() {
   ];
 
   return (
-    <div className="ib-twinviz" role="img" aria-label="Animated IntelliByld construction supply chain digital twin. BIM, ERP, documents, suppliers and EPDs feed a live operational twin powered by a knowledge graph and construction-trained SLM. Agentic AI turns that shared state into procurement, logistics and embodied-carbon workflows.">
+    <div className="ib-twinviz" role="img" aria-label="Animated Bricks & Brains construction supply chain digital twin. BIM, ERP, documents, suppliers and EPDs feed a live operational twin powered by a knowledge graph and construction-trained SLM. B₂ Agents turn that shared state into procurement, logistics and embodied-carbon workflows.">
       <div className="ib-twinviz-bar">
         <span>Live Construction Supply Chain</span>
         <span className="ib-twinviz-live"><i /> REAL-TIME VISIBILITY</span>
@@ -52,7 +52,7 @@ export function SupplyChainTwinAnimation() {
           <g className="tv-twin-core">
             <rect x="102" y="176" width="756" height="194" rx="22" className="tv-core-shell" />
             <rect x="114" y="188" width="732" height="170" rx="17" className="tv-core-inner" />
-            <text x="480" y="218" textAnchor="middle" className="tv-core-kicker">INTELLIBYLD CORE</text>
+            <text x="480" y="218" textAnchor="middle" className="tv-core-kicker">BRICKS & BRAINS CORE</text>
             <text x="480" y="250" textAnchor="middle" className="tv-core-title">Construction Supply Chain Digital Twin</text>
             <text x="480" y="272" textAnchor="middle" className="tv-core-sub">live state of materials · suppliers · orders · shipments · carbon</text>
 
@@ -85,7 +85,7 @@ export function SupplyChainTwinAnimation() {
             <rect width="276" height="54" rx="14" />
             <circle cx="30" cy="27" r="9" />
             <path d="M26 27 h8 M30 23 v8" />
-            <text x="54" y="24" className="tv-agent-title">Agentic AI</text>
+            <text x="54" y="24" className="tv-agent-title">B<tspan baselineShift="sub" fontSize="62%">2</tspan> Agents</text>
             <text x="54" y="40" className="tv-agent-sub">monitor · reason · coordinate · recommend</text>
           </g>
 
@@ -111,7 +111,7 @@ export function SupplyChainTwinAnimation() {
       <div className="ib-twinviz-foot">
         <span><b>BIM</b> models what is designed.</span>
         <span className="ib-twinviz-sep">→</span>
-        <span><b>IntelliByld</b> models the operational material supply chain.</span>
+        <span><b>Bricks & Brains</b> models the operational material supply chain.</span>
         <span className="ib-twinviz-badge">NOT A 3D / BIM TWIN</span>
       </div>
     </div>

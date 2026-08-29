@@ -9,6 +9,16 @@
 export type NodeKind = "default" | "source" | "agent" | "twin" | "physical";
 export type Side = "left" | "right" | "top" | "bottom";
 
+function svgB2(text: string) {
+  const parts = text.split("B₂");
+  return parts.map((part, index) => (
+    <tspan key={`${part}-${index}`}>
+      {index > 0 && <>B<tspan baselineShift="sub" fontSize="62%">2</tspan></>}
+      {part}
+    </tspan>
+  ));
+}
+
 export interface FCNode {
   id: string;
   label: string;
@@ -142,7 +152,7 @@ export function Flowchart({ nodes, edges, width = 1000, height, title, titleCy, 
               <g key={n.id} className={`ib-fc-node ib-fc-${kind}${glow ? " ib-fc-glow" : ""}`} transform={`translate(${n.x} ${n.y})`}>
                 <rect width={w} height={h} rx={11} />
                 <text className="lbl" x={w / 2} y={twoLine ? h / 2 - 4 : h / 2 + 6} textAnchor="middle">
-                  {n.label}
+                  {svgB2(n.label)}
                 </text>
                 {n.sub && (
                   <text className="sub" x={w / 2} y={h / 2 + 14} textAnchor="middle">

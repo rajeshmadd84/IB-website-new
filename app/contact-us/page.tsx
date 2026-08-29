@@ -3,7 +3,7 @@ import PilotForm from "@/components/ib/pilot-form";
 import { JsonLd, webPageJsonLd } from "@/components/ib/json-ld";
 
 const TITLE = "Contact";
-const DESCRIPTION = "Talk to IntelliByld about a pilot, a partnership, or the platform. Headquartered in Singapore.";
+const DESCRIPTION = "Talk to Bricks & Brains about a pilot, a partnership, or the platform. Headquartered in Singapore.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -24,7 +24,7 @@ export default function ContactPage() {
             Talk to the team building the <span className="cy">control tower</span>
           </>
         }
-        lead="Pilot, partnership, or platform question? IntelliByld is a Singapore-based construction technology company working with the local construction ecosystem."
+        lead="Pilot, partnership, or platform question? Bricks & Brains is a Singapore-based construction technology company working with the local construction ecosystem."
       />
       <section className="ib-sec alt" aria-labelledby="company-details">
         <div className="ib-wrap">
@@ -34,7 +34,7 @@ export default function ContactPage() {
               Singapore
             </span>
             <h3 id="company-details" style={{ fontSize: "clamp(1.9rem,4.4vw,3rem)", letterSpacing: "-.025em", margin: "1rem 0 1.1rem" }}>
-              IntelliByld Pte. Ltd.
+              Bricks & Brains Pte. Ltd.
               <br />
               <span style={{ fontSize: "0.5em", letterSpacing: "normal", fontWeight: 400 }}>(To be Registered)</span>
             </h3>

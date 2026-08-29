@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "IntelliByld: Decision Intelligence for Construction Supply Chains";
+export const alt = "Bricks & Brains: Decision Intelligence for Construction Supply Chains";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -32,7 +32,7 @@ export default async function Image() {
             marginBottom: "36px",
           }}
         >
-          IntelliByld
+          Bricks &amp; Brains
         </div>
         <div
           style={{
