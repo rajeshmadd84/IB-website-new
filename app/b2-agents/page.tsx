@@ -56,7 +56,7 @@ export default function AgenticAI() {
 
       <section className="ib-sec alt"><div className="ib-wrap"><div className="ib-head ib-reveal"><span className="ib-eyebrow"><IconQuestion /> FAQs</span><h2><B2Mark /> Agents, answered</h2></div><div className="ib-faq ib-reveal">{faqs.map((f, i) => <details key={i} open={i === 0}><summary>{formatB2(f.q)}</summary><p>{formatB2(f.a)}</p></details>)}</div></div></section>
 
-      <section className="ib-cta"><div className="ib-cta-bg" /><div className="ib-wrap ib-cta-inner ib-reveal"><h2>Put AI to work on a <span className="cy">real material workflow</span></h2><p>Start with one project or package and prove the workflow using your own procurement and delivery data.</p><div className="ib-cta-actions"><a href="/material-data-layer" className="ib-btn ib-btn-ghost">See the Data Layer</a></div></div></section>
+      <section className="ib-cta"><div className="ib-cta-bg" /><div className="ib-wrap ib-cta-inner ib-reveal"><h2>Put AI to work on a <span className="cy">real material workflow</span></h2><p>Start with one project or package and prove the workflow using your own procurement and delivery data.</p><div className="ib-cta-actions"><a href="/contact-us" className="ib-btn ib-btn-ghost">Talk to Bricks &amp; Brains</a></div></div></section>
     </main>
   );
 }

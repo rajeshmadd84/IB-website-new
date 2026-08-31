@@ -67,17 +67,17 @@ export default function Home() {
       <section className="ib-sec">
         <div className="ib-wrap">
           <div className="ib-head center ib-reveal">
-            <span className="ib-eyebrow">The idea</span>
-            <h2>Bricks × Brains.</h2>
+            <span className="ib-eyebrow ib-idea-eyebrow">The idea</span>
+            <h2><span className="ib-idea-bricks-text">Bricks</span> × <span className="ib-idea-brains-text">Brains</span>.</h2>
             <p>The physical construction world connected to the intelligence required to understand and coordinate it.</p>
           </div>
           <div className="ib-idea-grid ib-reveal">
-            <div className="ib-card">
+            <div className="ib-card ib-idea-bricks">
               <h3>Bricks</h3>
               <p>Projects · Materials · Suppliers · Equipment · Crews · Deliveries · Site conditions</p>
             </div>
             <div className="ib-idea-times" aria-hidden="true">×</div>
-            <div className="ib-card">
+            <div className="ib-card ib-idea-brains">
               <h3>Brains</h3>
               <p>Context · Relationships · Reasoning · Prediction · Decisions · Actions</p>
             </div>

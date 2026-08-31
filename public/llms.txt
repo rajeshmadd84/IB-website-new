@@ -32,4 +32,4 @@ Canonical website: https://www.intellibyld.com
 ## Contact
 
 - Email: hello@intellibyld.com
-- LinkedIn: https://www.linkedin.com/company/intellibyld
+- LinkedIn: https://www.linkedin.com/company/bricksandbrains

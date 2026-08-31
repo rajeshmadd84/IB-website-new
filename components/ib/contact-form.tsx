@@ -75,8 +75,8 @@ export default function ContactForm() {
                     <h4>Prefer LinkedIn?</h4>
                     <p>
                       Reach the team{" "}
-                      <a href="https://www.linkedin.com/company/intellibyld" style={{ color: "var(--ib-cyan)" }}>
-                        @intellibyld
+                      <a href="https://www.linkedin.com/company/bricksandbrains" style={{ color: "var(--ib-cyan)" }}>
+                        @Bricks&Brains
                       </a>
                       .
                     </p>

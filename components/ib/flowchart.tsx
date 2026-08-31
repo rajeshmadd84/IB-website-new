@@ -22,7 +22,7 @@ function svgB2(text: string) {
 export interface FCNode {
   id: string;
   label: string;
-  sub?: string;
+  sub?: string | string[];
   x: number;
   y: number;
   w?: number;
@@ -147,16 +147,21 @@ export function Flowchart({ nodes, edges, width = 1000, height, title, titleCy, 
             const h = n.h ?? NODE_H;
             const kind = n.kind ?? "default";
             const glow = n.glow || kind === "twin";
-            const twoLine = !!n.sub;
+            const subLines = Array.isArray(n.sub) ? n.sub : n.sub ? [n.sub] : [];
+            const twoLine = subLines.length > 0;
             return (
               <g key={n.id} className={`ib-fc-node ib-fc-${kind}${glow ? " ib-fc-glow" : ""}`} transform={`translate(${n.x} ${n.y})`}>
                 <rect width={w} height={h} rx={11} />
                 <text className="lbl" x={w / 2} y={twoLine ? h / 2 - 4 : h / 2 + 6} textAnchor="middle">
                   {svgB2(n.label)}
                 </text>
-                {n.sub && (
+                {subLines.length > 0 && (
                   <text className="sub" x={w / 2} y={h / 2 + 14} textAnchor="middle">
-                    {n.sub}
+                    {subLines.map((line, index) => (
+                      <tspan key={line} x={w / 2} dy={index === 0 ? 0 : 13}>
+                        {line}
+                      </tspan>
+                    ))}
                   </text>
                 )}
               </g>

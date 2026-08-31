@@ -1,6 +1,6 @@
 import { formatB2 } from "./b2-mark";
 
-const LINKEDIN = "https://www.linkedin.com/company/intellibyld";
+const LINKEDIN = "https://www.linkedin.com/company/bricksandbrains";
 
 const cols = [
   {
@@ -44,7 +44,7 @@ export default function Footer() {
               </span>
             </span>
             <p>Singapore-based AI for construction material supply chains, connecting procurement, logistics and embodied carbon.</p>
-            <a href={LINKEDIN} className="ib-btn ib-btn-ghost" style={{ padding: ".6em 1.1em", fontSize: ".85rem" }}>
+            <a href={LINKEDIN} className="ib-btn ib-btn-ghost" style={{ padding: ".6em 1.1em", fontSize: ".85rem" }} target="_blank" rel="noopener noreferrer">
               LinkedIn ↗
             </a>
           </div>
@@ -62,7 +62,7 @@ export default function Footer() {
         <div className="ib-foot-bottom">
           <span className="ib-foot-copy">© 2026 Bricks &amp; Brains. All rights reserved.</span>
           <div className="ib-foot-social">
-            <a href={LINKEDIN}>LinkedIn</a>
+            <a href={LINKEDIN} target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
       </div>

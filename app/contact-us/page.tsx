@@ -48,7 +48,7 @@ export default function ContactPage() {
             </p>
             <p style={{ fontSize: "1.04rem", marginBottom: "1rem", color: "var(--ib-text-body)" }}>
               <strong>Email:</strong> hello@intellibyld.com<br />
-              <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/intellibyld" style={{ color: "var(--ib-cyan)" }} target="_blank" rel="noopener noreferrer">@intellibyld</a>
+              <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/bricksandbrains" style={{ color: "var(--ib-cyan)" }} target="_blank" rel="noopener noreferrer">@Bricks&Brains</a>
             </p>
           </div>
         </div>

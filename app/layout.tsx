@@ -39,7 +39,7 @@ const siteJsonLd = {
       url: SITE_URL,
       logo: { "@type": "ImageObject", url: `${SITE_URL}/images/bb-logo.svg` },
       description: "Bricks & Brains is a decision-intelligence layer for construction material supply chains, connecting procurement, logistics, programme risk and embodied-carbon data.",
-      sameAs: ["https://www.linkedin.com/company/intellibyld"],
+      sameAs: ["https://www.linkedin.com/company/bricksandbrains"],
       founder: [
         { "@id": `${SITE_URL}/#rajesh-maddineni` },
         { "@id": `${SITE_URL}/#tarun-sai-kalimili` },
