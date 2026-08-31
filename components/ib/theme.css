@@ -46,6 +46,11 @@
 
 .ib-wrap{max-width:var(--ib-maxw);margin:0 auto;padding-left:var(--ib-pad);padding-right:var(--ib-pad)}
 
+.ib-rebrand-banner{background:var(--ib-cyan);color:#fff;border-bottom:1px solid var(--ib-cyan-deep)}
+.ib-rebrand-banner-inner{min-height:44px;display:flex;align-items:center;justify-content:center;gap:.55rem;font-family:var(--ib-display);font-size:.98rem;letter-spacing:.01em;text-align:center}
+.ib-rebrand-banner-inner strong{font-weight:700}
+.ib-rebrand-banner-inner span{opacity:.78;font-weight:500}
+
 /* eyebrow */
 .ib-eyebrow{font-family:var(--ib-mono);font-size:.88rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ib-cyan);display:inline-flex;align-items:center;gap:.6em}
 .ib-eyebrow svg{width:19px;height:19px;flex-shrink:0;stroke:var(--ib-cyan)}
@@ -74,7 +79,7 @@
 .ib-b2{display:inline-block;white-space:nowrap;letter-spacing:0}
 .ib-b2 sub{position:relative;top:.38em;margin-left:-.08em;font-size:.58em;line-height:0;vertical-align:baseline;letter-spacing:0}
 .ib-nav-links{display:flex;align-items:center;gap:1.8rem}
-.ib-nav-links a,.ib-nav-drop>span{font-size:.92rem;color:var(--ib-text-body);transition:color .15s;cursor:pointer;display:inline-flex;align-items:center;gap:.35em}
+.ib-nav-links a,.ib-nav-drop>span{font-size:.92rem;font-weight:600;color:var(--ib-text-body);transition:color .15s;cursor:pointer;display:inline-flex;align-items:center;gap:.35em}
 .ib-nav-drop{position:relative}
 .ib-drop-caret{color:var(--ib-text-muted);flex-shrink:0;transition:transform .16s,color .16s}
 .ib-nav-drop:focus-within .ib-drop-caret{transform:rotate(180deg);color:var(--ib-cyan)}
@@ -318,6 +323,7 @@
   .ib-foot-about{grid-column:1/-1}
 }
 @media(max-width:600px){
+  .ib-rebrand-banner-inner{min-height:48px;gap:.38rem;font-size:.86rem;flex-wrap:wrap;padding-top:.55rem;padding-bottom:.55rem}
   .ib-eyebrow{font-size:.8rem;letter-spacing:.14em}
   .ib-eyebrow svg{width:17px;height:17px}
   .ib-hero::before,.ib-phero::before,.ib-form-hero::before{background-size:auto 100%;opacity:.21}

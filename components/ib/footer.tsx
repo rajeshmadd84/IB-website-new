@@ -7,10 +7,18 @@ const cols = [
     h: "Platform",
     links: [
       ["B₂ Intelligence", "/b2-intelligence"],
-      ["B₂ Agents", "/agentic-ai"],
+      ["B₂ Agents", "/b2-agents"],
       ["Material Data Layer", "/material-data-layer"],
-      ["B₂ Carbon", "/sustainability"],
+      ["B₂ Carbon", "/b2-carbon"],
       ["Contact Us", "/contact-us"],
+    ],
+  },
+  {
+    h: "B₂ Agents",
+    links: [
+      ["B₂ Procurement Agents", "/agents/procurement"],
+      ["B₂ Logistics Agents", "/agents/logistics"],
+      ["B₂ Carbon", "/agents/scope3"],
     ],
   },
   {
@@ -20,14 +28,6 @@ const cols = [
       ["Quotation Mismatch", "/use-cases/quotation-mismatch"],
       ["Lower-Carbon Procurement", "/use-cases/lower-carbon-procurement"],
       ["Material Substitution", "/use-cases/material-substitution"],
-    ],
-  },
-  {
-    h: "B₂ Agents",
-    links: [
-      ["B₂ Procurement Agents", "/agents/procurement"],
-      ["B₂ Logistics Agents", "/agents/logistics"],
-      ["B₂ Carbon", "/agents/scope3"],
     ],
   },
 ];
@@ -62,8 +62,6 @@ export default function Footer() {
         <div className="ib-foot-bottom">
           <span className="ib-foot-copy">© 2026 Bricks &amp; Brains. All rights reserved.</span>
           <div className="ib-foot-social">
-            <a href="/contact-us">Start Pilot</a>
-            
             <a href={LINKEDIN}>LinkedIn</a>
           </div>
         </div>

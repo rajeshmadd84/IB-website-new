@@ -10,8 +10,8 @@ const DESCRIPTION = "Connect BOQs, supplier data, EPDs, purchase orders and deli
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/sustainability" },
-  openGraph: { title: TITLE, description: DESCRIPTION, url: "/sustainability" },
+  alternates: { canonical: "/b2-carbon" },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: "/b2-carbon" },
   twitter: { title: TITLE, description: DESCRIPTION },
 };
 
@@ -48,7 +48,7 @@ const faqs = [
 export default function Sustainability() {
   return (
     <main>
-      <JsonLd data={webPageJsonLd({ name: TITLE, description: DESCRIPTION, path: "/sustainability" })} />
+      <JsonLd data={webPageJsonLd({ name: TITLE, description: DESCRIPTION, path: "/b2-carbon" })} />
       <JsonLd data={faqPageJsonLd(faqs)} />
       <section className="ib-phero"><div className="ib-grid-bg" /><div className="ib-wrap" style={{ position: "relative" }}><span className="ib-eyebrow"><IconLeaf /> <B2Mark /> ESG</span><h1>Know the carbon of <span className="cy">what you procure.</span></h1><p>Bricks & Brains connects BOQs, supplier quotations, purchase orders, EPDs and delivery records to build a living embodied-carbon ledger for construction projects.</p><div className="ib-hero-actions" style={{ marginTop: "1.6rem" }}><a href="/pilot" className="ib-btn ib-btn-primary">Pilot <B2Mark /> ESG <span className="arw">→</span></a><a href="/contact-us" className="ib-btn ib-btn-ghost">Talk to us</a></div></div></section>
 
@@ -60,7 +60,7 @@ export default function Sustainability() {
 
       <section className="ib-sec alt"><div className="ib-wrap"><div className="ib-head ib-reveal"><span className="ib-eyebrow"><IconQuestion /> FAQs</span><h2>Embodied carbon, answered</h2></div><div className="ib-faq ib-reveal">{faqs.map((f, i) => <details key={i} open={i === 0}><summary>{f.q}</summary><p>{f.a}</p></details>)}</div></div></section>
 
-      <section className="ib-cta"><div className="ib-cta-bg" /><div className="ib-wrap ib-cta-inner ib-reveal"><h2>Connect carbon to the <span className="cy">materials you actually buy</span></h2><p>Start with one project or material package and build the carbon ledger from your existing procurement data.</p><div className="ib-cta-actions"><a href="/pilot" className="ib-btn ib-btn-primary">Start a Pilot <span className="arw">→</span></a><a href="/contact-us" className="ib-btn ib-btn-ghost">Contact us</a></div></div></section>
+      <section className="ib-cta"><div className="ib-cta-bg" /><div className="ib-wrap ib-cta-inner ib-reveal"><h2>Connect carbon to the <span className="cy">materials you actually buy</span></h2><p>Start with one project or material package and build the carbon ledger from your existing procurement data.</p><div className="ib-cta-actions"><a href="/contact-us" className="ib-btn ib-btn-ghost">Contact us</a></div></div></section>
     </main>
   );
 }

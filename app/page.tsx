@@ -2,6 +2,7 @@ import { SupplyChainTwinAnimation } from "@/components/ib/supply-chain-twin-anim
 import { IconBot, IconLayers, IconRadar, IconShield, IconLeaf, IconBlocks, IconCheck, IconLink, IconZap, IconTarget, IconUsers, IconPlug, IconPlay, IconQuestion, IconTruck } from "@/components/ib/icons";
 import { JsonLd, faqPageJsonLd, webPageJsonLd } from "@/components/ib/json-ld";
 import { B2Mark } from "@/components/ib/b2-mark";
+import RebrandBanner from "@/components/ib/rebrand-banner";
 
 const PAGE_TITLE = "Bricks & Brains — Construction Intelligence for Supply Chains";
 const PAGE_DESCRIPTION = "Bricks & Brains is the construction intelligence company behind B₂ Intelligence, B₂ Agents and B₂ Carbon — connecting project and supply-chain information to understand disruptions and coordinate action.";
@@ -40,6 +41,8 @@ export default function Home() {
       <JsonLd data={webPageJsonLd({ name: PAGE_TITLE, description: PAGE_DESCRIPTION, path: "/" })} />
       <JsonLd data={faqPageJsonLd(faqs)} />
 
+      <RebrandBanner />
+
       <section className="ib-hero">
         <div className="ib-grid-bg" />
         <div className="ib-wrap ib-hero-inner">
@@ -52,12 +55,32 @@ export default function Home() {
             Bricks &amp; Brains connects project, procurement, supplier and site data to understand disruptions, reason through their impact and coordinate what happens next.
           </p>
           <div className="ib-hero-actions">
-            <a href="/pilot" className="ib-btn ib-btn-primary">Start a Pilot <span className="arw">→</span></a>
             <a href="/b2-intelligence" className="ib-btn ib-btn-ghost">Meet <B2Mark /> Intelligence</a>
             <span className="ib-hero-note">Built in Singapore · pilots open</span>
           </div>
           <div style={{ marginTop: "clamp(2.2rem,5vw,3.4rem)" }}>
             <SupplyChainTwinAnimation />
+          </div>
+        </div>
+      </section>
+
+      <section className="ib-sec">
+        <div className="ib-wrap">
+          <div className="ib-head center ib-reveal">
+            <span className="ib-eyebrow">The idea</span>
+            <h2>Bricks × Brains.</h2>
+            <p>The physical construction world connected to the intelligence required to understand and coordinate it.</p>
+          </div>
+          <div className="ib-idea-grid ib-reveal">
+            <div className="ib-card">
+              <h3>Bricks</h3>
+              <p>Projects · Materials · Suppliers · Equipment · Crews · Deliveries · Site conditions</p>
+            </div>
+            <div className="ib-idea-times" aria-hidden="true">×</div>
+            <div className="ib-card">
+              <h3>Brains</h3>
+              <p>Context · Relationships · Reasoning · Prediction · Decisions · Actions</p>
+            </div>
           </div>
         </div>
       </section>
@@ -89,14 +112,10 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <div className="ib-card ib-reveal" style={{ marginTop: "1.5rem", borderColor: "rgba(0,224,255,.32)" }}>
-            <div className="ib-split" style={{ alignItems: "center" }}>
-              <div>
-                <span className="ib-eyebrow"><IconRadar /> The Bricks & Brains brain</span>
-                <h3 style={{ marginTop: ".8rem", fontSize: "clamp(1.35rem,2.5vw,2rem)" }}>Cost · Schedule · Risk · Carbon</h3>
-              </div>
-              <p style={{ margin: 0 }}><b><B2Mark /> Intelligence sits between the live Construction Supply Chain Digital Twin and the agent teams.</b> It turns connected project context into prioritised recommendations, while humans retain authority over commercial and project decisions.</p>
-            </div>
+          <div className="ib-reveal" style={{ marginTop: "1.8rem" }}>
+            <a href="/b2-intelligence" className="ib-btn ib-btn-primary">
+              Explore <B2Mark /> Intelligence <span className="arw">→</span>
+            </a>
           </div>
         </div>
       </section>
@@ -116,7 +135,7 @@ export default function Home() {
             </article>
             <article className="ib-card ib-reveal" style={{ transitionDelay: "80ms" }}>
               <span className="ib-eyebrow"><B2Mark /> is reasoning</span>
-              <h3>Understanding the impact…</h3>
+              <h3>Understanding the impact...</h3>
               <ul className="ib-checks">
                 <li><IconCheck /><span>Concrete pour schedule</span></li>
                 <li><IconCheck /><span>Concrete crew availability</span></li>
@@ -149,7 +168,6 @@ export default function Home() {
                 <li><IconCheck /><span><b>Physical state.</b> Supplier status, shipment milestones, ETA and site readiness.</span></li>
                 <li><IconCheck /><span><b>Carbon state.</b> Quantities, EPDs, emission factors and material-level CO₂e.</span></li>
               </ul>
-              <a href="/material-data-layer" className="ib-btn ib-btn-ghost" style={{ marginTop: "1.8rem" }}>Explore the Data Layer <span className="arw">→</span></a>
             </div>
             <div className="ib-card ib-reveal" style={{ transitionDelay: "100ms" }}>
               <span className="ib-eyebrow">Material record</span>
@@ -174,7 +192,7 @@ export default function Home() {
             <div className="ib-card ib-reveal" style={{ transitionDelay: "80ms" }}><div className="ib-ic"><IconTruck /></div><h3>Logistics agents</h3><p>Monitor supplier commitments and delivery milestones, identify disruption risk and coordinate exceptions.</p></div>
             <div className="ib-card ib-reveal" style={{ transitionDelay: "160ms" }}><div className="ib-ic"><IconLeaf /></div><h3>Carbon agents</h3><p>Match material records to EPDs or approved factors, calculate embodied carbon and surface lower-carbon options.</p></div>
           </div>
-          <div style={{ marginTop: "1.8rem" }}><a href="/agentic-ai" className="ib-btn ib-btn-ghost">See How <B2Mark /> Agents Work <span className="arw">→</span></a></div>
+          <div style={{ marginTop: "1.8rem" }}><a href="/b2-agents" className="ib-btn ib-btn-ghost">See How <B2Mark /> Agents Work <span className="arw">→</span></a></div>
         </div>
       </section>
 
@@ -190,7 +208,7 @@ export default function Home() {
             <div className="ib-card ib-reveal" style={{ transitionDelay: "80ms" }}><h3>Procured</h3><p>Replace assumptions with selected suppliers, product-specific EPDs and committed quantities as awards are made.</p></div>
             <div className="ib-card ib-reveal" style={{ transitionDelay: "160ms" }}><h3>Delivered / As-built</h3><p>Reconcile substitutions and actual material quantities so the carbon ledger moves closer to what was truly built.</p></div>
           </div>
-          <div style={{ marginTop: "1.8rem" }}><a href="/sustainability" className="ib-btn ib-btn-primary">Explore <B2Mark /> Carbon <span className="arw">→</span></a></div>
+          <div style={{ marginTop: "1.8rem" }}><a href="/b2-carbon" className="ib-btn ib-btn-primary">Explore <B2Mark /> Carbon <span className="arw">→</span></a></div>
         </div>
       </section>
 
@@ -225,7 +243,7 @@ export default function Home() {
         <div className="ib-wrap"><div className="ib-head ib-reveal"><span className="ib-eyebrow"><IconQuestion /> FAQs</span><h2>Bricks & Brains, answered</h2></div><div className="ib-faq ib-reveal">{faqs.map((f, i) => <details key={i} open={i === 0}><summary>{f.q}</summary><p>{f.a}</p></details>)}</div></div>
       </section>
 
-      <section className="ib-cta"><div className="ib-cta-bg" /><div className="ib-wrap ib-cta-inner ib-reveal"><h2>Make the material supply chain <span className="cy">intelligent</span></h2><p>Bring procurement, delivery and embodied-carbon data together on a real construction project.</p><div className="ib-cta-actions"><a href="/pilot" className="ib-btn ib-btn-primary">Start a Pilot <span className="arw">→</span></a><a href="/contact-us" className="ib-btn ib-btn-ghost">Talk to Bricks & Brains</a></div></div></section>
+      <section className="ib-cta"><div className="ib-cta-bg" /><div className="ib-wrap ib-cta-inner ib-reveal"><h2>Make the material supply chain <span className="cy">intelligent</span></h2><p>Bring procurement, delivery and embodied-carbon data together on a real construction project.</p><div className="ib-cta-actions"><a href="/contact-us" className="ib-btn ib-btn-ghost">Talk to Bricks & Brains</a></div></div></section>
     </main>
   );
 }

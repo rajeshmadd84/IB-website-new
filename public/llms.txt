@@ -10,9 +10,9 @@ Canonical website: https://www.intellibyld.com
 
 - [Construction Supply Chain Visibility](https://www.intellibyld.com/): Overview of the platform, live use cases and pilot approach.
 - [B₂ Intelligence](https://www.intellibyld.com/b2-intelligence): The shared intelligence layer connecting project, procurement, supplier, logistics and site information.
-- [B₂ Agents](https://www.intellibyld.com/agentic-ai): Specialised agent teams for procurement, material logistics and embodied carbon, with human approval gates.
+- [B₂ Agents](https://www.intellibyld.com/b2-agents): Specialised agent teams for procurement, material logistics and embodied carbon, with human approval gates.
 - [Material Data Layer](https://www.intellibyld.com/material-data-layer): How BIM, BOQs, ERP, supplier and project information connect to a shared operational material state.
-- [B₂ ESG](https://www.intellibyld.com/sustainability): Material-level carbon intelligence connected to procurement and delivery records.
+- [B₂ ESG](https://www.intellibyld.com/b2-carbon): Material-level carbon intelligence connected to procurement and delivery records.
 - [Join a Pilot](https://www.intellibyld.com/pilot): Apply to evaluate Bricks & Brains on a focused project or material package.
 - [Contact](https://www.intellibyld.com/contact-us): Contact information and company details.
 

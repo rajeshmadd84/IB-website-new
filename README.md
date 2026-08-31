@@ -11,9 +11,9 @@ animated SVG. Drops into a Next.js App Router project.
 | Route | File | Notes |
 |-------|------|-------|
 | `/` | `app/page.tsx` | Home — hero flowchart, agents, value props, team, FAQs |
-| `/agentic-ai` | `app/agentic-ai/page.tsx` | Overview — three teams, fourteen agents |
+| `/b2-agents` | `app/b2-agents/page.tsx` | Overview — three teams, fourteen agents |
 | `/digital-twins` | `app/digital-twins/page.tsx` | Physical ↔ digital mirror |
-| `/sustainability` | `app/sustainability/page.tsx` | Embodied-carbon ledger |
+| `/b2-carbon` | `app/b2-carbon/page.tsx` | Embodied-carbon ledger |
 | `/pilot` | `app/pilot/page.tsx` + `components/ib/pilot-form.tsx` | Pilot application form |
 | `/contact-us` | `app/contact-us/page.tsx` + `components/ib/contact-form.tsx` | Contact form |
 | `/use-cases/supplier-delay-neutralization` | `app/use-cases/[slug]/page.tsx` | ↓ |
@@ -34,9 +34,9 @@ no new JSX required.
 app/
 ├── layout.tsx                  # root: <html>/<body>, .ib-root wrapper, Nav + Footer, metadata
 ├── page.tsx                    # Home
-├── agentic-ai/page.tsx
+├── b2-agents/page.tsx
 ├── digital-twins/page.tsx
-├── sustainability/page.tsx
+├── b2-carbon/page.tsx
 ├── pilot/page.tsx              # server wrapper (metadata) → PilotForm
 ├── contact-us/page.tsx         # server wrapper (metadata) → ContactForm
 ├── use-cases/[slug]/page.tsx   # dynamic → DetailPage (3 slugs)

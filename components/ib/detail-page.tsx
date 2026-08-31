@@ -24,7 +24,7 @@ export default function DetailPage({ d }: { d: Detail }) {
   const isTeam = !!d.agents;
   const pagePath = `${groupHref}/${d.slug}`;
   const parentCrumb = d.group === "agents"
-    ? { name: "B₂ Agents", path: "/agentic-ai" }
+    ? { name: "B₂ Agents", path: "/b2-agents" }
     : { name: "Use Cases", path: "/#use-cases" };
 
   return (

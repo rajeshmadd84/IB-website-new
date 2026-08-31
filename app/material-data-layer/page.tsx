@@ -65,7 +65,7 @@ export default function MaterialDataLayer() {
 
       <section className="ib-sec"><div className="ib-wrap"><div className="ib-head ib-reveal"><span className="ib-eyebrow"><IconQuestion /> FAQs</span><h2>How the data layer fits with BIM</h2></div><div className="ib-faq ib-reveal">{faqs.map((f, i) => <details key={i} open={i === 0}><summary>{f.q}</summary><p>{f.a}</p></details>)}</div></div></section>
 
-      <section className="ib-cta"><div className="ib-cta-bg" /><div className="ib-wrap ib-cta-inner ib-reveal"><h2>Connect one <span className="cy">material workflow</span></h2><p>Start with the BOQs, procurement records and supplier information you already use on a Singapore project.</p><div className="ib-cta-actions"><a href="/pilot" className="ib-btn ib-btn-primary">Start a Pilot <span className="arw">→</span></a><a href="/agentic-ai" className="ib-btn ib-btn-ghost">See <B2Mark /> Agents</a></div></div></section>
+      <section className="ib-cta"><div className="ib-cta-bg" /><div className="ib-wrap ib-cta-inner ib-reveal"><h2>Connect one <span className="cy">material workflow</span></h2><p>Start with the BOQs, procurement records and supplier information you already use on a Singapore project.</p><div className="ib-cta-actions"><a href="/b2-agents" className="ib-btn ib-btn-ghost">See <B2Mark /> Agents</a></div></div></section>
     </main>
   );
 }

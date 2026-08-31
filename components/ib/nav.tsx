@@ -56,10 +56,10 @@ export default function Nav() {
           <a href="/b2-intelligence" onClick={close}>
             <span className="ib-b2">B<sub>2</sub></span> Intelligence
           </a>
-          <a href="/agentic-ai" onClick={close}>
+          <a href="/b2-agents" onClick={close}>
             <span className="ib-b2">B<sub>2</sub></span> Agents
           </a>
-          <a href="/sustainability" onClick={close}>
+          <a href="/b2-carbon" onClick={close}>
             <span className="ib-b2">B<sub>2</sub></span> Carbon
           </a>
           <div className={`ib-nav-drop${useCasesOpen ? " open" : ""}`}>
@@ -90,15 +90,8 @@ export default function Nav() {
           <a href="/contact-us" onClick={close}>
             Contact
           </a>
-          <a href="/contact-us" className="ib-btn ib-btn-primary ib-nav-cta-mobile" onClick={close}>
-            Start Pilot <span className="arw">→</span>
-          </a>
         </nav>
         <div className="ib-nav-cta">
-
-          <a href="/contact-us" className="ib-btn ib-btn-primary ib-nav-cta-desktop">
-            Start Pilot <span className="arw">→</span>
-          </a>
           <button className="ib-menu-toggle" onClick={() => setOpen((v) => !v)} aria-expanded={open} aria-label="Toggle menu">
             ☰
           </button>

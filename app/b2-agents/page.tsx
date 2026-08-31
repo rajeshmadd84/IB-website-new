@@ -10,8 +10,8 @@ const DESCRIPTION = "Bricks & Brains uses specialised AI agents to draft, analys
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/agentic-ai" },
-  openGraph: { title: TITLE, description: DESCRIPTION, url: "/agentic-ai" },
+  alternates: { canonical: "/b2-agents" },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: "/b2-agents" },
   twitter: { title: TITLE, description: DESCRIPTION },
 };
 
@@ -44,7 +44,7 @@ const faqs = [
 export default function AgenticAI() {
   return (
     <main>
-      <JsonLd data={webPageJsonLd({ name: TITLE, description: DESCRIPTION, path: "/agentic-ai" })} />
+      <JsonLd data={webPageJsonLd({ name: TITLE, description: DESCRIPTION, path: "/b2-agents" })} />
       <JsonLd data={faqPageJsonLd(faqs)} />
       <section className="ib-phero"><div className="ib-grid-bg" /><div className="ib-wrap" style={{ position: "relative" }}><span className="ib-eyebrow"><IconBot /> <B2Mark /> Agents</span><h1>Agents do the work. <span className="cy">Humans hold the authority.</span></h1><p>Bricks & Brains uses specialised AI agents to handle repetitive procurement, logistics and carbon work — drafting, analysing, chasing, monitoring and recommending — while your team keeps control of the decisions that matter.</p></div></section>
 
@@ -56,7 +56,7 @@ export default function AgenticAI() {
 
       <section className="ib-sec alt"><div className="ib-wrap"><div className="ib-head ib-reveal"><span className="ib-eyebrow"><IconQuestion /> FAQs</span><h2><B2Mark /> Agents, answered</h2></div><div className="ib-faq ib-reveal">{faqs.map((f, i) => <details key={i} open={i === 0}><summary>{formatB2(f.q)}</summary><p>{formatB2(f.a)}</p></details>)}</div></div></section>
 
-      <section className="ib-cta"><div className="ib-cta-bg" /><div className="ib-wrap ib-cta-inner ib-reveal"><h2>Put AI to work on a <span className="cy">real material workflow</span></h2><p>Start with one project or package and prove the workflow using your own procurement and delivery data.</p><div className="ib-cta-actions"><a href="/pilot" className="ib-btn ib-btn-primary">Start a Pilot <span className="arw">→</span></a><a href="/material-data-layer" className="ib-btn ib-btn-ghost">See the Data Layer</a></div></div></section>
+      <section className="ib-cta"><div className="ib-cta-bg" /><div className="ib-wrap ib-cta-inner ib-reveal"><h2>Put AI to work on a <span className="cy">real material workflow</span></h2><p>Start with one project or package and prove the workflow using your own procurement and delivery data.</p><div className="ib-cta-actions"><a href="/material-data-layer" className="ib-btn ib-btn-ghost">See the Data Layer</a></div></div></section>
     </main>
   );
 }
