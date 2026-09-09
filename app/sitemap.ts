@@ -1,7 +1,8 @@
 import type { MetadataRoute } from "next";
 import { useCaseSlugs, agentSlugs } from "@/components/ib/detail-data";
 
-const SITE_URL = "https://www.intellibyld.com";
+// Keep sitemap URLs on the domain that currently serves the deployed site.
+const SITE_URL = "https://bricks-brains.com";
 const LAST_SIGNIFICANT_UPDATE = new Date("2026-08-21");
 
 export default function sitemap(): MetadataRoute.Sitemap {
