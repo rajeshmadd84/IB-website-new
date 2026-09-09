@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!d) return {};
   const url = `/use-cases/${d.slug}`;
   return {
-    title: d.title,
+    title: { absolute: `${d.title} | Bricks & Brains` },
     description: d.metaDescription,
     alternates: { canonical: url },
     openGraph: { title: d.title, description: d.metaDescription, url },

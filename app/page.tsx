@@ -1,11 +1,20 @@
+import type { Metadata } from "next";
 import { SupplyChainTwinAnimation } from "@/components/ib/supply-chain-twin-animation";
 import { IconBot, IconLayers, IconRadar, IconShield, IconLeaf, IconBlocks, IconCheck, IconLink, IconZap, IconTarget, IconUsers, IconPlug, IconPlay, IconQuestion, IconTruck } from "@/components/ib/icons";
 import { JsonLd, faqPageJsonLd, webPageJsonLd } from "@/components/ib/json-ld";
 import { B2Mark } from "@/components/ib/b2-mark";
 import RebrandBanner from "@/components/ib/rebrand-banner";
 
-const PAGE_TITLE = "Bricks & Brains — Construction Intelligence for Supply Chains";
-const PAGE_DESCRIPTION = "Bricks & Brains is the construction intelligence company behind B₂ Intelligence, B₂ Agents and B₂ Carbon — connecting project and supply-chain information to understand disruptions and coordinate action.";
+const PAGE_TITLE = "Bricks & Brains | Decision Intelligence for Construction Supply Chains";
+const PAGE_DESCRIPTION = "Bricks & Brains connects construction project, procurement, supplier, logistics and embodied-carbon data so teams can understand disruption and coordinate action.";
+
+export const metadata: Metadata = {
+  title: { absolute: PAGE_TITLE },
+  description: PAGE_DESCRIPTION,
+  alternates: { canonical: "/" },
+  openGraph: { title: PAGE_TITLE, description: PAGE_DESCRIPTION, url: "/" },
+  twitter: { card: "summary_large_image", title: PAGE_TITLE, description: PAGE_DESCRIPTION },
+};
 
 const decisionStages = [
   { n: "01", h: "Detect", q: "What changed?", p: "Supplier milestones, quotations, shipments, substitutions, EPDs and project status continuously update the operational picture." },

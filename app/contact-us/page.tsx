@@ -6,7 +6,7 @@ const TITLE = "Contact";
 const DESCRIPTION = "Talk to Bricks & Brains about a pilot, a partnership, or the platform. Headquartered in Singapore.";
 
 export const metadata: Metadata = {
-  title: TITLE,
+  title: { absolute: `${TITLE} | Bricks & Brains` },
   description: DESCRIPTION,
   alternates: { canonical: "/contact-us" },
   openGraph: { title: TITLE, description: DESCRIPTION, url: "/contact-us" },
@@ -47,7 +47,7 @@ export default function ContactPage() {
               Singapore 139950
             </p>
             <p style={{ fontSize: "1.04rem", marginBottom: "1rem", color: "var(--ib-text-body)" }}>
-              <strong>Email:</strong> hello@intellibyld.com<br />
+              <strong>Email:</strong> hello@bricks-brains.com<br />
               <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/bricksandbrains" style={{ color: "var(--ib-cyan)" }} target="_blank" rel="noopener noreferrer">@Bricks&Brains</a>
             </p>
           </div>

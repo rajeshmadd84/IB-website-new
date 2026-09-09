@@ -4,11 +4,11 @@ import { IconBlocks, IconTruck, IconLeaf, IconCheck, IconShield, IconBot, IconWo
 import { JsonLd, faqPageJsonLd, webPageJsonLd } from "@/components/ib/json-ld";
 import { B2Mark, formatB2 } from "@/components/ib/b2-mark";
 
-const TITLE = "B₂ Agents";
-const DESCRIPTION = "Bricks & Brains uses specialised AI agents to draft, analyse, monitor and coordinate construction procurement, material logistics and embodied-carbon workflows while keeping commercial authority with project teams.";
+const TITLE = "B2 Agents | AI Agents for Construction Supply Chains | Bricks & Brains";
+const DESCRIPTION = "B2 Agents support construction procurement, material logistics and embodied-carbon workflows by drafting, analysing, monitoring and coordinating work with human approval gates.";
 
 export const metadata: Metadata = {
-  title: TITLE,
+  title: { absolute: TITLE },
   description: DESCRIPTION,
   alternates: { canonical: "/b2-agents" },
   openGraph: { title: TITLE, description: DESCRIPTION, url: "/b2-agents" },

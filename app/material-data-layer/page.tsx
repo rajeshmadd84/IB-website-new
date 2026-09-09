@@ -8,7 +8,7 @@ const TITLE = "Connected Material Data Layer";
 const DESCRIPTION = "Bricks & Brains connects BOQs, suppliers, RFQs, purchase orders, shipments, delivery records and embodied-carbon data into one shared operational material layer.";
 
 export const metadata: Metadata = {
-  title: TITLE,
+  title: { absolute: `${TITLE} | Bricks & Brains` },
   description: DESCRIPTION,
   alternates: { canonical: "/material-data-layer" },
   openGraph: { title: TITLE, description: DESCRIPTION, url: "/material-data-layer" },

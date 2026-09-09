@@ -9,7 +9,7 @@ import "@/components/ib/theme.css";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Bricks & Brains — Decision Intelligence for Construction Supply Chains",
+    default: "Bricks & Brains | Decision Intelligence for Construction Supply Chains",
     template: "%s — Bricks & Brains",
   },
   description:
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "Bricks & Brains",
-    title: "Bricks & Brains — Decision Intelligence for Construction Supply Chains",
+    title: "Bricks & Brains | Decision Intelligence for Construction Supply Chains",
     description: "Decision intelligence and agentic execution for construction procurement, material logistics, risk and embodied carbon.",
     url: SITE_URL,
   },
@@ -36,9 +36,10 @@ const siteJsonLd = {
       "@type": "Organization",
       "@id": ORGANIZATION_ID,
       name: "Bricks & Brains",
+      alternateName: "IntelliByld",
       url: SITE_URL,
       logo: { "@type": "ImageObject", url: `${SITE_URL}/images/bb-logo.svg` },
-      description: "Bricks & Brains is a decision-intelligence layer for construction material supply chains, connecting procurement, logistics, programme risk and embodied-carbon data.",
+      description: "Decision intelligence for construction supply chains.",
       sameAs: ["https://www.linkedin.com/company/bricksandbrains"],
       founder: [
         { "@id": `${SITE_URL}/#rajesh-maddineni` },
@@ -52,7 +53,7 @@ const siteJsonLd = {
         postalCode: "139950",
         addressCountry: "SG",
       },
-      email: "hello@intellibyld.com",
+      email: "hello@bricks-brains.com",
     },
     {
       "@type": "WebSite",

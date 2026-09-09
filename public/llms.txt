@@ -4,32 +4,32 @@
 
 Bricks & Brains is a Singapore-based construction technology company. Its platform combines a Construction Supply Chain Digital Twin, a knowledge graph, construction-focused language intelligence and specialised AI agents. The agents draft, analyse, monitor and coordinate work while commercial, contractual, technical and regulatory decisions remain behind human approval gates.
 
-Canonical website: https://www.intellibyld.com
+Canonical website: https://www.bricks-brains.com
 
 ## Platform
 
-- [Construction Supply Chain Visibility](https://www.intellibyld.com/): Overview of the platform, live use cases and pilot approach.
-- [B₂ Intelligence](https://www.intellibyld.com/b2-intelligence): The shared intelligence layer connecting project, procurement, supplier, logistics and site information.
-- [B₂ Agents](https://www.intellibyld.com/b2-agents): Specialised agent teams for procurement, material logistics and embodied carbon, with human approval gates.
-- [Material Data Layer](https://www.intellibyld.com/material-data-layer): How BIM, BOQs, ERP, supplier and project information connect to a shared operational material state.
-- [B₂ ESG](https://www.intellibyld.com/b2-carbon): Material-level carbon intelligence connected to procurement and delivery records.
-- [Join a Pilot](https://www.intellibyld.com/pilot): Apply to evaluate Bricks & Brains on a focused project or material package.
-- [Contact](https://www.intellibyld.com/contact-us): Contact information and company details.
+- [Construction Supply Chain Visibility](https://www.bricks-brains.com/): Overview of the platform, live use cases and pilot approach.
+- [B2 Intelligence](https://www.bricks-brains.com/b2-intelligence): The shared intelligence layer connecting project, procurement, supplier, logistics and site information.
+- [B2 Agents](https://www.bricks-brains.com/b2-agents): Specialised agent teams for procurement, material logistics and embodied carbon, with human approval gates.
+- [Material Data Layer](https://www.bricks-brains.com/material-data-layer): How BIM, BOQs, ERP, supplier and project information connect to a shared operational material state.
+- [B2 Carbon](https://www.bricks-brains.com/b2-carbon): Material-level embodied-carbon intelligence connected to construction procurement, suppliers and delivery records.
+- [Join a Pilot](https://www.bricks-brains.com/pilot): Apply to evaluate Bricks & Brains on a focused project or material package.
+- [Contact](https://www.bricks-brains.com/contact-us): Contact information and company details.
 
 ## Live Use Cases
 
-- [Critical Material Delay](https://www.intellibyld.com/use-cases/critical-material-delay): Connect a supplier milestone change to its purchase order, shipment and programme dependency, then evaluate recovery options.
-- [Quotation Mismatch](https://www.intellibyld.com/use-cases/quotation-mismatch): Map inconsistent supplier quotations back to BOQ and RFQ requirements to prepare a comparable bid view.
-- [Lower-Carbon Procurement](https://www.intellibyld.com/use-cases/lower-carbon-procurement): Compare cost, lead time, product carbon data and transport within the procurement decision.
-- [Material Substitution](https://www.intellibyld.com/use-cases/material-substitution): Assess a proposed substitute across specification, commercial, delivery and embodied-carbon impacts before approval.
+- [Critical Material Delay](https://www.bricks-brains.com/use-cases/critical-material-delay): Connect a supplier milestone change to its purchase order, shipment and programme dependency, then evaluate recovery options.
+- [Quotation Mismatch](https://www.bricks-brains.com/use-cases/quotation-mismatch): Map inconsistent supplier quotations back to BOQ and RFQ requirements to prepare a comparable bid view.
+- [Lower-Carbon Procurement](https://www.bricks-brains.com/use-cases/lower-carbon-procurement): Compare cost, lead time, product carbon data and transport within the procurement decision.
+- [Material Substitution](https://www.bricks-brains.com/use-cases/material-substitution): Assess a proposed substitute across specification, commercial, delivery and embodied-carbon impacts before approval.
 
 ## Agent Teams
 
-- [Procurement Agents](https://www.intellibyld.com/agents/procurement): Draft RFQs, structure supplier quotations, compare bids and prepare award recommendations.
-- [Logistics Agents](https://www.intellibyld.com/agents/logistics): Monitor supplier commitments and delivery milestones, surface disruption risk and coordinate exceptions.
-- [B₂ ESG Agents](https://www.intellibyld.com/agents/scope3): Match materials to EPDs or approved factors, calculate carbon and support lower-carbon procurement comparisons.
+- [Procurement Agents](https://www.bricks-brains.com/agents/procurement): Draft RFQs, structure supplier quotations, compare bids and prepare award recommendations.
+- [Logistics Agents](https://www.bricks-brains.com/agents/logistics): Monitor supplier commitments and delivery milestones, surface disruption risk and coordinate exceptions.
+- [B2 Carbon Agents](https://www.bricks-brains.com/agents/scope3): Match materials to EPDs or approved factors, calculate carbon and support lower-carbon procurement comparisons.
 
 ## Contact
 
-- Email: hello@intellibyld.com
+- Email: hello@bricks-brains.com
 - LinkedIn: https://www.linkedin.com/company/bricksandbrains

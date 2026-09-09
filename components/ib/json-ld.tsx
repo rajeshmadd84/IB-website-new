@@ -1,4 +1,4 @@
-export const SITE_URL = "https://bricks-brains.com";
+export const SITE_URL = "https://www.bricks-brains.com";
 export const ORGANIZATION_ID = `${SITE_URL}/#organization`;
 export const WEBSITE_ID = `${SITE_URL}/#website`;
 

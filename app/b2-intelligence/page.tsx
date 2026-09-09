@@ -4,9 +4,9 @@ import { IconLink, IconShield, IconQuestion } from "@/components/ib/icons";
 import { JsonLd, faqPageJsonLd, webPageJsonLd } from "@/components/ib/json-ld";
 import { B2Mark, formatB2 } from "@/components/ib/b2-mark";
 
-const TITLE = "B₂ Intelligence";
-const DESCRIPTION = "B₂ Intelligence is the intelligence layer for construction supply chains, connecting project, procurement, supplier, logistics and site information so teams can understand disruptions, reason through impact and coordinate action.";
-export const metadata: Metadata = { title: TITLE, description: DESCRIPTION, alternates: { canonical: "/b2-intelligence" }, openGraph: { title: TITLE, description: DESCRIPTION, url: "/b2-intelligence" } };
+const TITLE = "B2 Intelligence | Construction Decision Intelligence | Bricks & Brains";
+const DESCRIPTION = "B2 Intelligence connects project, procurement, supplier, logistics and site information so construction teams can understand disruption, assess impact and coordinate action.";
+export const metadata: Metadata = { title: { absolute: TITLE }, description: DESCRIPTION, alternates: { canonical: "/b2-intelligence" }, openGraph: { title: TITLE, description: DESCRIPTION, url: "/b2-intelligence" }, twitter: { card: "summary_large_image", title: TITLE, description: DESCRIPTION } };
 
 const nodes: FCNode[] = [
   { id: "sources", label: "Project + Supply Data", sub: ["BOQ · RFQ · PO", "schedules · supplier updates"], x: 20, y: 55, w: 230, kind: "source" },

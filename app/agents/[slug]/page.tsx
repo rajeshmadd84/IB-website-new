@@ -12,12 +12,19 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const d = getDetail("agents", slug);
   if (!d) return {};
   const url = `/agents/${d.slug}`;
+  const title = d.slug === "procurement"
+    ? "AI Procurement Agents for Construction | Bricks & Brains"
+    : d.slug === "logistics"
+      ? "Construction Logistics AI Agents | Bricks & Brains"
+      : d.slug === "scope3"
+        ? "B2 Carbon Agents | Construction Scope 3 Intelligence | Bricks & Brains"
+        : d.title;
   return {
-    title: d.title,
+    title: { absolute: title },
     description: d.metaDescription,
     alternates: { canonical: url },
-    openGraph: { title: d.title, description: d.metaDescription, url },
-    twitter: { title: d.title, description: d.metaDescription },
+    openGraph: { title, description: d.metaDescription, url },
+    twitter: { card: "summary_large_image", title, description: d.metaDescription },
   };
 }
 

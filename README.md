@@ -1,6 +1,6 @@
 # IntelliByld — Website (Next.js / App Router)
 
-A multi-page rebuild of intellibyld.com: **minimal images, animated flowcharts.**
+A multi-page rebuild of www.bricks-brains.com: **minimal images, animated flowcharts.**
 Light blueprint theme, brand-blue accent, zero raster images — every visual is CSS or
 animated SVG. Drops into a Next.js App Router project.
 

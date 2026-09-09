@@ -4,11 +4,11 @@ import { IconCheck, IconLeaf, IconRadar, IconLayers, IconGear, IconQuestion } fr
 import { JsonLd, faqPageJsonLd, webPageJsonLd } from "@/components/ib/json-ld";
 import { B2Mark } from "@/components/ib/b2-mark";
 
-const TITLE = "B₂ ESG";
-const DESCRIPTION = "Connect BOQs, supplier data, EPDs, purchase orders and delivered quantities to build a living embodied-carbon ledger for construction projects.";
+const TITLE = "B2 Carbon | Embodied Carbon Intelligence for Construction | Bricks & Brains";
+const DESCRIPTION = "B2 Carbon connects construction materials, suppliers, EPDs, procurement and logistics data to make embodied carbon visible from design through delivery.";
 
 export const metadata: Metadata = {
-  title: TITLE,
+  title: { absolute: TITLE },
   description: DESCRIPTION,
   alternates: { canonical: "/b2-carbon" },
   openGraph: { title: TITLE, description: DESCRIPTION, url: "/b2-carbon" },
@@ -50,7 +50,7 @@ export default function Sustainability() {
     <main>
       <JsonLd data={webPageJsonLd({ name: TITLE, description: DESCRIPTION, path: "/b2-carbon" })} />
       <JsonLd data={faqPageJsonLd(faqs)} />
-      <section className="ib-phero"><div className="ib-grid-bg" /><div className="ib-wrap" style={{ position: "relative" }}><span className="ib-eyebrow"><IconLeaf /> <B2Mark /> ESG</span><h1>Know the carbon of <span className="cy">what you procure.</span></h1><p>Bricks & Brains connects BOQs, supplier quotations, purchase orders, EPDs and delivery records to build a living embodied-carbon ledger for construction projects.</p><div className="ib-hero-actions" style={{ marginTop: "1.6rem" }}><a href="/pilot" className="ib-btn ib-btn-primary">Pilot <B2Mark /> ESG <span className="arw">→</span></a><a href="/contact-us" className="ib-btn ib-btn-ghost">Talk to us</a></div></div></section>
+      <section className="ib-phero"><div className="ib-grid-bg" /><div className="ib-wrap" style={{ position: "relative" }}><span className="ib-eyebrow"><IconLeaf /> <B2Mark /> Carbon</span><h1>Know the carbon of <span className="cy">what you procure.</span></h1><p>Bricks & Brains connects BOQs, supplier quotations, purchase orders, EPDs and delivery records to build a living embodied-carbon ledger for construction projects.</p><div className="ib-hero-actions" style={{ marginTop: "1.6rem" }}><a href="/pilot" className="ib-btn ib-btn-primary">Pilot <B2Mark /> Carbon <span className="arw">→</span></a><a href="/contact-us" className="ib-btn ib-btn-ghost">Talk to us</a></div></div></section>
 
       <section className="ib-sec"><div className="ib-wrap"><div className="ib-head ib-reveal"><span className="ib-eyebrow"><IconGear /> How it works</span><h2>From material data to a living carbon ledger</h2><p>Carbon is calculated from quantities and emissions data, then updated as the project moves from design assumptions to real procurement and delivery records.</p></div><div className="ib-reveal"><Flowchart nodes={carbonNodes} edges={carbonEdges} height={300} title="Embodied Carbon Ledger" caption="The live supply-chain twin connects quantities, supplier/product factors and procurement actuals so the carbon ledger stays traceable as the project evolves." legend /></div></div></section>
 
