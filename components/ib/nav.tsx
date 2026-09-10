@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 
 const useCases = [
   { href: "/use-cases/critical-material-delay", label: "Critical Material Delay", sub: "See the programme impact early" },
-  { href: "/use-cases/quotation-mismatch", label: "Quotation Mismatch", sub: "Turn supplier bids into a comparable view" },
   { href: "/use-cases/lower-carbon-procurement", label: "Lower-Carbon Procurement", sub: "Compare cost, schedule and carbon" },
   { href: "/use-cases/material-substitution", label: "Material Substitution", sub: "See downstream impact before approval" },
 ];

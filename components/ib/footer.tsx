@@ -25,7 +25,6 @@ const cols = [
     h: "Use Cases",
     links: [
       ["Critical Material Delay", "/use-cases/critical-material-delay"],
-      ["Quotation Mismatch", "/use-cases/quotation-mismatch"],
       ["Lower-Carbon Procurement", "/use-cases/lower-carbon-procurement"],
       ["Material Substitution", "/use-cases/material-substitution"],
     ],

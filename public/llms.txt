@@ -19,7 +19,6 @@ Canonical website: https://www.bricks-brains.com
 ## Live Use Cases
 
 - [Critical Material Delay](https://www.bricks-brains.com/use-cases/critical-material-delay): Connect a supplier milestone change to its purchase order, shipment and programme dependency, then evaluate recovery options.
-- [Quotation Mismatch](https://www.bricks-brains.com/use-cases/quotation-mismatch): Map inconsistent supplier quotations back to BOQ and RFQ requirements to prepare a comparable bid view.
 - [Lower-Carbon Procurement](https://www.bricks-brains.com/use-cases/lower-carbon-procurement): Compare cost, lead time, product carbon data and transport within the procurement decision.
 - [Material Substitution](https://www.bricks-brains.com/use-cases/material-substitution): Assess a proposed substitute across specification, commercial, delivery and embodied-carbon impacts before approval.
 

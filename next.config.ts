@@ -26,6 +26,11 @@ const nextConfig: NextConfig = {
         destination: "/b2-agents",
         permanent: true,
       },
+      {
+        source: "/use-cases/quotation-mismatch",
+        destination: "/agents/procurement",
+        permanent: true,
+      },
     ];
   },
 };

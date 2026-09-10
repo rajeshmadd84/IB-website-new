@@ -112,59 +112,6 @@ const deliveryRisk: Detail = {
   ctaCy: "before it reaches site",
 };
 
-const quotationMismatch: Detail = {
-  slug: "quotation-mismatch",
-  group: "use-cases",
-  eyebrow: "Live Use Case",
-  kicker: "USE CASE · 02",
-  title: "A supplier quotation does not match the RFQ",
-  cy: "does not match",
-  lead: "Five quotations arrive for a material package. One excludes required items, another uses different units and two contain commercial assumptions buried in attachments. Bricks & Brains turns the responses into one comparable view before evaluation begins.",
-  metaDescription: "See how Bricks & Brains reads supplier quotations, maps them against BOQ and RFQ requirements, flags exclusions and prepares a comparable bid view for procurement teams.",
-  flow: {
-    title: "Quotation reconciliation - live scenario",
-    caption: "Supplier documents are interpreted, mapped to requirements and converted into a comparable procurement decision.",
-    height: 318,
-    legend: true,
-    nodes: [
-      { id: "quotes", label: "Supplier Quotes", sub: "PDF · XLSX · email", x: 24, y: 42, w: 170, kind: "physical" },
-      { id: "slm", label: "Construction-trained SLM", sub: "reads scope · terms · exclusions", x: 246, y: 42, w: 218, kind: "agent" },
-      { id: "kg", label: "Knowledge Graph", sub: "maps quote ↔ RFQ ↔ BOQ", x: 516, y: 42, w: 208, kind: "twin" },
-      { id: "compare", label: "Bid Comparison", sub: "normalised view", x: 776, y: 42, w: 190, kind: "agent" },
-      { id: "exceptions", label: "Exceptions", sub: "missing · excluded · inconsistent", x: 286, y: 202, w: 214 },
-      { id: "clarify", label: "Clarifications", sub: "drafted for supplier", x: 616, y: 202, w: 198, kind: "physical" },
-    ],
-    edges: [
-      { from: "quotes", to: "slm", pulses: 1 },
-      { from: "slm", to: "kg", pulses: 2 },
-      { from: "kg", to: "compare", pulses: 2 },
-      { from: "slm", to: "exceptions", fromSide: "bottom", toSide: "top", pulses: 1 },
-      { from: "exceptions", to: "clarify", pulses: 1 },
-      { from: "clarify", to: "compare", fromSide: "top", toSide: "bottom", dashed: true, pulses: 1 },
-    ],
-  },
-  splitHead: "From five different quotations to one decision-ready comparison",
-  splitCy: "decision-ready comparison",
-  splitBody: "Procurement teams should not spend their time reconstructing what suppliers meant. Bricks & Brains uses construction context to extract commercial and technical details, relate them back to the requirement and make exceptions visible before a recommendation is prepared.",
-  checks: [
-    { b: "Read construction documents.", rest: "The construction-trained SLM interprets quotation text, schedules, exclusions, units and commercial terms." },
-    { b: "Map back to the requirement.", rest: "The Knowledge Graph connects quoted line items to the relevant BOQ, specification and RFQ scope." },
-    { b: "Keep procurement in control.", rest: "Agents can draft clarifications and comparisons; supplier selection and award remain a procurement decision." },
-  ],
-  outcomesHead: "What procurement receives",
-  outcomes: [
-    { h: "Comparable scope", p: "Different supplier formats are translated into a common view tied to the original requirement." },
-    { h: "Visible exceptions", p: "Missing items, exclusions and inconsistent assumptions are surfaced before they distort the evaluation." },
-    { h: "Faster clarification", p: "Supplier questions can be prepared from the identified gaps instead of manually rebuilt line by line." },
-  ],
-  faqs: [
-    { q: "Can Bricks & Brains understand supplier PDFs and spreadsheets?", a: "The architecture is designed to interpret common procurement documents and connect extracted information to structured project records. Document quality and project-specific terminology can still require review during implementation." },
-    { q: "Does the AI choose the winning bidder?", a: "It can prepare a ranked or normalised comparison using agreed criteria, but the commercial award can remain a human approval decision with a recorded audit trail." },
-  ],
-  ctaTitle: "Turn supplier responses into a comparable decision",
-  ctaCy: "comparable decision",
-};
-
 const lowerCarbonOption: Detail = {
   slug: "lower-carbon-procurement",
   group: "use-cases",
@@ -495,7 +442,7 @@ const scope3: Detail = {
   ctaCy: "line-item resolution",
 };
 
-export const DETAILS: Detail[] = [deliveryRisk, quotationMismatch, lowerCarbonOption, materialSubstitution, procurement, logistics, scope3];
+export const DETAILS: Detail[] = [deliveryRisk, lowerCarbonOption, materialSubstitution, procurement, logistics, scope3];
 
 export const useCaseSlugs = DETAILS.filter((d) => d.group === "use-cases").map((d) => d.slug);
 export const agentSlugs = DETAILS.filter((d) => d.group === "agents").map((d) => d.slug);
