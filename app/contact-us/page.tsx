@@ -19,12 +19,22 @@ export default function ContactPage() {
       <JsonLd data={webPageJsonLd({ name: TITLE, description: DESCRIPTION, path: "/contact-us" })} />
       <PilotForm
         eyebrow="Contact Us"
-        heading={
+        asideContent={
           <>
-            Talk to the team building the <span className="cy">control tower</span>
+            <h1>Talk to us about your <span className="cy">construction supply chain</span></h1>
+            <p className="ib-lead">Bricks & Brains helps construction teams detect material risks earlier, connect fragmented project information, and act before disruptions reach the site.</p>
+            <p className="ib-lead">Start with a focused workflow in <strong>site logistics, procurement, or embodied carbon</strong>, then expand as Bricks & Brains learns your projects, materials, suppliers, and operating context.</p>
+            <h2>Start small. Prove value. Expand.</h2>
+            <ul className="ib-steps">
+              <li><span className="n">01</span><div><h4>Begin with one project or workflow</h4><p>Connect the information already used by your team, including schedules, material requirements, supplier updates, spreadsheets, emails, and project systems.</p></div></li>
+              <li><span className="n">02</span><div><h4>Focus on an operational problem</h4><p>Start with material delivery coordination, supplier follow-ups, required-on-site visibility, procurement comparison, or carbon tracking.</p></div></li>
+              <li><span className="n">03</span><div><h4>Build intelligence over time</h4><p>B₂ Intelligence creates context across projects, materials, suppliers, decisions, and outcomes, while B₂ Agents help teams execute repeatable workflows with human oversight.</p></div></li>
+            </ul>
+            <h2>See Bricks &amp; Brains on your project</h2>
+            <p className="ib-lead">Tell us where coordination is breaking today. We’ll show you how Bricks &amp; Brains can bring the relevant information together and help your team make faster, better-informed decisions.</p>
+            <p className="ib-reassure"><b>Talk to Bricks &amp; Brains</b></p>
           </>
         }
-        lead="Pilot, partnership, or platform question? Bricks & Brains is a Singapore-based construction technology company working with the local construction ecosystem."
       />
       <section className="ib-sec alt" aria-labelledby="company-details">
         <div className="ib-wrap">
@@ -35,9 +45,10 @@ export default function ContactPage() {
             </span>
             <h3 id="company-details" style={{ fontSize: "clamp(1.9rem,4.4vw,3rem)", letterSpacing: "-.025em", margin: "1rem 0 1.1rem" }}>
               Bricks & Brains Pte. Ltd.
-              <br />
-              <span style={{ fontSize: "0.5em", letterSpacing: "normal", fontWeight: 400 }}>(To be Registered)</span>
             </h3>
+            <p style={{ fontSize: "1.04rem", marginBottom: "1rem", color: "var(--ib-text-body)" }}>
+              <strong>UEN:</strong> 202647854C
+            </p>
             <p style={{ fontSize: "1.04rem", marginBottom: "1rem", color: "var(--ib-text-body)" }}>
               Built in Singapore for construction material procurement, supply-chain coordination and embodied-carbon intelligence.
             </p>

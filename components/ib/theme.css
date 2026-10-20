@@ -267,6 +267,7 @@
 .ib-form-grid{display:grid;grid-template-columns:.82fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:start}
 .ib-aside h1{font-size:clamp(2.1rem,4.8vw,3.3rem);letter-spacing:-.03em;margin:1.1rem 0 1.2rem;line-height:1.03}
 .ib-aside h1 .cy{color:var(--ib-cyan)}
+.ib-aside h2{font-family:var(--ib-display);font-size:clamp(1.5rem,3vw,2rem);letter-spacing:-.025em;line-height:1.15;margin:2.4rem 0 1.35rem}
 .ib-lead{font-size:1.06rem;color:var(--ib-text-body);margin-bottom:2.2rem;max-width:46ch}
 .ib-steps{list-style:none;display:flex;flex-direction:column;gap:1.3rem;margin-bottom:2.2rem}
 .ib-steps li{display:flex;gap:1rem;align-items:flex-start}

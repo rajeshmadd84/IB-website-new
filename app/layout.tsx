@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     template: "%s — Bricks & Brains",
   },
   description:
-    "Bricks & Brains is the decision-intelligence layer for construction material supply chains, connecting procurement, suppliers, logistics, programme risk and embodied carbon to understand what changed, what it affects and what to do next.",
+    "Bricks & Brains is the decision-intelligence layer for construction supply chains, connecting procurement, suppliers, logistics, programme risk and embodied carbon to understand what changed, what it affects and what to do next.",
   keywords: ["Construction Supply Chain", "B₂ Agents", "Construction Procurement", "Material Logistics", "BIM", "Embodied Carbon", "Singapore Construction Technology"],
   icons: {
     icon: [{ url: "/images/icon.svg", type: "image/svg+xml" }],

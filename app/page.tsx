@@ -3,7 +3,6 @@ import { SupplyChainTwinAnimation } from "@/components/ib/supply-chain-twin-anim
 import { IconBot, IconLayers, IconRadar, IconShield, IconLeaf, IconBlocks, IconCheck, IconLink, IconZap, IconTarget, IconUsers, IconPlug, IconPlay, IconQuestion, IconTruck } from "@/components/ib/icons";
 import { JsonLd, faqPageJsonLd, webPageJsonLd } from "@/components/ib/json-ld";
 import { B2Mark } from "@/components/ib/b2-mark";
-import RebrandBanner from "@/components/ib/rebrand-banner";
 
 const PAGE_TITLE = "Bricks & Brains | Decision Intelligence for Construction Supply Chains";
 const PAGE_DESCRIPTION = "Bricks & Brains connects construction project, procurement, supplier, logistics and embodied-carbon data so teams can understand disruption and coordinate action.";
@@ -37,11 +36,11 @@ const team = [
 ];
 
 const faqs = [
-  { q: "What is Bricks & Brains?", a: "Bricks & Brains is a decision-intelligence layer for construction material supply chains. It maintains a connected operational view of materials, suppliers, orders, logistics, programme dependencies and carbon so teams can understand what changed, what it affects and what to do next across cost, schedule, risk and embodied carbon." },
-  { q: "Where does Bricks & Brains start?", a: "Pilots can begin from the material and procurement data teams already have, such as BOQs, spreadsheets, RFQs, purchase orders and supplier documents. Deeper BIM and ERP integrations can be added as the pilot expands." },
+  { q: "What is Bricks & Brains?", a: "Bricks & Brains is a decision-intelligence platform for construction supply chains. It connects materials, equipment, suppliers, workforce, subcontractors, procurement, logistics, project dependencies and embodied-carbon data so teams can understand what changed, assess its impact and decide what to do next." },
+  { q: "Where does Bricks & Brains start?", a: "Bricks & Brains can start with the project, procurement and operational data a construction team already has, including BOQs, spreadsheets, RFQs, purchase orders, supplier documents, schedules and logistics updates. Deeper connections to BIM, ERP and project-management systems can be added as the use case expands." },
   { q: "Does Bricks & Brains make procurement decisions automatically?", a: "AI agents can draft RFQs, chase responses, compare suppliers, monitor logistics and prepare recommendations. Commercial, contractual and regulatory decisions remain behind human approval gates." },
   { q: "How does Bricks & Brains calculate embodied carbon?", a: "Bricks & Brains links material quantities to product-specific EPDs or approved emission factors and can incorporate supplier and logistics information. This creates a live carbon ledger that can move from design assumptions toward procured and delivered quantities." },
-  { q: "Where is Bricks & Brains focused today?", a: "Bricks & Brains is a Singapore-based construction technology company focused on working with developers, main contractors, EPC teams and sustainability stakeholders in Singapore." },
+  { q: "Where is Bricks & Brains focused today?", a: "Bricks & Brains is focused initially on construction supply chains in Singapore, helping developers, main contractors, EPC teams and sustainability stakeholders improve procurement, site logistics, resource coordination and embodied-carbon visibility." },
 ];
 
 export default function Home() {
@@ -50,14 +49,12 @@ export default function Home() {
       <JsonLd data={webPageJsonLd({ name: PAGE_TITLE, description: PAGE_DESCRIPTION, path: "/" })} />
       <JsonLd data={faqPageJsonLd(faqs)} />
 
-      <RebrandBanner />
-
       <section className="ib-hero">
         <div className="ib-grid-bg" />
         <div className="ib-wrap ib-hero-inner">
           <span className="ib-eyebrow"><IconBot /> Construction Intelligence for Supply Chains</span>
           <h1>
-            <span className="ib-hero-line ib-hero-line-long">Construction doesn't need another dashboard.</span>
+            <span className="ib-hero-line ib-hero-line-long">Construction doesn't need another dashboard.</span>{" "}
             <span className="ib-hero-line cy">It needs intelligence.</span>
           </h1>
           <p className="ib-hero-sub">
@@ -171,7 +168,7 @@ export default function Home() {
             <div className="ib-reveal">
               <span className="ib-eyebrow"><IconLayers /> Construction Supply Chain Digital Twin</span>
               <h2>One connected record from <span style={{ color: "var(--ib-cyan)" }}>requirement to site</span></h2>
-              <p>Bricks & Brains maintains a shared operational data layer across Project → Package → Material → Supplier → PO → Shipment → Site, with cost, schedule and carbon attached to the same material records.</p>
+              <p>Bricks & Brains maintains a shared operational data layer across projects, materials, equipment, suppliers, workforce, subcontractors, procurement, logistics and site conditions, with cost, schedule and carbon connected to the same project context.</p>
               <ul className="ib-checks">
                 <li><IconCheck /><span><b>Commercial state.</b> RFQs, supplier responses, awards and purchase orders.</span></li>
                 <li><IconCheck /><span><b>Physical state.</b> Supplier status, shipment milestones, ETA and site readiness.</span></li>

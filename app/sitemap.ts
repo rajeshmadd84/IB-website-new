@@ -6,7 +6,7 @@ const SITE_URL = "https://www.bricks-brains.com";
 const LAST_SIGNIFICANT_UPDATE = new Date("2026-08-21");
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = ["", "/b2-intelligence", "/b2-agents", "/material-data-layer", "/b2-carbon", "/pilot", "/contact-us"].map((path) => ({
+  const staticRoutes = ["", "/about", "/b2-intelligence", "/b2-agents", "/material-data-layer", "/b2-carbon", "/pilot", "/contact-us"].map((path) => ({
     url: `${SITE_URL}${path}`,
     lastModified: LAST_SIGNIFICANT_UPDATE,
   }));

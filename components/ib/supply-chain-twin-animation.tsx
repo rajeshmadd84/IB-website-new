@@ -54,7 +54,7 @@ export function SupplyChainTwinAnimation() {
             <rect x="114" y="188" width="732" height="170" rx="17" className="tv-core-inner" />
             <text x="480" y="218" textAnchor="middle" className="tv-core-kicker">BRICKS & BRAINS CORE</text>
             <text x="480" y="250" textAnchor="middle" className="tv-core-title">Construction Supply Chain Digital Twin</text>
-            <text x="480" y="272" textAnchor="middle" className="tv-core-sub">live state of materials · suppliers · orders · shipments · carbon</text>
+            <text x="480" y="272" textAnchor="middle" className="tv-core-sub">live state of materials · equipment · suppliers · workforce · logistics · carbon</text>
 
             <g className="tv-engine tv-engine-kg" transform="translate(178 294)">
               <rect width="270" height="46" rx="10" />
@@ -111,7 +111,7 @@ export function SupplyChainTwinAnimation() {
       <div className="ib-twinviz-foot">
         <span><b>BIM</b> models what is designed.</span>
         <span className="ib-twinviz-sep">→</span>
-        <span><b>Bricks & Brains</b> models the operational material supply chain.</span>
+        <span><b>Bricks & Brains</b> models the operational construction supply chain.</span>
         <span className="ib-twinviz-badge">NOT A 3D / BIM TWIN</span>
       </div>
     </div>

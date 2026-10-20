@@ -61,6 +61,7 @@ export default function Nav() {
           <a href="/b2-carbon" onClick={close}>
             <span className="ib-b2">B<sub>2</sub></span> Carbon
           </a>
+          <a href="/about" onClick={close}>About</a>
           <div className={`ib-nav-drop${useCasesOpen ? " open" : ""}`}>
             <span
               tabIndex={0}

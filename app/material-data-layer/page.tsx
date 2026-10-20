@@ -30,9 +30,9 @@ const edges: FCEdge[] = [
 ];
 
 const faqs = [
-  { q: "Is this a BIM digital twin?", a: "No. Bricks & Brains does not try to recreate the building as a 3D or BIM digital twin. It connects the operational material records around procurement, suppliers, orders, deliveries and embodied carbon." },
-  { q: "How does Bricks & Brains work with BIM?", a: "BIM can provide design intent, specifications and quantities. Bricks & Brains then connects those material requirements to procurement, supplier, delivery and carbon data. BIM remains the design environment; Bricks & Brains focuses on the material supply chain." },
-  { q: "Do we need a major systems integration first?", a: "No. A pilot can start from BOQs, spreadsheets, RFQs, purchase orders and supplier documents, then add ERP, BIM or project-system integrations where they create value." },
+  { q: "Is this a BIM digital twin?", a: "The Bricks & Brains Construction Supply Chain Digital Twin is not a 3D or BIM digital twin of the building. It is an operational model of the construction supply chain that can connect materials, equipment, suppliers, workforce, subcontractors, procurement records, deliveries, site status and project dependencies." },
+  { q: "How does Bricks & Brains work with BIM?", a: "Bricks & Brains can use BIM as a source of design intent, specifications, quantities and project requirements. It then connects those requirements with procurement, suppliers, materials, equipment, logistics, workforce and carbon information while BIM remains the project's design and modelling environment." },
+  { q: "Do we need a major systems integration first?", a: "A Bricks & Brains pilot can start from BOQs, spreadsheets, RFQs, purchase orders and supplier documents, then add ERP, BIM or project-system integrations where they create value." },
 ];
 
 export default function MaterialDataLayer() {

@@ -10,6 +10,7 @@ const cols = [
       ["B₂ Agents", "/b2-agents"],
       ["Material Data Layer", "/material-data-layer"],
       ["B₂ Carbon", "/b2-carbon"],
+      ["About", "/about"],
       ["Contact Us", "/contact-us"],
     ],
   },
@@ -42,7 +43,7 @@ export default function Footer() {
                 <img src="/images/bb-logo.svg" alt="Bricks &amp; Brains" className="ib-logo" />
               </span>
             </span>
-            <p>Singapore-based AI for construction material supply chains, connecting procurement, logistics and embodied carbon.</p>
+            <p>Singapore-based decision intelligence for construction supply chains, connecting procurement, logistics and embodied carbon.</p>
             <a href={LINKEDIN} className="ib-btn ib-btn-ghost" style={{ padding: ".6em 1.1em", fontSize: ".85rem" }} target="_blank" rel="noopener noreferrer">
               LinkedIn ↗
             </a>
@@ -60,6 +61,7 @@ export default function Footer() {
         </div>
         <div className="ib-foot-bottom">
           <span className="ib-foot-copy">© 2026 Bricks &amp; Brains. All rights reserved.</span>
+          <span className="ib-foot-copy">Made with Love <span role="img" aria-label="heart">❤️</span> in Singapore for the world</span>
           <div className="ib-foot-social">
             <a href={LINKEDIN} target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>

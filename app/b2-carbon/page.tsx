@@ -40,9 +40,9 @@ const points = [
 
 const faqs = [
   { q: "How does Bricks & Brains calculate embodied carbon?", a: "Bricks & Brains links material quantities to product-specific EPDs or approved emission factors. The calculation can evolve from design or BOQ quantities to awarded, procured and delivered quantities as better project data becomes available." },
-  { q: "Is this direct measurement of CO₂ emissions?", a: "No. Embodied carbon is calculated from material quantities and appropriate emissions data such as EPDs or approved factors. Bricks & Brains's advantage is keeping those calculations connected to the procurement and delivery records that represent what the project is actually buying and building." },
-  { q: "Can it compare suppliers on carbon before award?", a: "Yes. Where comparable EPD or emissions data is available, Bricks & Brains can surface carbon alongside price, lead time and supplier risk to support procurement decisions before award." },
-  { q: "Is this intended to replace an LCA tool?", a: "Not necessarily. Bricks & Brains is focused on the construction material supply chain and on making procurement and delivery data usable for embodied-carbon intelligence. It can complement broader LCA, certification and reporting workflows." },
+  { q: "Is this direct measurement of CO₂ emissions?", a: "B₂ Carbon calculates embodied carbon from material quantities and appropriate emissions data such as EPDs or approved factors. Bricks & Brains keeps those calculations connected to procurement and delivery records that represent what the project is actually buying and building." },
+  { q: "Can it compare suppliers on carbon before award?", a: "B₂ Carbon can surface carbon alongside price, lead time and supplier risk when comparable EPD or emissions data is available, supporting procurement decisions before award." },
+  { q: "Is this intended to replace an LCA tool?", a: "B₂ Carbon focuses on construction materials and on making procurement and delivery data usable for embodied-carbon intelligence. The product can complement broader LCA, certification and reporting workflows." },
 ];
 
 export default function Sustainability() {

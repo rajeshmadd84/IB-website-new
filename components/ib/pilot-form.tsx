@@ -11,6 +11,7 @@ interface PilotFormProps {
   eyebrow?: string;
   heading?: React.ReactNode;
   lead?: string;
+  asideContent?: React.ReactNode;
 }
 
 export default function PilotForm({
@@ -21,6 +22,7 @@ export default function PilotForm({
     </>
   ),
   lead = "Free pilot for select developers, GCs, and EPC teams. Connect one site and see AI-assisted coordination in your own data during a focused project pilot.",
+  asideContent,
 }: PilotFormProps = {}) {
   const [f, setF] = useState({ name: "", email: "", company: "", role: "", project: "", note: "" });
   const [err, setErr] = useState("");
@@ -85,7 +87,7 @@ export default function PilotForm({
                   <i>02</i> You share a BOM; we point at your existing channels.
                 </span>
                 <span>
-                  <i>03</i> First live coordination dashboard inside 7 days.
+                  <i>03</i> Live intelligence layer on one project.
                 </span>
               </div>
               <a href="/" className="ib-btn ib-btn-ghost">
@@ -108,36 +110,40 @@ export default function PilotForm({
               <span className="ib-eyebrow">
                 <IconRocket /> {eyebrow}
               </span>
-              <h1>{heading}</h1>
-              <p className="ib-lead">{lead}</p>
-              <ul className="ib-steps">
-                <li>
-                  <span className="n">01</span>
-                  <div>
-                    <h4>Connect one site</h4>
-                    <p>Share a BOM and your existing email / PO channels. No integration work, no IT tickets.</p>
-                  </div>
-                </li>
-                <li>
-                  <span className="n">02</span>
-                  <div>
-                    <h4>Live dashboard in 7 days</h4>
-                    <p>Your first real-time coordination view, built from your own project data.</p>
-                  </div>
-                </li>
-                <li>
-                  <span className="n">03</span>
-                  <div>
-                    <h4>First save in 14 days</h4>
-                    <p>A real disruption detected and acted on before it reached the site.</p>
-                  </div>
-                </li>
-              </ul>
-              <p className="ib-reassure">
-                <b>Pre-revenue MVP, live today.</b> Pilots begin from your BOMs; BIM-native ingestion comes later.
-                <br />
-                No procurement battles. No consulting bill.
-              </p>
+              {asideContent ?? (
+                <>
+                  <h1>{heading}</h1>
+                  <p className="ib-lead">{lead}</p>
+                  <ul className="ib-steps">
+                    <li>
+                      <span className="n">01</span>
+                      <div>
+                        <h4>Connect one site</h4>
+                        <p>Share a BOM and your existing email / PO channels. No integration work, no IT tickets.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <span className="n">02</span>
+                      <div>
+                        <h4>Live intelligence layer on one project</h4>
+                        <p>Your first decision-intelligence view, built from your own project data.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <span className="n">03</span>
+                      <div>
+                        <h4>First action in 14 days</h4>
+                        <p>A real disruption understood and acted on before it reaches the site.</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <p className="ib-reassure">
+                    <b>Working MVP, live today.</b> Pilots begin from your BOMs; BIM-native ingestion comes later.
+                    <br />
+                    No procurement battles. No consulting bill.
+                  </p>
+                </>
+              )}
             </aside>
 
             <div className="ib-card-form">

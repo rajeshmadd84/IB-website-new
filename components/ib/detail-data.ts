@@ -105,7 +105,7 @@ const deliveryRisk: Detail = {
     { h: "The decision required", p: "The right project or commercial owner receives a clear action with the supporting context." },
   ],
   faqs: [
-    { q: "Does Bricks & Brains automatically change the supplier or programme?", a: "Not by default. Agents can monitor, analyse, prepare options and automate low-risk coordination, while supplier changes, commercial awards and material programme decisions can remain behind human approval gates." },
+    { q: "Does Bricks & Brains automatically change the supplier or programme?", a: "Bricks & Brains agents can monitor, analyse, prepare options and automate low-risk coordination, while supplier changes, commercial awards and material programme decisions can remain behind human approval gates." },
     { q: "What data does this use case need?", a: "A pilot can start with the relevant material package, supplier commitment, purchase-order or procurement information, required-on-site dates and available programme dependencies. Deeper integrations can be added later." },
   ],
   ctaTitle: "See a material risk before it reaches site",
@@ -158,7 +158,7 @@ const lowerCarbonOption: Detail = {
     { h: "Visible trade-offs", p: "Procurement can discuss cost, schedule and carbon from one decision context rather than separate spreadsheets." },
   ],
   faqs: [
-    { q: "Does Bricks & Brains claim to directly measure emissions?", a: "No. Embodied carbon is calculated from material quantities combined with product-specific EPDs or approved emission factors, with logistics information incorporated where appropriate. The value is the connection to actual procurement and delivery records." },
+    { q: "Does Bricks & Brains claim to directly measure emissions?", a: "B₂ Carbon calculates embodied carbon from material quantities combined with product-specific EPDs or approved emission factors, incorporating logistics information where appropriate. The value is the connection to actual procurement and delivery records." },
     { q: "What happens when a supplier has no EPD?", a: "The workflow can use an approved fallback factor and record the data-quality level, while the supplier or sustainability team is prompted to improve the record when better product-specific data becomes available." },
   ],
   ctaTitle: "Put carbon into the procurement decision",
@@ -210,8 +210,8 @@ const materialSubstitution: Detail = {
     { h: "Controlled state change", p: "The operational record changes only after the appropriate human decision, preserving traceability." },
   ],
   faqs: [
-    { q: "Does Bricks & Brains approve technical substitutions?", a: "No. It can organise the information, identify affected records and prepare impact analysis. Technical or contractual approval remains with the authorised project stakeholders." },
-    { q: "Why is the Knowledge Graph important here?", a: "Because the substitute can touch several records at once. The graph preserves the relationships between material, specification, supplier, order, schedule and carbon data so the system can identify the relevant downstream context." },
+    { q: "Does Bricks & Brains approve technical substitutions?", a: "Bricks & Brains can organise the information, identify affected records and prepare impact analysis, while technical or contractual approval remains with authorised project stakeholders." },
+    { q: "Why is the Knowledge Graph important here?", a: "The Knowledge Graph preserves relationships between material, specification, supplier, order, schedule and carbon data because a substitute can touch several records at once. Bricks & Brains can then identify the relevant downstream context." },
   ],
   ctaTitle: "See every consequence before approving a substitution",
   ctaCy: "before approving a substitution",
@@ -287,9 +287,9 @@ const procurement: Detail = {
     { h: "Full traceability", p: "Every recommendation and negotiation move is logged and auditable." },
   ],
   faqs: [
-    { q: "Does it replace my procurement team?", a: "No. It removes the busywork. Buyers set strategy, mandates and approvals; the agents handle RFQ drafting, parsing, scoring and negotiation logistics, so the team spends time on judgement, not data entry." },
-    { q: "How are suppliers scored?", a: "On a configurable blend of commercial terms (price, lead time, warranty) and a supplier scorecard covering ESG, financial health and past performance. You control the weighting, and every score is explainable." },
-    { q: "Where do pilots begin?", a: "From your BoMs. BIM-native ingestion comes later; sourcing starts from the bill of materials and project specs you already have." },
+    { q: "Does it replace my procurement team?", a: "B₂ Procurement Agents remove busywork while buyers set strategy, mandates and approvals. The agents handle RFQ drafting, parsing, scoring and negotiation logistics, so the team spends time on judgement rather than data entry." },
+    { q: "How are suppliers scored?", a: "B₂ Procurement Agents use a configurable blend of commercial terms (price, lead time, warranty) and a supplier scorecard covering ESG, financial health and past performance. Teams control the weighting, and every score is explainable." },
+    { q: "Where do pilots begin?", a: "B₂ Procurement Agents can start from your BoMs and project specifications; BIM-native ingestion can be added later." },
   ],
   ctaTitle: "Turn requirements into confirmed suppliers",
   ctaCy: "confirmed suppliers",
@@ -334,7 +334,7 @@ const logistics: Detail = {
   agents: [
     { ref: "05", name: "Order Coordination Agent", tag: "Phase 2", role: "The day-to-day point of contact for every confirmed order.", duties: ["Confirms POs and validates delivery schedules", "Runs scheduled status check-ins with suppliers", "Captures milestones: production, inspection, dispatch", "Maintains a live order ledger and raises early warnings"] },
     { ref: "06", name: "Disruption & Risk Agent", tag: "Phase 2", role: "The early-warning system for the supply chain.", duties: ["Monitors weather, port congestion, geopolitics, strikes", "Detects missed milestones, quality issues, supplier silence", "Predicts downstream impact on critical-path activities", "Recommends mitigation and escalates high-impact events"] },
-    { ref: "07", name: "Logistics & Site Sync Agent", tag: "Phase 2", role: "The last-mile agent that lands materials when the site is ready.", duties: ["Coordinates carriers for pickup, in-transit and ETA", "Tracks shipments across road, sea, rail and air", "Aligns deliveries with manpower and equipment", "Closes the loop with goods-receipt confirmation"] },
+    { ref: "07", name: "Logistics & Site Sync Agent", tag: "Phase 2", role: "The last-mile agent that lands materials when the site is ready.", duties: ["Coordinates carriers for pickup, in-transit and ETA", "Tracks shipments across road, sea, rail and air", "Aligns deliveries with workforce and equipment", "Closes the loop with goods-receipt confirmation"] },
   ],
   workflowHead: "From PO to goods receipt",
   workflow: [
@@ -354,12 +354,12 @@ const logistics: Detail = {
   outcomesHead: "What the logistics team delivers",
   outcomes: [
     { h: "Early warning", p: "Disruptions are detected and forecast before they hit the critical path." },
-    { h: "Site efficiency", p: "Deliveries arrive in sync with manpower and equipment, cutting idle time." },
+    { h: "Site efficiency", p: "Deliveries arrive in sync with workforce and equipment, cutting idle time." },
     { h: "Closed-loop receipt", p: "Goods receipt is confirmed against the PO, with exceptions handled, not lost." },
   ],
   faqs: [
-    { q: "How does it catch disruptions early?", a: "It watches both external signals (weather, port congestion, strikes) and internal ones (missed milestones, supplier silence), then forecasts the impact on your critical path before the delay reaches the gate." },
-    { q: "Does it share context with sourcing?", a: "Yes. It runs on the same Procurement Orchestrator, so award terms, supplier commitments and schedule context carry straight into execution without re-keying." },
+    { q: "How does it catch disruptions early?", a: "B₂ Logistics Agents watch external signals such as weather, port congestion and strikes alongside internal signals such as missed milestones and supplier silence, then forecast critical-path impact before a delay reaches the gate." },
+    { q: "Does it share context with sourcing?", a: "B₂ Logistics Agents run on the same Procurement Orchestrator, so award terms, supplier commitments and schedule context carry into execution without re-keying." },
   ],
   ctaTitle: "Turn confirmed orders into on-time deliveries",
   ctaCy: "on-time deliveries",
@@ -434,9 +434,9 @@ const scope3: Detail = {
     { h: "Audit-ready traceability", p: "Every reported tonne traces back to a transaction, a factor and an approver." },
   ],
   faqs: [
-    { q: "Does carbon tracking mean extra data entry?", a: "No. The Scope 3 agents draw on the same RFQ, PO and shipment records the procurement agents already produce, so emissions are quantified automatically the moment an order is placed." },
-    { q: "Which frameworks are supported?", a: "CSRD ESRS E1, the GHG Protocol, CDP and ISSB IFRS S2, all generated from the same underlying ledger, so there's no recalculation between frameworks." },
-    { q: "How does data quality improve over time?", a: "Spend-based and average factors are systematically replaced with primary supplier data (EPDs and verified product carbon footprints), moving figures from tier 3 toward tier 1, with every change logged." },
+    { q: "Does carbon tracking mean extra data entry?", a: "B₂ Carbon Agents draw on the same RFQ, PO and shipment records that procurement agents already produce, so emissions are quantified automatically when an order is placed." },
+    { q: "Which frameworks are supported?", a: "B₂ Carbon Agents can produce outputs for CSRD ESRS E1, the GHG Protocol, CDP and ISSB IFRS S2 from the same underlying ledger, avoiding recalculation between frameworks." },
+    { q: "How does data quality improve over time?", a: "B₂ Carbon Agents systematically replace spend-based and average factors with primary supplier data such as EPDs and verified product carbon footprints, moving figures from tier 3 toward tier 1 with every change logged." },
   ],
   ctaTitle: "Know your footprint at line-item resolution",
   ctaCy: "line-item resolution",

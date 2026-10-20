@@ -16,9 +16,9 @@ const nodes: FCNode[] = [
 ];
 const edges: FCEdge[] = [{ from: "sources", to: "b2", pulses: 1 }, { from: "b2", to: "agents", pulses: 1 }, { from: "agents", to: "actions", pulses: 1 }];
 const faqs = [
-  { q: "What is B₂ Intelligence?", a: "B₂ Intelligence is the shared intelligence layer inside Bricks & Brains. It connects fragmented construction and supply-chain information into a contextual model that can understand relationships, evaluate impacts and support coordinated action." },
-  { q: "Is B₂ Intelligence another dashboard?", a: "No. Dashboards display information. B₂ Intelligence is designed to connect information, understand dependencies and provide the context B₂ Agents need to reason and act." },
-  { q: "What does B₂ connect?", a: "B₂ can connect project schedules, material requirements, procurement records, supplier information, logistics milestones, site updates and carbon data, starting with the data a project already has." },
+  { q: "What is B₂ Intelligence?", a: "B₂ Intelligence is the shared decision-intelligence layer within Bricks & Brains. It connects fragmented project and supply-chain information into a contextual model that understands relationships between materials, equipment, suppliers, workforce, subcontractors, activities, deliveries and site conditions so teams and B₂ Agents can evaluate impacts and coordinate actions." },
+  { q: "Is B₂ Intelligence another dashboard?", a: "B₂ Intelligence is designed to connect information, understand dependencies and provide the context B₂ Agents need to reason and act; dashboards primarily display information." },
+  { q: "What does B₂ Intelligence connect?", a: "B₂ Intelligence can connect project schedules, material requirements, equipment needs, workforce and subcontractor information, procurement records, supplier data, logistics milestones, site updates and embodied-carbon data into one shared construction context. Projects can start with existing data and add deeper system integrations as required." },
 ];
 
 export default function B2Intelligence() {
