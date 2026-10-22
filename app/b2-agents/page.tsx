@@ -4,7 +4,7 @@ import { IconBlocks, IconTruck, IconLeaf, IconCheck, IconShield, IconBot, IconWo
 import { JsonLd, faqPageJsonLd, webPageJsonLd } from "@/components/ib/json-ld";
 import { B2Mark, formatB2 } from "@/components/ib/b2-mark";
 
-const TITLE = "B₂ Agents | AI Agents for Construction Supply Chains | Bricks & Brains";
+const TITLE = "AI Agents for Construction Procurement and Logistics | Bricks & Brains";
 const DESCRIPTION = "B2 Agents support construction procurement, material logistics and embodied-carbon workflows by drafting, analysing, monitoring and coordinating work with human approval gates.";
 
 export const metadata: Metadata = {
@@ -46,7 +46,7 @@ export default function AgenticAI() {
     <main>
       <JsonLd data={webPageJsonLd({ name: TITLE, description: DESCRIPTION, path: "/b2-agents" })} />
       <JsonLd data={faqPageJsonLd(faqs)} />
-      <section className="ib-phero"><div className="ib-grid-bg" /><div className="ib-wrap" style={{ position: "relative" }}><span className="ib-eyebrow"><IconBot /> <B2Mark /> Agents</span><h1>Agents do the work. <span className="cy">Humans hold the authority.</span></h1><p>Bricks & Brains uses specialised AI agents to handle repetitive procurement, logistics and carbon work — drafting, analysing, chasing, monitoring and recommending — while your team keeps control of the decisions that matter.</p></div></section>
+      <section className="ib-phero"><div className="ib-grid-bg" /><div className="ib-wrap" style={{ position: "relative" }}><span className="ib-eyebrow"><IconBot /> <B2Mark /> Agents</span><h1>AI Agents for Construction <span className="cy">Procurement and Logistics</span></h1><p>Bricks & Brains uses specialised AI agents to handle repetitive procurement, logistics and carbon work — drafting, analysing, chasing, monitoring and recommending — while your team keeps control of the decisions that matter.</p></div></section>
 
       <section className="ib-sec"><div className="ib-wrap"><div className="ib-head ib-reveal"><span className="ib-eyebrow"><IconWorkflow /> How it works</span><h2>AI execution with <span style={{ color: "var(--ib-cyan)" }}>clear approval gates</span></h2><p>The goal is not autonomy for its own sake. The goal is faster, better-informed construction supply-chain decisions with a clear audit trail.</p></div><div className="ib-reveal"><Flowchart nodes={nodes} edges={edges} height={280} title="Agentic workflow" caption="Agents act on the live Construction Supply Chain Digital Twin; humans approve decisions with commercial or regulatory consequence." legend /></div></div></section>
 

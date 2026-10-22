@@ -4,7 +4,7 @@ import { IconBot, IconLayers, IconRadar, IconShield, IconLeaf, IconBlocks, IconC
 import { JsonLd, faqPageJsonLd, webPageJsonLd } from "@/components/ib/json-ld";
 import { B2Mark } from "@/components/ib/b2-mark";
 
-const PAGE_TITLE = "Bricks & Brains | Decision Intelligence for Construction Supply Chains";
+const PAGE_TITLE = "AI-Powered Construction Supply Chain Intelligence | Bricks & Brains";
 const PAGE_DESCRIPTION = "Bricks & Brains connects construction project, procurement, supplier, logistics and embodied-carbon data so teams can understand disruption and coordinate action.";
 
 export const metadata: Metadata = {
@@ -54,8 +54,8 @@ export default function Home() {
         <div className="ib-wrap ib-hero-inner">
           <span className="ib-eyebrow"><IconBot /> Construction Intelligence for Supply Chains</span>
           <h1>
-            <span className="ib-hero-line ib-hero-line-long">Construction doesn't need another dashboard.</span>{" "}
-            <span className="ib-hero-line cy">It needs intelligence.</span>
+            <span className="ib-hero-line">AI-Powered Construction</span>{" "}
+            <span className="ib-hero-line cy">Supply Chain Intelligence</span>
           </h1>
           <p className="ib-hero-sub">
             Bricks &amp; Brains connects project, procurement, supplier and site data to understand disruptions, reason through their impact and coordinate what happens next.

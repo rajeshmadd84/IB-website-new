@@ -13,9 +13,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!d) return {};
   const url = `/agents/${d.slug}`;
   const title = d.slug === "procurement"
-    ? "AI Procurement Agents for Construction | Bricks & Brains"
+    ? "AI Procurement Automation for Construction | Bricks & Brains"
     : d.slug === "logistics"
-      ? "Construction Logistics AI Agents | Bricks & Brains"
+      ? "AI Material Delivery Tracking and Logistics | Bricks & Brains"
       : d.slug === "scope3"
         ? "B2 Carbon Agents | Construction Scope 3 Intelligence | Bricks & Brains"
         : d.title;

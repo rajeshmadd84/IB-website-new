@@ -4,7 +4,7 @@ import { IconCheck, IconLayers, IconLink, IconRadar, IconLeaf, IconQuestion } fr
 import { JsonLd, faqPageJsonLd, webPageJsonLd } from "@/components/ib/json-ld";
 import { B2Mark } from "@/components/ib/b2-mark";
 
-const TITLE = "Connected Material Data Layer";
+const TITLE = "Construction Material Data Integration Platform";
 const DESCRIPTION = "Bricks & Brains connects BOQs, suppliers, RFQs, purchase orders, shipments, delivery records and embodied-carbon data into one shared operational material layer.";
 
 export const metadata: Metadata = {
@@ -42,7 +42,7 @@ export default function MaterialDataLayer() {
       <JsonLd data={faqPageJsonLd(faqs)} />
       <section className="ib-phero"><div className="ib-grid-bg" /><div className="ib-wrap" style={{ position: "relative" }}>
         <span className="ib-eyebrow"><IconLayers /> Connected Material Data Layer</span>
-        <h1>One operational record for every <span className="cy">construction material.</span></h1>
+        <h1>Construction Material <span className="cy">Data Integration Platform</span></h1>
         <p>Bricks & Brains connects material requirements, suppliers, RFQs, purchase orders, shipments, delivery records, EPDs and carbon data without positioning itself as another BIM or 3D digital-twin platform.</p>
       </div></section>
 

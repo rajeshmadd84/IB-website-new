@@ -58,10 +58,10 @@ export default function Footer() {
               ))}
             </div>
           ))}
+          <p className="ib-foot-love">Made with Love <span role="img" aria-label="heart">❤️</span> in Singapore for the world</p>
         </div>
         <div className="ib-foot-bottom">
           <span className="ib-foot-copy">© 2026 Bricks &amp; Brains. All rights reserved.</span>
-          <span className="ib-foot-copy">Made with Love <span role="img" aria-label="heart">❤️</span> in Singapore for the world</span>
           <div className="ib-foot-social">
             <a href={LINKEDIN} target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>

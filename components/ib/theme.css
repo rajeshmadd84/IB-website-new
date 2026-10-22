@@ -250,6 +250,7 @@
 /* ============ FOOTER ============ */
 .ib-foot{border-top:1px solid var(--ib-line);background:var(--ib-ink-2);padding:clamp(2.8rem,6vw,4rem) 0 2.2rem}
 .ib-foot-top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:2rem;margin-bottom:2.5rem}
+.ib-foot-love{grid-column:1/-1;text-align:center;font-family:var(--ib-display);font-size:clamp(.95rem,1.5vw,1.1rem);font-weight:600;line-height:1.5;color:var(--ib-text);margin:.5rem 0 0}
 .ib-foot-about{max-width:300px}
 .ib-foot-brand{font-family:var(--ib-display);font-weight:800;font-size:1.2rem;color:var(--ib-text);margin-bottom:.9rem;display:inline-flex;align-items:center;gap:.5em}
 .ib-foot-brand b{color:var(--ib-cyan)}
