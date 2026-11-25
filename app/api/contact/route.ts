@@ -13,6 +13,13 @@ export async function POST(request: Request) {
       headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
       body: JSON.stringify({ access_key: accessKey, subject: 'New Contact / Pilot Application', from_name: 'Bricks & Brains Website', name, email, company, role, project, message: note }),
     });
+    const contentType = delivery.headers.get('content-type') || '';
+    if (!contentType.includes('application/json')) {
+      const body = await delivery.text();
+      const title = body.match(/<title[^>]*>([^<]{0,200})<\/title>/i)?.[1] || 'No page title';
+      console.error('Web3Forms returned a non-JSON response:', delivery.status, contentType, title);
+      return Response.json({ error: 'Form delivery is temporarily unavailable.' }, { status: 502 });
+    }
     const result = await delivery.json();
     if (!delivery.ok || result.success !== true) return Response.json({ error: 'Could not deliver your request. Please try again.' }, { status: 502 });
     return Response.json({ success: true });
