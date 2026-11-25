@@ -62,7 +62,7 @@ export default function ContactForm() {
                     <h4>Building in construction?</h4>
                     <p>
                       The fastest path is the{" "}
-                      <a href="/pilot" style={{ color: "var(--ib-cyan)" }}>
+                      <a href="/contact-us" style={{ color: "var(--ib-cyan)" }}>
                         pilot
                       </a>
                       : one live site, results in three weeks.

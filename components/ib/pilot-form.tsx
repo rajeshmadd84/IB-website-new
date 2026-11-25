@@ -5,8 +5,6 @@ import { IconCheck, IconRocket, IconLoader } from "@/components/ib/icons";
 
 const ROLES = ["Developer / Owner", "General Contractor", "EPC", "Consultant / PM", "Other"];
 
-const W3FORMS_ACCESS_KEY = process.env.NEXT_PUBLIC_W3FORMS_ACCESS_KEY || "";
-
 interface PilotFormProps {
   eyebrow?: string;
   heading?: React.ReactNode;
@@ -38,26 +36,17 @@ export default function PilotForm({
     setErr("");
     setLoading(true);
     try {
-      const body = new FormData();
-      body.append("access_key", W3FORMS_ACCESS_KEY);
-      body.append("subject", "New Pilot Application");
-      body.append("name", f.name);
-      body.append("email", f.email);
-      body.append("company", f.company);
-      body.append("role", f.role);
-      body.append("project", f.project);
-      body.append("message", f.note);
-
-      const res = await fetch("https://api.web3forms.com/submit", {
+      const res = await fetch("/api/contact", {
         method: "POST",
-        body,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(f),
       });
 
       const data = await res.json();
       if (data.success) {
         setDone(true);
       } else {
-        setErr(data.message || "Submission failed. Please try again.");
+        setErr(data.error || "Submission failed. Please try again.");
       }
     } catch {
       setErr("Network error. Please check your connection and try again.");

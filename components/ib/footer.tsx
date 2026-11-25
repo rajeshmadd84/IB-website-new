@@ -40,7 +40,7 @@ export default function Footer() {
           <div className="ib-foot-about">
             <span className="ib-foot-brand">
               <span className="ib-logo-crop ib-logo-crop-footer">
-                <img src="/images/bb-logo.svg" alt="Bricks &amp; Brains" className="ib-logo" />
+                <img src="/images/bb-wordmark.png" alt="Bricks &amp; Brains" className="ib-logo" />
               </span>
             </span>
             <p>Singapore-based decision intelligence for construction supply chains, connecting procurement, logistics and embodied carbon.</p>

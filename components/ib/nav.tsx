@@ -47,7 +47,7 @@ export default function Nav() {
       <div className="ib-wrap ib-nav-inner">
         <a href="/" className="ib-brand" onClick={close}>
           <span className="ib-logo-crop">
-            <img src="/images/bb-logo.svg" alt="Bricks &amp; Brains" className="ib-logo" />
+            <img src="/images/bb-wordmark.png" alt="Bricks &amp; Brains" className="ib-logo" />
           </span>
         </a>
         <nav className={`ib-nav-links${open ? " open" : ""}`}>

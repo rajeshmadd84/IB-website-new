@@ -49,25 +49,24 @@ export default function Home() {
       <JsonLd data={webPageJsonLd({ name: PAGE_TITLE, description: PAGE_DESCRIPTION, path: "/" })} />
       <JsonLd data={faqPageJsonLd(faqs)} />
 
-      <section className="ib-hero">
-        <div className="ib-grid-bg" />
+      <section className="ib-hero ib-hero-photo">
         <div className="ib-wrap ib-hero-inner">
-          <span className="ib-eyebrow"><IconBot /> Construction Intelligence for Supply Chains</span>
           <h1>
-            <span className="ib-hero-line">AI-Powered Construction</span>{" "}
-            <span className="ib-hero-line cy">Supply Chain Intelligence</span>
+            <span className="ib-hero-line ib-hero-line-long">Construction doesn't need another dashboard.</span>{" "}
+            <span className="ib-hero-line cy">It needs intelligence.</span>
           </h1>
           <p className="ib-hero-sub">
-            Bricks &amp; Brains connects project, procurement, supplier and site data to understand disruptions, reason through their impact and coordinate what happens next.
+            The Decision Intelligence Layer for Construction.
           </p>
           <div className="ib-hero-actions">
             <a href="/b2-intelligence" className="ib-btn ib-btn-ghost">Meet <B2Mark /> Intelligence</a>
             <span className="ib-hero-note">Built in Singapore · pilots open</span>
           </div>
-          <div style={{ marginTop: "clamp(2.2rem,5vw,3.4rem)" }}>
-            <SupplyChainTwinAnimation />
-          </div>
         </div>
+      </section>
+
+      <section className="ib-sec" aria-label="Construction supply chain digital twin">
+        <div className="ib-wrap"><SupplyChainTwinAnimation /></div>
       </section>
 
       <section className="ib-sec">
@@ -228,7 +227,7 @@ export default function Home() {
       <section className="ib-sec alt">
         <div className="ib-wrap">
           <div className="ib-split">
-            <div className="ib-reveal"><span className="ib-eyebrow"><IconPlay /> Pilot</span><h2>Run Bricks & Brains on <span style={{ color: "var(--ib-cyan)" }}>one live project</span></h2><p>Start with a defined procurement package and evaluate the workflow using your own material, supplier and delivery data.</p><div className="ib-hero-actions" style={{ marginTop: "1.8rem" }}><a href="/pilot" className="ib-btn ib-btn-primary">Apply for Pilot <span className="arw">→</span></a><a href="/contact-us" className="ib-btn ib-btn-ghost">Contact us</a></div></div>
+            <div className="ib-reveal"><span className="ib-eyebrow"><IconPlay /> Pilot</span><h2>Run Bricks & Brains on <span style={{ color: "var(--ib-cyan)" }}>one live project</span></h2><p>Start with a defined procurement package and evaluate the workflow using your own material, supplier and delivery data.</p><div className="ib-hero-actions" style={{ marginTop: "1.8rem" }}><a href="/contact-us" className="ib-btn ib-btn-primary">Apply for Pilot <span className="arw">→</span></a><a href="/contact-us" className="ib-btn ib-btn-ghost">Contact us</a></div></div>
             <ul className="ib-steps ib-reveal" style={{ transitionDelay: "100ms" }}>
               <li><span className="n">01</span><div><h4>Define the package</h4><p>Select a live project, material package and outcome to measure.</p></div></li>
               <li><span className="n">02</span><div><h4>Connect project data</h4><p>Bring in relevant BOQ, supplier, RFQ, PO, logistics and EPD information.</p></div></li>

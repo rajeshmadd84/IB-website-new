@@ -38,7 +38,7 @@ const siteJsonLd = {
       name: "Bricks & Brains",
       alternateName: "IntelliByld",
       url: SITE_URL,
-      logo: { "@type": "ImageObject", url: `${SITE_URL}/images/bb-logo.svg` },
+      logo: { "@type": "ImageObject", url: `${SITE_URL}/images/bb-wordmark.png` },
       description: "Decision intelligence for construction supply chains.",
       sameAs: ["https://www.linkedin.com/company/bricksandbrains"],
       founder: [

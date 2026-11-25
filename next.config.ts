@@ -22,6 +22,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/pilot",
+        destination: "/contact-us",
+        permanent: true,
+      },
+      {
         source: "/agentic-ai",
         destination: "/b2-agents",
         permanent: true,

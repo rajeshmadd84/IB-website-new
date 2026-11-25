@@ -166,7 +166,7 @@ export default function DetailPage({ d }: { d: Detail }) {
                     </li>
                   ))}
                 </ul>
-                <a href="/pilot" className="ib-btn ib-btn-primary" style={{ marginTop: "1.8rem" }}>
+                <a href="/contact-us" className="ib-btn ib-btn-primary" style={{ marginTop: "1.8rem" }}>
                   Run it on a live project <span className="arw">→</span>
                 </a>
               </div>

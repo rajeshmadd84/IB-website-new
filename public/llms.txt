@@ -13,7 +13,7 @@ Canonical website: https://www.bricks-brains.com
 - [B2 Agents](https://www.bricks-brains.com/b2-agents): Specialised agent teams for procurement, material logistics and embodied carbon, with human approval gates.
 - [Material Data Layer](https://www.bricks-brains.com/material-data-layer): How BIM, BOQs, ERP, supplier and project information connect to a shared operational material state.
 - [B2 Carbon](https://www.bricks-brains.com/b2-carbon): Material-level embodied-carbon intelligence connected to construction procurement, suppliers and delivery records.
-- [Join a Pilot](https://www.bricks-brains.com/pilot): Apply to evaluate Bricks & Brains on a focused project or material package.
+- [Join a Pilot](https://www.bricks-brains.com/contact-us): Apply to evaluate Bricks & Brains on a focused project or material package.
 - [Contact](https://www.bricks-brains.com/contact-us): Contact information and company details.
 
 ## Live Use Cases
@@ -32,3 +32,5 @@ Canonical website: https://www.bricks-brains.com
 
 - Email: hello@bricks-brains.com
 - LinkedIn: https://www.linkedin.com/company/bricksandbrains
+
+- [Industry Survey](https://www.bricks-brains.com/survey): Share your experience of construction supply chain and site logistics.
