@@ -31,7 +31,9 @@ export async function POST(request: Request) {
     const result = await delivery.json();
     if (!delivery.ok || result.success !== true) return Response.json({ error: 'Could not deliver response' }, { status: 502 });
     return Response.json({ success: true });
-  } catch {
-    return Response.json({ error: 'Could not save response' }, { status: 500 });
+  } catch (error) {
+    const cause = error instanceof Error ? error.cause : undefined;
+    console.error('Survey delivery failed:', error instanceof Error ? error.message : 'Unknown error', cause instanceof Error ? cause.message : '');
+    return Response.json({ error: 'Could not deliver response' }, { status: 500 });
   }
 }

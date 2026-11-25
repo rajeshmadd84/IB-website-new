@@ -16,7 +16,9 @@ export async function POST(request: Request) {
     const result = await delivery.json();
     if (!delivery.ok || result.success !== true) return Response.json({ error: 'Could not deliver your request. Please try again.' }, { status: 502 });
     return Response.json({ success: true });
-  } catch {
+  } catch (error) {
+    const cause = error instanceof Error ? error.cause : undefined;
+    console.error('Contact delivery failed:', error instanceof Error ? error.message : 'Unknown error', cause instanceof Error ? cause.message : '');
     return Response.json({ error: 'Could not deliver your request. Please try again.' }, { status: 500 });
   }
 }
